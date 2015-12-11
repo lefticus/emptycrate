@@ -4,9 +4,9 @@ title: Pinheads Is Now an Award Winning Game
 published: true
 date: '2008-10-29 13:16:05'
 redirect_from:
-- content/pinheads-now-award-winning-game
-- node/4311
-- import_node/327
+- content/pinheads-now-award-winning-game/
+- node/4311/
+- import_node/327/
 tags:
 - EmptyCrate Game Engine
 - Pinheads

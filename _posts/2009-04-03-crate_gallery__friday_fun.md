@@ -4,9 +4,9 @@ title: Crate Gallery - Friday Fun
 published: true
 date: '2009-04-03 05:00:00'
 redirect_from:
-- content/crate-gallery-friday-fun
-- node/4358
-- import_node/389
+- content/crate-gallery-friday-fun/
+- node/4358/
+- import_node/389/
 tags:
 - Fun
 - EmptyCrate

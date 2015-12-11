@@ -4,9 +4,9 @@ title: Adventures in Adventure Game Creation
 published: true
 date: '2008-09-28 17:02:10'
 redirect_from:
-- content/adventures-adventure-game-creation
-- node/4305
-- import_node/315
+- content/adventures-adventure-game-creation/
+- node/4305/
+- import_node/315/
 tags:
 - EmptyCrate Game Engine
 - Adventure Gaming

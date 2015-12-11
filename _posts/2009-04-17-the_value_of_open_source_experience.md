@@ -4,9 +4,9 @@ title: The Value of Open Source Experience
 published: true
 date: '2009-04-17 05:00:00'
 redirect_from:
-- content/value-open-source-experience
-- node/4368
-- import_node/400
+- content/value-open-source-experience/
+- node/4368/
+- import_node/400/
 tags:
 - Programming
 - Open Source

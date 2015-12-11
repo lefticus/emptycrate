@@ -4,9 +4,9 @@ title: Nokia N800 Essential Software
 published: true
 date: '2008-04-06 20:22:59'
 redirect_from:
-- content/nokia-n800-essential-software
-- node/4277
-- import_node/286
+- content/nokia-n800-essential-software/
+- node/4277/
+- import_node/286/
 tags:
 - N800
 ---

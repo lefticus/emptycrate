@@ -4,9 +4,9 @@ title: Celeste - Cloud Detection for Hugin
 published: true
 date: '2009-03-21 23:18:27'
 redirect_from:
-- content/celeste-cloud-detection-hugin
-- node/4351
-- import_node/377
+- content/celeste-cloud-detection-hugin/
+- node/4351/
+- import_node/377/
 tags:
 - Hugin
 ---

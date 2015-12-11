@@ -4,9 +4,9 @@ title: 'Nobody Understands C++: Part 8: Operator Overloading'
 published: true
 date: '2009-10-12 05:00:00'
 redirect_from:
-- content/nobody-understands-c-part-8-operator-overloading
-- node/4401
-- import_node/448
+- content/nobody-understands-c-part-8-operator-overloading/
+- node/4401/
+- import_node/448/
 tags:
 - Programming
 - Operator Overloading

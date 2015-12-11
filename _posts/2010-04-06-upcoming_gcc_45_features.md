@@ -4,9 +4,9 @@ title: Upcoming GCC 4.5 Features
 published: true
 date: '2010-04-06 17:22:04'
 redirect_from:
-- content/upcoming-gcc-45-features
-- node/4403
-- import_node/457
+- content/upcoming-gcc-45-features/
+- node/4403/
+- import_node/457/
 tags:
 - GCC
 - C++

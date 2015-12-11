@@ -4,9 +4,9 @@ title: More Netbook Backup and Recovery Options
 published: true
 date: '2010-04-19 06:48:08'
 redirect_from:
-- content/more-netbook-backup-and-recovery-options
-- node/4408
-- import_node/460
+- content/more-netbook-backup-and-recovery-options/
+- node/4408/
+- import_node/460/
 tags:
 - Windows
 - Recovery

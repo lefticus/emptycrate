@@ -4,9 +4,9 @@ title: Portable Ubuntu for Windows
 published: true
 date: '2009-04-10 05:00:00'
 redirect_from:
-- content/portable-ubuntu-windows
-- node/4362
-- import_node/394
+- content/portable-ubuntu-windows/
+- node/4362/
+- import_node/394/
 tags:
 - Ubuntu
 - Linux

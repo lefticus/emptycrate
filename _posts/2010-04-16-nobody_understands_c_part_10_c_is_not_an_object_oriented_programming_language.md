@@ -5,9 +5,9 @@ title: 'Nobody Understands C++: Part 10: C++ Is Not an Object Oriented Programmi
 published: true
 date: '2010-04-16 10:57:07'
 redirect_from:
-- content/nobody-understands-c-part-10-c-not-object-oriented-programming-language
-- node/4406
-- import_node/458
+- content/nobody-understands-c-part-10-c-not-object-oriented-programming-language/
+- node/4406/
+- import_node/458/
 tags:
 - Programming
 - OOP

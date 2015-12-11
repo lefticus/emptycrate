@@ -4,9 +4,9 @@ title: Mexican Fajita Style Chicken Dish
 published: true
 date: '2008-11-01 11:37:05'
 redirect_from:
-- content/mexican-fajita-style-chicken-dish
-- node/4315
-- import_node/331
+- content/mexican-fajita-style-chicken-dish/
+- node/4315/
+- import_node/331/
 tags:
 - Recipe
 - Cooking

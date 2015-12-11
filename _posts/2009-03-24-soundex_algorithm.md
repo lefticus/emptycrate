@@ -4,9 +4,9 @@ title: Soundex Algorithm
 published: true
 date: '2009-03-24 05:00:00'
 redirect_from:
-- content/soundex-algorithm
-- node/4363
-- import_node/378
+- content/soundex-algorithm/
+- node/4363/
+- import_node/378/
 tags:
 - Soundex
 - Programming

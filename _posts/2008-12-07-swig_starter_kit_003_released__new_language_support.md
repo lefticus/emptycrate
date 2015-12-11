@@ -4,9 +4,9 @@ title: Swig Starter Kit 0.0.3 Released - New Language Support
 published: true
 date: '2008-12-07 13:24:18'
 redirect_from:
-- content/swig-starter-kit-003-released-new-language-support
-- node/4335
-- import_node/347
+- content/swig-starter-kit-003-released-new-language-support/
+- node/4335/
+- import_node/347/
 tags:
 - Swig Starter Kit
 - Ruby

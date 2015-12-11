@@ -4,9 +4,9 @@ title: Now Tweeting
 published: true
 date: '2009-04-28 18:30:00'
 redirect_from:
-- content/now-tweeting
-- node/4375
-- import_node/422
+- content/now-tweeting/
+- node/4375/
+- import_node/422/
 tags:
 - Twitter
 - Drupal

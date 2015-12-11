@@ -4,9 +4,9 @@ title: MySQL Stored Routines are setuid By Default
 published: true
 date: '2009-06-15 05:00:00'
 redirect_from:
-- content/mysql-stored-routines-are-setuid-default
-- node/4390
-- import_node/431
+- content/mysql-stored-routines-are-setuid-default/
+- node/4390/
+- import_node/431/
 tags:
 - Security
 - MySQL

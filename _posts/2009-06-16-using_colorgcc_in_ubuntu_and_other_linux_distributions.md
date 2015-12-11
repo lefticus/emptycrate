@@ -4,9 +4,9 @@ title: Using colorgcc in Ubuntu (and other Linux distributions)
 published: true
 date: '2009-06-16 05:00:00'
 redirect_from:
-- content/using-colorgcc-ubuntu-and-other-linux-distributions
-- node/4391
-- import_node/429
+- content/using-colorgcc-ubuntu-and-other-linux-distributions/
+- node/4391/
+- import_node/429/
 tags:
 - Ubuntu
 - Programming

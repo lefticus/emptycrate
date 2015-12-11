@@ -4,9 +4,9 @@ title: Crate Game Engine snapshot-20080313 Release
 published: true
 date: '2008-03-14 07:09:48'
 redirect_from:
-- content/crate-game-engine-snapshot-20080313-release
-- node/4270
-- import_node/273
+- content/crate-game-engine-snapshot-20080313-release/
+- node/4270/
+- import_node/273/
 tags:
 - Programming
 - Crate Game Engine

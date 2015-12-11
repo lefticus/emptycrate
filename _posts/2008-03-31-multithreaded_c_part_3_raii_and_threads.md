@@ -4,9 +4,9 @@ title: 'Multithreaded C++: Part 3: RAII And Threads'
 published: true
 date: '2008-03-31 22:21:27'
 redirect_from:
-- content/multithreaded-c-part-3-raii-and-threads
-- node/4273
-- import_node/282
+- content/multithreaded-c-part-3-raii-and-threads/
+- node/4273/
+- import_node/282/
 tags:
 - Boost
 - Articles

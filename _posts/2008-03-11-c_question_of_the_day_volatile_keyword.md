@@ -4,9 +4,9 @@ title: 'C++ Question of the Day: Volatile Keyword'
 published: true
 date: '2008-03-11 11:25:23'
 redirect_from:
-- content/c-question-day-volatile-keyword
-- node/4265
-- import_node/272
+- content/c-question-day-volatile-keyword/
+- node/4265/
+- import_node/272/
 tags:
 - Programming
 - C++

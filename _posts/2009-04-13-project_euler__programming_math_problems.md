@@ -4,9 +4,9 @@ title: Project Euler - Programming Math Problems
 published: true
 date: '2009-04-13 05:00:00'
 redirect_from:
-- content/project-euler-programming-math-problems
-- node/4364
-- import_node/395
+- content/project-euler-programming-math-problems/
+- node/4364/
+- import_node/395/
 tags:
 - Puzzle
 - Project Euler

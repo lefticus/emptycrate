@@ -4,9 +4,9 @@ title: Covariant Return Types
 published: true
 date: '2006-07-14 22:24:25'
 redirect_from:
-- content/covariant-return-types
-- node/4240
-- import_node/230
+- content/covariant-return-types/
+- node/4240/
+- import_node/230/
 tags:
 - Programming
 ---

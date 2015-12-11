@@ -4,9 +4,9 @@ title: 'Multithreaded C++: Part 4: Futures and Other Thread Handlers'
 published: true
 date: '2008-04-16 20:53:31'
 redirect_from:
-- content/multithreaded-c-part-4-futures-and-other-thread-handlers
-- node/4280
-- import_node/290
+- content/multithreaded-c-part-4-futures-and-other-thread-handlers/
+- node/4280/
+- import_node/290/
 tags:
 - C++
 - Threads

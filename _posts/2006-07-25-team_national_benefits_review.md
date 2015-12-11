@@ -4,8 +4,8 @@ title: Team National Benefits Review
 published: false
 date: '2006-07-25 22:41:45'
 redirect_from:
-- import_node/237
-- node/4252
+- import_node/237/
+- node/4252/
 ---
 
 NOTE: This discussion has gotten out of hand, so I have disabled comments. This article was meant as a review from a consumer perspective. Yes, there are ways to make money off of this program, but that is not the focus of this article. I am no longer maintiaining this article and will not be updating it as things at Team National (TM) changes. **What is Team National and Why Do You / Should We Care?** We have many friends from church who have bought into the [Team National (TM)](http://bign.com) (aka National Companies, Inc (TM), aka Big N (TM)) [MLM](http://en.wikipedia.org/wiki/Multi-level_marketing) system. We were invited to one of their meetings where they try to get new members to buy the benefits package. While there, we heard many heart felt stories about money saved and lives changed; people quiting their jobs because they are making so much money with the company; etc. We did not buy into the system that night, but thought we should take it seriously, mainly because of all the friends that were involved. As we began to look closer we saw that things are not what they seem. Some of the more interesting ways to save money are available to anyone (see the [Marketplace](#marketplace) below). Some of them are not benefits at all, particularly the [insurance rates](#autoinsurance), which were mentioned quite frequently in the meeting we attended. **About Team National (TM)** Membership to Team National (TM) costs $795 for 2 years or $2195 for a lifetime. The lifetime membership also provides "benefits" to your parents, children, and grandchildren, for their lifetimes. Because of this, many people will think they are getting such a great deal that it cannot be passed up. However, $2200 is still a lot of money today and should be considered very carefully. Probably the first question that should be asked is, "What benefits do they offer?" If you go to a meeting for Team National (TM) you will likely hear lots of talk about how Team National (TM) members are:

@@ -4,9 +4,9 @@ title: 'Getting the List of Default #define''s From GCC'
 published: true
 date: '2009-04-02 05:00:00'
 redirect_from:
-- content/getting-list-default-defines-gcc
-- node/4357
-- import_node/390
+- content/getting-list-default-defines-gcc/
+- node/4357/
+- import_node/390/
 tags:
 - Programming
 - GCC

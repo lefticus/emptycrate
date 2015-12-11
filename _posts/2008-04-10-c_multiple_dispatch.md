@@ -4,9 +4,9 @@ title: C++ Multiple Dispatch?
 published: true
 date: '2008-04-10 07:54:47'
 redirect_from:
-- content/c-multiple-dispatch
-- node/4281
-- import_node/287
+- content/c-multiple-dispatch/
+- node/4281/
+- import_node/287/
 tags:
 - Programming
 - C++

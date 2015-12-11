@@ -4,9 +4,9 @@ title: 'C++ Templates: Using Templates to Generate the Fibonacci Sequence'
 published: true
 date: '2008-03-09 15:40:47'
 redirect_from:
-- content/c-templates-using-templates-generate-fibonacci-sequence
-- node/4256
-- import_node/271
+- content/c-templates-using-templates-generate-fibonacci-sequence/
+- node/4256/
+- import_node/271/
 tags:
 - Programming
 - C++

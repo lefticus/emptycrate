@@ -4,9 +4,9 @@ title: Prefer .at() to [ ] When Accessing C++ Vectors
 published: true
 date: '2009-02-12 08:40:23'
 redirect_from:
-- content/prefer-when-accessing-c-vectors
-- node/4340
-- import_node/366
+- content/prefer-when-accessing-c-vectors/
+- node/4340/
+- import_node/366/
 tags:
 - C++
 - Programming

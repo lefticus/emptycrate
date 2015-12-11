@@ -4,9 +4,9 @@ title: 'Nobody Understands C++: Part 5: Template Code Bloat'
 published: true
 date: '2008-05-06 09:50:52'
 redirect_from:
-- content/nobody-understands-c-part-5-template-code-bloat
-- node/4294
-- import_node/307
+- content/nobody-understands-c-part-5-template-code-bloat/
+- node/4294/
+- import_node/307/
 tags:
 - Nobody Understands
 - C++

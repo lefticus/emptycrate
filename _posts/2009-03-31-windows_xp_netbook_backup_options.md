@@ -4,9 +4,9 @@ title: Windows XP Netbook Backup Options
 published: true
 date: '2009-03-31 05:00:00'
 redirect_from:
-- content/windows-xp-netbook-backup-options
-- node/4356
-- import_node/387
+- content/windows-xp-netbook-backup-options/
+- node/4356/
+- import_node/387/
 tags:
 - Recovery
 - Netbook

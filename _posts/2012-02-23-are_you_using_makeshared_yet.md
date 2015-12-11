@@ -4,9 +4,9 @@ title: Are You Using make_shared Yet?
 published: true
 date: '2012-02-23 09:46:55'
 redirect_from:
-- content/are-you-using-makeshared-yet
-- node/4421
-- import_node/474
+- content/are-you-using-makeshared-yet/
+- node/4421/
+- import_node/474/
 tags:
 - C++
 - Boost

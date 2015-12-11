@@ -4,9 +4,9 @@ title: C++ Virtual Methods
 published: true
 date: '2009-06-01 05:00:00'
 redirect_from:
-- content/c-virtual-methods
-- node/4380
-- import_node/430
+- content/c-virtual-methods/
+- node/4380/
+- import_node/430/
 tags:
 - Virtual
 - Programming

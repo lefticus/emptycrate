@@ -1,5 +1,33 @@
+<!DOCTYPE HTML>
+
+<head>
+  {% include head.html %}
+</head>
+
 <body>
 
-  {{ content }}
+  {% include common_body.html %}
+
+  <div class='container'>
+
+
+    <div class="row">
+      <div class="col-md-8">
+        {{ content }}
+      </div>
+      <div class="col-md-4">
+        {% include related.html %}
+      </div>
+    </div>
+
+    <nav>
+      <ul class="pager">
+        {% if page.previous %}{% assign prevdisabled = "" %}{%else%}{% assign prevdisabled = "disabled" %}{% endif %}
+        {% if page.next %}{% assign nextdisabled = "" %}{%else%}{% assign nextdisabled = "disabled" %}{% endif %}
+        <li class="previous {{prevdisabled}}"><a href="{{ page.previous.url }}"><span aria-hidden="true">&larr;</span> {{page.previous.title}}</a></li>
+        <li class="next {{nextdisabled}}"><a href="{{ page.next.url }}">{{page.next.title}} <span aria-hidden="true">&rarr;</span></a></li>
+      </ul>
+    </nav>
+  </div>
 
 </body>

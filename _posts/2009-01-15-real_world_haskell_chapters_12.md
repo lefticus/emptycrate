@@ -4,9 +4,9 @@ title: 'Real World Haskell: Chapters 1-2'
 published: true
 date: '2009-01-15 17:35:49'
 redirect_from:
-- content/real-world-haskell-chapters-1-2
-- node/4329
-- import_node/357
+- content/real-world-haskell-chapters-1-2/
+- node/4329/
+- import_node/357/
 tags:
 - Haskell
 - C++

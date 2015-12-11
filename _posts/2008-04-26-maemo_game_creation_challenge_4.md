@@ -4,9 +4,9 @@ title: Maemo Game Creation Challenge 4
 published: true
 date: '2008-04-26 21:55:25'
 redirect_from:
-- content/maemo-game-creation-challenge-4
-- node/4292
-- import_node/300
+- content/maemo-game-creation-challenge-4/
+- node/4292/
+- import_node/300/
 tags:
 - Programming
 - Maemo

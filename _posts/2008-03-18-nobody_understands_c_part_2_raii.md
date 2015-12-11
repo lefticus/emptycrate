@@ -4,9 +4,9 @@ title: 'Nobody Understands C++: Part 2: RAII'
 published: true
 date: '2008-03-18 20:22:18'
 redirect_from:
-- content/nobody-understands-c-part-2-raii
-- node/4264
-- import_node/274
+- content/nobody-understands-c-part-2-raii/
+- node/4264/
+- import_node/274/
 tags:
 - RAII
 - Programming

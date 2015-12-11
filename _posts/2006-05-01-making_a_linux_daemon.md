@@ -4,9 +4,9 @@ title: Making a Linux Daemon
 published: true
 date: '2006-05-01 15:15:34'
 redirect_from:
-- content/making-linux-daemon
-- node/4284
-- import_node/219
+- content/making-linux-daemon/
+- node/4284/
+- import_node/219/
 tags:
 - Programming
 ---

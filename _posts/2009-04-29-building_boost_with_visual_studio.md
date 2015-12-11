@@ -4,9 +4,9 @@ title: Building Boost With Visual Studio
 published: true
 date: '2009-04-29 05:00:00'
 redirect_from:
-- content/building-boost-visual-studio
-- node/4376
-- import_node/414
+- content/building-boost-visual-studio/
+- node/4376/
+- import_node/414/
 tags:
 - Visual Studio
 - Boost

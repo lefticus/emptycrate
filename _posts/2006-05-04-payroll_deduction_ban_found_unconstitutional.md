@@ -4,9 +4,9 @@ title: Payroll deduction ban found unconstitutional
 published: true
 date: '2006-05-04 20:08:20'
 redirect_from:
-- content/payroll-deduction-ban-found-unconstitutional
-- node/4233
-- import_node/222
+- content/payroll-deduction-ban-found-unconstitutional/
+- node/4233/
+- import_node/222/
 tags:
 - Unconstitutional
 ---

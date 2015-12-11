@@ -4,9 +4,9 @@ title: C++ Error Handling
 published: true
 date: '2006-05-04 13:01:07'
 redirect_from:
-- content/c-error-handling
-- node/4231
-- import_node/220
+- content/c-error-handling/
+- node/4231/
+- import_node/220/
 tags:
 - Programming
 ---

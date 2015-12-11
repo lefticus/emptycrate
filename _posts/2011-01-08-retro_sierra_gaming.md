@@ -4,9 +4,9 @@ title: Retro Sierra Gaming
 published: true
 date: '2011-01-08 19:42:47'
 redirect_from:
-- content/retro-sierra-gaming
-- node/4413
-- import_node/466
+- content/retro-sierra-gaming/
+- node/4413/
+- import_node/466/
 tags:
 - Sierra
 - Retro

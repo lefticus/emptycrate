@@ -4,9 +4,9 @@ title: Cruel and Unusual C++ Interview Questions
 published: true
 date: '2008-12-02 14:00:42'
 redirect_from:
-- content/cruel-and-unusual-c-interview-questions
-- node/4321
-- import_node/346
+- content/cruel-and-unusual-c-interview-questions/
+- node/4321/
+- import_node/346/
 tags:
 - Interviewing
 - C++

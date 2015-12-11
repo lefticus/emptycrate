@@ -4,9 +4,9 @@ title: Pass By Iterator
 published: true
 date: '2008-05-20 18:28:19'
 redirect_from:
-- content/pass-iterator
-- node/4298
-- import_node/311
+- content/pass-iterator/
+- node/4298/
+- import_node/311/
 tags:
 - Templates
 - Programming

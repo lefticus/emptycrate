@@ -4,9 +4,9 @@ title: 'C++ Loop Optimization: Part 3: Dynamic List Generation'
 published: true
 date: '2008-10-30 18:25:41'
 redirect_from:
-- content/c-loop-optimization-part-3-dynamic-list-generation
-- node/4312
-- import_node/328
+- content/c-loop-optimization-part-3-dynamic-list-generation/
+- node/4312/
+- import_node/328/
 tags:
 - Articles
 - C++

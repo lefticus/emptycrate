@@ -4,9 +4,9 @@ title: New ChaiScript Releases
 published: true
 date: '2012-06-08 08:14:23'
 redirect_from:
-- content/new-chaiscript-releases
-- node/4423
-- import_node/476
+- content/new-chaiscript-releases/
+- node/4423/
+- import_node/476/
 tags:
 - ChaiScript
 - C++11

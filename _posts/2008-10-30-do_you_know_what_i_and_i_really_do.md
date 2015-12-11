@@ -4,9 +4,9 @@ title: Do You Know What ++i And i++ Really Do?
 published: true
 date: '2008-10-30 21:44:52'
 redirect_from:
-- content/do-you-know-what-i-and-i-really-do
-- node/4313
-- import_node/329
+- content/do-you-know-what-i-and-i-really-do/
+- node/4313/
+- import_node/329/
 tags:
 - Programming
 - Articles

@@ -4,9 +4,9 @@ title: ChaiScript Performance Updates
 published: true
 date: '2009-08-09 16:18:49'
 redirect_from:
-- content/chaiscript-performance-updates
-- node/4394
-- import_node/439
+- content/chaiscript-performance-updates/
+- node/4394/
+- import_node/439/
 tags:
 - Optimization
 - ChaiScript

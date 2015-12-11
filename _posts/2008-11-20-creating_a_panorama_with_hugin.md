@@ -4,9 +4,9 @@ title: Creating a Panorama with Hugin
 published: true
 date: '2008-11-20 20:52:03'
 redirect_from:
-- content/creating-panorama-hugin
-- node/4317
-- import_node/342
+- content/creating-panorama-hugin/
+- node/4317/
+- import_node/342/
 tags:
 - Ireland
 - Hugin

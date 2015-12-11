@@ -4,9 +4,9 @@ title: C++ Loop Optimization
 published: true
 date: '2008-10-26 20:30:44'
 redirect_from:
-- content/c-loop-optimization
-- node/4310
-- import_node/323
+- content/c-loop-optimization/
+- node/4310/
+- import_node/323/
 tags:
 - Programming
 - Optimization

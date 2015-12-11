@@ -4,9 +4,9 @@ title: C++ Mutiple Dispatch!
 published: true
 date: '2008-04-10 11:21:20'
 redirect_from:
-- content/c-mutiple-dispatch
-- node/4279
-- import_node/288
+- content/c-mutiple-dispatch/
+- node/4279/
+- import_node/288/
 tags:
 - Templates
 - Programming

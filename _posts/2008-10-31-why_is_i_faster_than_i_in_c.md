@@ -4,9 +4,9 @@ title: Why is ++i faster than i++ in C++?
 published: true
 date: '2008-10-31 22:15:59'
 redirect_from:
-- content/why-i-faster-i-c
-- node/4314
-- import_node/330
+- content/why-i-faster-i-c/
+- node/4314/
+- import_node/330/
 tags:
 - Programming
 - C++

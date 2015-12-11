@@ -4,9 +4,9 @@ title: '"The No Twinkie Database"'
 published: true
 date: '2009-06-05 05:00:00'
 redirect_from:
-- content/no-twinkie-database
-- node/4384
-- import_node/428
+- content/no-twinkie-database/
+- node/4384/
+- import_node/428/
 tags:
 - Programming
 - Game

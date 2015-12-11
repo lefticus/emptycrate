@@ -4,9 +4,9 @@ title: Swig Starter Kit 0.0.2
 published: true
 date: '2008-12-01 20:02:15'
 redirect_from:
-- content/swig-starter-kit-002
-- node/4334
-- import_node/344
+- content/swig-starter-kit-002/
+- node/4334/
+- import_node/344/
 tags:
 - Templates
 - Swig Starter Kit

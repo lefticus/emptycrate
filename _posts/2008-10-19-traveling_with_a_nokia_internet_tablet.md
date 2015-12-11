@@ -4,9 +4,9 @@ title: Traveling with a Nokia Internet Tablet
 published: true
 date: '2008-10-19 09:01:48'
 redirect_from:
-- content/traveling-nokia-internet-tablet
-- node/4306
-- import_node/319
+- content/traveling-nokia-internet-tablet/
+- node/4306/
+- import_node/319/
 tags:
 - Travel
 - Maemo

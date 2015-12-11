@@ -4,9 +4,9 @@ title: Simple C++ String Conversions
 published: true
 date: '2009-03-17 14:13:56'
 redirect_from:
-- content/simple-c-string-conversions
-- node/4347
-- import_node/372
+- content/simple-c-string-conversions/
+- node/4347/
+- import_node/372/
 tags:
 - Programming
 - C++

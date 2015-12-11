@@ -4,9 +4,9 @@ title: Good Bye, Dr. Dobb's Journal
 published: true
 date: '2009-04-06 05:00:00'
 redirect_from:
-- content/good-bye-dr-dobbs-journal
-- node/4359
-- import_node/391
+- content/good-bye-dr-dobbs-journal/
+- node/4359/
+- import_node/391/
 tags:
 - Dr. Dobb's Journal
 ---

@@ -4,9 +4,9 @@ title: Using Non-Standard Resolutions with VirtualBox RDP
 published: true
 date: '2012-02-21 12:52:51'
 redirect_from:
-- content/using-non-standard-resolutions-virtualbox-rdp
-- node/4420
-- import_node/473
+- content/using-non-standard-resolutions-virtualbox-rdp/
+- node/4420/
+- import_node/473/
 tags:
 - VirtualBox
 - Windows

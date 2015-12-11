@@ -4,9 +4,9 @@ title: Programming With Portability in Mind
 published: true
 date: '2009-05-04 05:00:00'
 redirect_from:
-- content/programming-portability-mind
-- node/4379
-- import_node/424
+- content/programming-portability-mind/
+- node/4379/
+- import_node/424/
 tags:
 - Visual Studio
 - Programming

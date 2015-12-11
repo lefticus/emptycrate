@@ -4,9 +4,9 @@ title: C++0x Final Committee Draft
 published: true
 date: '2010-04-14 08:00:54'
 redirect_from:
-- content/c0x-final-committee-draft
-- node/4405
-- import_node/456
+- content/c0x-final-committee-draft/
+- node/4405/
+- import_node/456/
 tags:
 - C++
 ---

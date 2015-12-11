@@ -4,9 +4,9 @@ title: Iterators Must Go (aka, Alexandrescu endorses D)
 published: true
 date: '2009-06-03 05:00:00'
 redirect_from:
-- content/iterators-must-go-aka-alexandrescu-endorses-d
-- node/4382
-- import_node/427
+- content/iterators-must-go-aka-alexandrescu-endorses-d/
+- node/4382/
+- import_node/427/
 tags:
 - Programming
 - D

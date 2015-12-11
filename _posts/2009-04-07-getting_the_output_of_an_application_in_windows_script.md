@@ -4,9 +4,9 @@ title: Getting the Output of an Application in Windows Script
 published: true
 date: '2009-04-07 05:00:00'
 redirect_from:
-- content/getting-output-application-windows-script
-- node/4360
-- import_node/392
+- content/getting-output-application-windows-script/
+- node/4360/
+- import_node/392/
 tags:
 - Windows Script
 - Programming

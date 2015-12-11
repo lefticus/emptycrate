@@ -4,9 +4,9 @@ title: Boost Preprocessor Metaprogramming and Intro to Templates Revisited
 published: true
 date: '2007-06-28 15:18:41'
 redirect_from:
-- content/boost-preprocessor-metaprogramming-and-intro-templates-revisited
-- node/4257
-- import_node/267
+- content/boost-preprocessor-metaprogramming-and-intro-templates-revisited/
+- node/4257/
+- import_node/267/
 tags:
 - Templates
 - Programming

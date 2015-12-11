@@ -4,9 +4,9 @@ title: 'Nobody Understands C++: Part 4: Functional Programming'
 published: true
 date: '2008-04-24 20:30:09'
 redirect_from:
-- content/nobody-understands-c-part-4-functional-programming
-- node/4288
-- import_node/294
+- content/nobody-understands-c-part-4-functional-programming/
+- node/4288/
+- import_node/294/
 tags:
 - Programming
 - Nobody Understands

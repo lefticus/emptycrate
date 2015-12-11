@@ -4,9 +4,9 @@ title: When to use reinterpret_cast<> vs. static_cast<>
 published: true
 date: '2009-04-01 05:00:00'
 redirect_from:
-- content/when-use-reinterpretcast-vs-staticcast
-- node/4410
-- import_node/388
+- content/when-use-reinterpretcast-vs-staticcast/
+- node/4410/
+- import_node/388/
 tags:
 - Programming
 - C++

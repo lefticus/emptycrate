@@ -4,9 +4,9 @@ title: Dr. Dobb, Where Art Thou?
 published: true
 date: '2008-12-13 16:29:08'
 redirect_from:
-- content/dr-dobb-where-art-thou
-- node/4322
-- import_node/349
+- content/dr-dobb-where-art-thou/
+- node/4322/
+- import_node/349/
 tags:
 - Dr. Dobb's Journal
 ---

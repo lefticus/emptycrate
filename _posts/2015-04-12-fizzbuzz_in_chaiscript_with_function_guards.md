@@ -4,8 +4,8 @@ title: FizzBuzz in ChaiScript with Function Guards
 published: true
 date: '2015-04-12 07:21:05'
 redirect_from:
-- content/fizzbuzz-chaiscript-function-guards
-- node/4603
+- content/fizzbuzz-chaiscript-function-guards/
+- node/4603/
 tags:
 - ChaiScript
 - Programming

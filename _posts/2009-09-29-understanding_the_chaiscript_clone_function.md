@@ -4,9 +4,9 @@ title: Understanding the ChaiScript clone Function
 published: true
 date: '2009-09-29 20:06:18'
 redirect_from:
-- content/understanding-chaiscript-clone-function
-- node/4397
-- import_node/444
+- content/understanding-chaiscript-clone-function/
+- node/4397/
+- import_node/444/
 tags:
 - ChaiScript
 - C++

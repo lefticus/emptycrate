@@ -4,9 +4,9 @@ title: Using Visual Studio Property Sheets to Manage Common Properties
 published: true
 date: '2009-04-30 05:00:00'
 redirect_from:
-- content/using-visual-studio-property-sheets-manage-common-properties
-- node/4377
-- import_node/421
+- content/using-visual-studio-property-sheets-manage-common-properties/
+- node/4377/
+- import_node/421/
 tags:
 - Visual Studio
 - Programming

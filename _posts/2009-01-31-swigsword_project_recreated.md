@@ -4,9 +4,9 @@ title: SwigSword Project Recreated
 published: true
 date: '2009-01-31 12:08:36'
 redirect_from:
-- content/swigsword-project-recreated
-- node/4336
-- import_node/362
+- content/swigsword-project-recreated/
+- node/4336/
+- import_node/362/
 tags:
 - SWORD
 - SwigSword

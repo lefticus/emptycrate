@@ -4,9 +4,9 @@ title: 'Blogging the C++ Language: Named Operators'
 published: true
 date: '2006-08-28 14:54:57'
 redirect_from:
-- content/blogging-c-language-named-operators
-- node/4244
-- import_node/242
+- content/blogging-c-language-named-operators/
+- node/4244/
+- import_node/242/
 tags:
 - Programming
 ---

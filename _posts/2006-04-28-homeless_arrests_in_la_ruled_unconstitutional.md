@@ -4,9 +4,9 @@ title: Homeless arrests in L.A. ruled unconstitutional
 published: true
 date: '2006-04-28 08:29:29'
 redirect_from:
-- content/homeless-arrests-la-ruled-unconstitutional
-- node/4223
-- import_node/212
+- content/homeless-arrests-la-ruled-unconstitutional/
+- node/4223/
+- import_node/212/
 tags:
 - Unconstitutional
 ---

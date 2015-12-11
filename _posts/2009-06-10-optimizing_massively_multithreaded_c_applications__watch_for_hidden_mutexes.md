@@ -4,9 +4,9 @@ title: Optimizing Massively Multithreaded C++ Applications - Watch for Hidden Mu
 published: true
 date: '2009-06-10 05:00:00'
 redirect_from:
-- content/optimizing-massively-multithreaded-c-applications-watch-hidden-mutexes
-- node/4387
-- import_node/435
+- content/optimizing-massively-multithreaded-c-applications-watch-hidden-mutexes/
+- node/4387/
+- import_node/435/
 tags:
 - Threads
 - Programming

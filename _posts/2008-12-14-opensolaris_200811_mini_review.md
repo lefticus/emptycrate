@@ -4,9 +4,9 @@ title: OpenSolaris 2008.11 Mini Review
 published: true
 date: '2008-12-14 22:27:27'
 redirect_from:
-- content/opensolaris-200811-mini-review
-- node/4324
-- import_node/351
+- content/opensolaris-200811-mini-review/
+- node/4324/
+- import_node/351/
 tags:
 - OpenSolaris
 - Review

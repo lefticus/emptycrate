@@ -4,9 +4,9 @@ title: 'Real World Haskell: Chapter 3'
 published: true
 date: '2009-01-26 11:23:57'
 redirect_from:
-- content/real-world-haskell-chapter-3
-- node/4333
-- import_node/358
+- content/real-world-haskell-chapter-3/
+- node/4333/
+- import_node/358/
 tags:
 - Programming
 - Haskell

@@ -4,9 +4,9 @@ title: Don't Join on Yourself!
 published: true
 date: '2008-03-20 13:27:20'
 redirect_from:
-- content/dont-join-yourself
-- node/4266
-- import_node/276
+- content/dont-join-yourself/
+- node/4266/
+- import_node/276/
 tags:
 - Threads
 - Programming

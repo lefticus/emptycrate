@@ -4,9 +4,9 @@ title: 'Nobody Understands C++: Part 3: Templates'
 published: true
 date: '2008-04-05 11:46:37'
 redirect_from:
-- content/nobody-understands-c-part-3-templates
-- node/4278
-- import_node/284
+- content/nobody-understands-c-part-3-templates/
+- node/4278/
+- import_node/284/
 tags:
 - Templates
 - Programming

@@ -4,9 +4,9 @@ title: 'Nobody Understands C++: Part 6: Are You Still Using Pointers?'
 published: true
 date: '2009-01-02 00:50:25'
 redirect_from:
-- content/nobody-understands-c-part-6-are-you-still-using-pointers
-- node/4325
-- import_node/354
+- content/nobody-understands-c-part-6-are-you-still-using-pointers/
+- node/4325/
+- import_node/354/
 tags:
 - Nobody Understands
 - C++

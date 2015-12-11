@@ -4,9 +4,9 @@ title: EmptyCrate Game Engine Release_1
 published: true
 date: '2008-08-18 09:16:46'
 redirect_from:
-- content/emptycrate-game-engine-release1
-- node/4300
-- import_node/313
+- content/emptycrate-game-engine-release1/
+- node/4300/
+- import_node/313/
 tags:
 - EmptyCrate Game Engine
 - Changelog

@@ -4,9 +4,9 @@ title: '"Unconstitutional" Cross Ordered to be Removed'
 published: true
 date: '2006-05-04 20:22:46'
 redirect_from:
-- content/unconstitutional-cross-ordered-be-removed
-- node/4234
-- import_node/223
+- content/unconstitutional-cross-ordered-be-removed/
+- node/4234/
+- import_node/223/
 tags:
 - Unconstitutional
 ---

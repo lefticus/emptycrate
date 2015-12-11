@@ -4,9 +4,9 @@ title: 'Multithreaded C++: Part 2: Boost Threads'
 published: true
 date: '2008-03-21 20:13:23'
 redirect_from:
-- content/multithreaded-c-part-2-boost-threads
-- node/4267
-- import_node/277
+- content/multithreaded-c-part-2-boost-threads/
+- node/4267/
+- import_node/277/
 tags:
 - Threads
 - Programming

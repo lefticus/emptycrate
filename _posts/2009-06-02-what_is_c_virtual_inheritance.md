@@ -4,9 +4,9 @@ title: What is C++ Virtual Inheritance?
 published: true
 date: '2009-06-02 05:00:00'
 redirect_from:
-- content/what-c-virtual-inheritance
-- node/4381
-- import_node/425
+- content/what-c-virtual-inheritance/
+- node/4381/
+- import_node/425/
 tags:
 - Virtual
 - Programming

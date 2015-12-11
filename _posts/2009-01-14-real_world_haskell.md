@@ -4,9 +4,9 @@ title: Real World Haskell
 published: true
 date: '2009-01-14 22:23:06'
 redirect_from:
-- content/real-world-haskell
-- node/4328
-- import_node/356
+- content/real-world-haskell/
+- node/4328/
+- import_node/356/
 tags:
 - Haskell
 - Programming

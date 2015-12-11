@@ -4,9 +4,9 @@ title: 'Blogging the C++ Language: catch keyword'
 published: true
 date: '2006-09-04 08:32:07'
 redirect_from:
-- content/blogging-c-language-catch-keyword
-- node/4249
-- import_node/247
+- content/blogging-c-language-catch-keyword/
+- node/4249/
+- import_node/247/
 tags:
 - Programming
 ---

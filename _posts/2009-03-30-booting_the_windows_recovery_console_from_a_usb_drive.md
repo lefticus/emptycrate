@@ -4,9 +4,9 @@ title: Booting the Windows Recovery Console From a USB Drive
 published: true
 date: '2009-03-30 05:00:00'
 redirect_from:
-- content/booting-windows-recovery-console-usb-drive
-- node/4355
-- import_node/386
+- content/booting-windows-recovery-console-usb-drive/
+- node/4355/
+- import_node/386/
 tags:
 - Windows
 - Recovery

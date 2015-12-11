@@ -4,9 +4,9 @@ title: Federal judge strikes part of state's campaign finance laws
 published: true
 date: '2006-05-01 09:26:47'
 redirect_from:
-- content/federal-judge-strikes-part-states-campaign-finance-laws
-- node/4229
-- import_node/217
+- content/federal-judge-strikes-part-states-campaign-finance-laws/
+- node/4229/
+- import_node/217/
 tags:
 - Unconstitutional
 ---

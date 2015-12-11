@@ -4,9 +4,9 @@ title: Developer Day - Boulder 2009
 published: true
 date: '2009-10-14 05:00:00'
 redirect_from:
-- content/developer-day-boulder-2009
-- node/4400
-- import_node/450
+- content/developer-day-boulder-2009/
+- node/4400/
+- import_node/450/
 tags:
 - Programming
 - Developer Day

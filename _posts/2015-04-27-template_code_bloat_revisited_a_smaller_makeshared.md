@@ -3,10 +3,13 @@ layout: blog_post
 title: 'Template Code Bloat Revisited: A Smaller make_shared'
 published: true
 date: '2015-04-27 06:56:51'
+tags:
+- Templates
+- C++
 redirect_from:
-- content/template-code-bloat-revisited-smaller-makeshared
-- node/4604
-- content/template-code-bloat-revisited
+- content/template-code-bloat-revisited-smaller-makeshared/
+- node/4604/
+- content/template-code-bloat-revisited/
 ---
 
 *Note 2015-05-01 - fixed typos in first example* *Note 2015-05-04 - fixed typos in second example*
@@ -126,42 +129,44 @@ It has all of the problems mentioned above. I believe these could be sorted out,
 The full tested example is this:
 
 
-    #include &lt;memory>
-    #include &lt;vector>
+```cpp
+#include <memory>
+#include <vector>
 
-    struct Base
-    {
-      virtual ~Base() = default;
-    };
+struct Base
+{
+  virtual ~Base() = default;
+};
 
-    template<int T>
-    struct Derived : Base
-    {
-      Derived(int) {}
-    };
+template<int T>
+struct Derived : Base
+{
+  Derived(int) {}
+};
 
-    template<typename B, typename D, typename ...Arg>
-    inline std::shared_ptr<B> make_shared(Arg && ... arg)
-    {
-    #ifdef USE_STD
-      return std::make_shared<D>(std::forward<Arg>(arg)...);
-    #else
-      return std::shared_ptr<B>(static_cast<B*>(new D(std::forward<Arg>(arg)...)));
-    #endif
-    }
+template<typename B, typename D, typename ...Arg>
+inline std::shared_ptr<B> make_shared(Arg && ... arg)
+{
+#ifdef USE_STD
+  return std::make_shared<D>(std::forward<Arg>(arg)...);
+#else
+  return std::shared_ptr<B>(static_cast<B*>(new D(std::forward<Arg>(arg)...)));
+#endif
+}
 
-    int main()
-    {
-      std::vector<std::shared_ptr<Base>> objs;
+int main()
+{
+  std::vector<std::shared_ptr<Base>> objs;
 
-      objs.push_back(make_shared<Base, Derived<1>>(1));
-      objs.push_back(make_shared<Base, Derived<2>>(2));
-      objs.push_back(make_shared<Base, Derived<3>>(3));
-      // ... snip
-      objs.push_back(make_shared<Base, Derived<57>>(57));
-      objs.push_back(make_shared<Base, Derived<58>>(58));
-      objs.push_back(make_shared<Base, Derived<59>>(59));
-    }
+  objs.push_back(make_shared<Base, Derived<1>>(1));
+  objs.push_back(make_shared<Base, Derived<2>>(2));
+  objs.push_back(make_shared<Base, Derived<3>>(3));
+  // ... snip
+  objs.push_back(make_shared<Base, Derived<57>>(57));
+  objs.push_back(make_shared<Base, Derived<58>>(58));
+  objs.push_back(make_shared<Base, Derived<59>>(59));
+}
+```
 
 
 Using the `std::make_shared` version:

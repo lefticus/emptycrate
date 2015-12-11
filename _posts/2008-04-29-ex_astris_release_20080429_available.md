@@ -4,9 +4,9 @@ title: Ex Astris Release 2008-04-29 Available
 published: true
 date: '2008-04-29 20:25:05'
 redirect_from:
-- content/ex-astris-release-2008-04-29-available
-- node/4293
-- import_node/302
+- content/ex-astris-release-2008-04-29-available/
+- node/4293/
+- import_node/302/
 tags:
 - Ex Astris
 - Changelog

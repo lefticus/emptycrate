@@ -4,9 +4,9 @@ title: Google Chrome 2.0 Beta Released
 published: true
 date: '2009-03-18 09:43:05'
 redirect_from:
-- content/google-chrome-20-beta-released
-- node/4348
-- import_node/374
+- content/google-chrome-20-beta-released/
+- node/4348/
+- import_node/374/
 tags:
 - Google Chrome
 - Acer Aspire One

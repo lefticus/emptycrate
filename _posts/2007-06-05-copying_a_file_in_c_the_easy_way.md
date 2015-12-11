@@ -4,9 +4,9 @@ title: Copying a File in C++, The Easy Way
 published: true
 date: '2007-06-05 11:42:45'
 redirect_from:
-- content/copying-file-c-easy-way
-- node/4258
-- import_node/264
+- content/copying-file-c-easy-way/
+- node/4258/
+- import_node/264/
 tags:
 - Programming
 - C++

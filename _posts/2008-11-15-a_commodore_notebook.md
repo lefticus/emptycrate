@@ -4,9 +4,9 @@ title: A Commodore Notebook?
 published: true
 date: '2008-11-15 13:09:47'
 redirect_from:
-- content/commodore-notebook
-- node/4316
-- import_node/332
+- content/commodore-notebook/
+- node/4316/
+- import_node/332/
 tags:
 - commodore
 - hardware

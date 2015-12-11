@@ -4,9 +4,9 @@ title: 'My Blog: My Living Resume'
 published: true
 date: '2008-12-14 15:22:46'
 redirect_from:
-- content/my-blog-my-living-resume
-- node/4323
-- import_node/350
+- content/my-blog-my-living-resume/
+- node/4323/
+- import_node/350/
 tags:
 - Blogging
 - Resume

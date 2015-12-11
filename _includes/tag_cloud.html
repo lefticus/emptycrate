@@ -1,0 +1,38 @@
+{% assign min = 1000000 %}
+{% assign max = 0 %}
+{% assign tagnames = "" | split: ";" %}
+{% for tag in site.tags %}
+  {% assign count = tag.last | size %}
+  {% if count > 1 %}
+    {% if count > max %}
+      {% assign max = count %}
+    {% endif %}
+    {% if count < min %}
+      {% assign min = count %}
+    {% endif %}
+    {% assign tagnames = tagnames | push: tag.first %}
+  {% endif %}
+{% endfor %}
+
+{% assign tagnames = tagnames | sort %}
+
+{% assign range = max | minus: min | times: 1.0 %}
+
+{% for tag in tagnames %}
+  {% for tagobj in site.tags %}
+    {% if tagobj.first == tag %}
+      {% assign count = tagobj.last | size | times: 1.0 %}
+      {% assign distance = max | minus: count | times: 1.0 %}
+      {% assign percent = distance | divided_by: range %}
+      {% if percent < 0.25 %}
+        <big><big><big>{{tag}}</big></big></big>
+      {% elsif percent < 0.50 %}
+        <big><big>{{tag}}</big></big>
+      {% elsif percent < 0.75 %}
+        <big>{{tag}}</big>
+      {% else %}
+      {{ count }}{{tag}}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

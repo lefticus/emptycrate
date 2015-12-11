@@ -4,9 +4,9 @@ title: Overloading && and || Operators in C++
 published: true
 date: '2009-02-03 20:56:44'
 redirect_from:
-- content/overloading-and-operators-c
-- node/4338
-- import_node/363
+- content/overloading-and-operators-c/
+- node/4338/
+- import_node/363/
 tags:
 - Programming
 - Operator Overloading

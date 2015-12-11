@@ -4,9 +4,9 @@ title: Swig Starter Kit 0.0.1
 published: true
 date: '2008-11-28 10:30:53'
 redirect_from:
-- content/swig-starter-kit-001
-- node/4318
-- import_node/343
+- content/swig-starter-kit-001/
+- node/4318/
+- import_node/343/
 tags:
 - Swig Starter Kit
 - Lua

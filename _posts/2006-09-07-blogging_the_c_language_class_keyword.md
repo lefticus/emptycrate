@@ -4,9 +4,9 @@ title: 'Blogging the C++ Language: class keyword'
 published: true
 date: '2006-09-07 15:28:42'
 redirect_from:
-- content/blogging-c-language-class-keyword
-- node/4250
-- import_node/248
+- content/blogging-c-language-class-keyword/
+- node/4250/
+- import_node/248/
 tags:
 - Programming
 ---

@@ -4,9 +4,9 @@ title: Top 5 Myths About C++
 published: true
 date: '2008-05-14 21:03:15'
 redirect_from:
-- content/top-5-myths-about-c
-- node/4295
-- import_node/308
+- content/top-5-myths-about-c/
+- node/4295/
+- import_node/308/
 tags:
 - C++
 - Programming

@@ -4,9 +4,9 @@ title: Optimizing Massively Multithreaded C++ Applications - Don't Forget the Ob
 published: true
 date: '2009-06-09 05:00:00'
 redirect_from:
-- content/optimizing-massively-multithreaded-c-applications-dont-forget-obvious
-- node/4386
-- import_node/434
+- content/optimizing-massively-multithreaded-c-applications-dont-forget-obvious/
+- node/4386/
+- import_node/434/
 tags:
 - Threads
 - Programming

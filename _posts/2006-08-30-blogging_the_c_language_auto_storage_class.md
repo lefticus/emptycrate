@@ -4,9 +4,9 @@ title: 'Blogging the C++ Language: auto storage class'
 published: true
 date: '2006-08-30 12:36:29'
 redirect_from:
-- content/blogging-c-language-auto-storage-class
-- node/4246
-- import_node/244
+- content/blogging-c-language-auto-storage-class/
+- node/4246/
+- import_node/244/
 tags:
 - Programming
 ---

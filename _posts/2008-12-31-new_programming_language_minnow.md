@@ -4,9 +4,9 @@ title: 'New Programming Language: Minnow'
 published: true
 date: '2008-12-31 12:10:06'
 redirect_from:
-- content/new-programming-language-minnow
-- node/4327
-- import_node/353
+- content/new-programming-language-minnow/
+- node/4327/
+- import_node/353/
 tags:
 - Programming
 - Minnow

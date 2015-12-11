@@ -4,9 +4,9 @@ title: Formatting a Comma Delimated List Redux
 published: true
 date: '2009-03-08 14:14:41'
 redirect_from:
-- content/formatting-comma-delimated-list-redux
-- node/4345
-- import_node/370
+- content/formatting-comma-delimated-list-redux/
+- node/4345/
+- import_node/370/
 tags:
 - Programming
 - Puzzle

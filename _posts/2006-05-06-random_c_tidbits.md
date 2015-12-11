@@ -4,9 +4,9 @@ title: Random C++ Tidbits
 published: true
 date: '2006-05-06 11:08:26'
 redirect_from:
-- content/random-c-tidbits
-- node/4235
-- import_node/224
+- content/random-c-tidbits/
+- node/4235/
+- import_node/224/
 tags:
 - Programming
 ---

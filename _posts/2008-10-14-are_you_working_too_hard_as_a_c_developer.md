@@ -4,9 +4,9 @@ title: Are You Working Too Hard as A C++ Developer?
 published: true
 date: '2008-10-14 22:30:23'
 redirect_from:
-- content/are-you-working-too-hard-c-developer
-- node/4319
-- import_node/318
+- content/are-you-working-too-hard-c-developer/
+- node/4319/
+- import_node/318/
 tags:
 - Programming
 - C++

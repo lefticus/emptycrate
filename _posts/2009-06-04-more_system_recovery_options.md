@@ -4,9 +4,9 @@ title: More System Recovery Options
 published: true
 date: '2009-06-04 05:00:00'
 redirect_from:
-- content/more-system-recovery-options
-- node/4383
-- import_node/426
+- content/more-system-recovery-options/
+- node/4383/
+- import_node/426/
 tags:
 - XP
 - Windows

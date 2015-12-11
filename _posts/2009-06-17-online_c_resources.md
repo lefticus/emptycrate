@@ -4,9 +4,9 @@ title: Online C++ Resources
 published: true
 date: '2009-06-17 05:00:00'
 redirect_from:
-- content/online-c-resources
-- node/4392
-- import_node/432
+- content/online-c-resources/
+- node/4392/
+- import_node/432/
 tags:
 - C++
 ---

@@ -4,9 +4,9 @@ title: Server Problems
 published: true
 date: '2008-04-21 09:31:36'
 redirect_from:
-- content/server-problems
-- node/4283
-- import_node/293
+- content/server-problems/
+- node/4283/
+- import_node/293/
 tags:
 - EmptyCrate
 ---

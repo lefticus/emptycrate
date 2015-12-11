@@ -4,9 +4,9 @@ title: 'C++ Question of the Day: std::map index operator'
 published: true
 date: '2009-05-01 05:00:00'
 redirect_from:
-- content/c-question-day-stdmap-index-operator
-- node/4378
-- import_node/423
+- content/c-question-day-stdmap-index-operator/
+- node/4378/
+- import_node/423/
 tags:
 - Question of the Day
 - Programming

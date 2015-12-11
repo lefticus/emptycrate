@@ -4,9 +4,9 @@ title: 'Blogging the C++ Language: break statement'
 published: true
 date: '2006-08-31 13:18:46'
 redirect_from:
-- content/blogging-c-language-break-statement
-- node/4247
-- import_node/245
+- content/blogging-c-language-break-statement/
+- node/4247/
+- import_node/245/
 tags:
 - Programming
 ---

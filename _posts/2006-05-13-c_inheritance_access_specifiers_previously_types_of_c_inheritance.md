@@ -4,9 +4,9 @@ title: 'C++ Inheritance Access Specifiers (previously: Types of C++ Inheritance)
 published: true
 date: '2006-05-13 16:36:40'
 redirect_from:
-- content/c-inheritance-access-specifiers-previously-types-c-inheritance
-- node/4343
-- import_node/226
+- content/c-inheritance-access-specifiers-previously-types-c-inheritance/
+- node/4343/
+- import_node/226/
 tags:
 - Programming
 - C++

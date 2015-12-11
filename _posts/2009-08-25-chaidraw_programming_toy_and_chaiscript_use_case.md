@@ -4,9 +4,9 @@ title: 'ChaiDraw: Programming Toy and Chaiscript Use Case'
 published: true
 date: '2009-08-25 15:35:40'
 redirect_from:
-- content/chaidraw-programming-toy-and-chaiscript-use-case
-- node/4396
-- import_node/443
+- content/chaidraw-programming-toy-and-chaiscript-use-case/
+- node/4396/
+- import_node/443/
 tags:
 - C++
 - Programming

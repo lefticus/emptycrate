@@ -4,9 +4,9 @@ title: 'Blogging the C++ Language: Cast Operators'
 published: true
 date: '2006-09-22 13:59:17'
 redirect_from:
-- content/blogging-c-language-cast-operators
-- node/4262
-- import_node/254
+- content/blogging-c-language-cast-operators/
+- node/4262/
+- import_node/254/
 tags:
 - Programming
 - C++

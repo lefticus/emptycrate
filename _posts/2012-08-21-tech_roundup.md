@@ -4,9 +4,9 @@ title: Tech Roundup
 published: true
 date: '2012-08-21 15:43:52'
 redirect_from:
-- content/tech-roundup
-- node/4424
-- import_node/477
+- content/tech-roundup/
+- node/4424/
+- import_node/477/
 tags:
 - technology
 - Programming

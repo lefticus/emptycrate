@@ -4,8 +4,8 @@ title: Make Sure You Provide Virtual Destructors
 published: true
 date: '2014-09-06 14:38:59'
 redirect_from:
-- content/make-sure-you-provide-virtual-destructors
-- node/4600
+- content/make-sure-you-provide-virtual-destructors/
+- node/4600/
 tags:
 - C++
 - Programming

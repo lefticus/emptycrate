@@ -4,9 +4,9 @@ title: 'Blogging the C++ Language: case keyword'
 published: true
 date: '2006-09-03 07:13:59'
 redirect_from:
-- content/blogging-c-language-case-keyword
-- node/4248
-- import_node/246
+- content/blogging-c-language-case-keyword/
+- node/4248/
+- import_node/246/
 tags:
 - Programming
 ---

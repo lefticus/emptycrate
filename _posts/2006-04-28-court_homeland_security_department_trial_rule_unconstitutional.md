@@ -4,9 +4,9 @@ title: 'Court: Homeland Security Department trial rule unconstitutional'
 published: true
 date: '2006-04-28 08:08:33'
 redirect_from:
-- content/court-homeland-security-department-trial-rule-unconstitutional
-- node/4224
-- import_node/211
+- content/court-homeland-security-department-trial-rule-unconstitutional/
+- node/4224/
+- import_node/211/
 tags:
 - Unconstitutional
 ---

@@ -5,9 +5,9 @@ title: Automatically Generating Templates with the Boost Preprocessor Metaprogra
 published: true
 date: '2007-06-02 21:58:06'
 redirect_from:
-- content/automatically-generating-templates-boost-preprocessor-metaprogramming-library
-- node/4259
-- import_node/262
+- content/automatically-generating-templates-boost-preprocessor-metaprogramming-library/
+- node/4259/
+- import_node/262/
 tags:
 - Programming
 - Templates

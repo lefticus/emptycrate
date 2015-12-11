@@ -4,9 +4,9 @@ title: Haskell Pattern Matching and Network CIDR's
 published: true
 date: '2009-01-27 09:27:41'
 redirect_from:
-- content/haskell-pattern-matching-and-network-cidrs
-- node/4332
-- import_node/361
+- content/haskell-pattern-matching-and-network-cidrs/
+- node/4332/
+- import_node/361/
 tags:
 - Pattern Matching
 - Haskell

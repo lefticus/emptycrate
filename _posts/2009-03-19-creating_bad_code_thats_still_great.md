@@ -4,9 +4,9 @@ title: Creating Bad Code That's Still Great
 published: true
 date: '2009-03-19 15:10:20'
 redirect_from:
-- content/creating-bad-code-thats-still-great
-- node/4349
-- import_node/375
+- content/creating-bad-code-thats-still-great/
+- node/4349/
+- import_node/375/
 tags:
 - Programming
 - Articles

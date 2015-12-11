@@ -4,9 +4,9 @@ title: 'Boost::Spirit: A BNF Parser Generator'
 published: true
 date: '2007-06-26 20:57:19'
 redirect_from:
-- content/boostspirit-bnf-parser-generator
-- node/4286
-- import_node/266
+- content/boostspirit-bnf-parser-generator/
+- node/4286/
+- import_node/266/
 tags:
 - Programming
 - C++

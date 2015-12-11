@@ -4,9 +4,9 @@ title: Optimizing Massively Multithreaded C++ Applications - Where's the Output 
 published: true
 date: '2009-06-12 05:00:00'
 redirect_from:
-- content/optimizing-massively-multithreaded-c-applications-wheres-output-going
-- node/4389
-- import_node/437
+- content/optimizing-massively-multithreaded-c-applications-wheres-output-going/
+- node/4389/
+- import_node/437/
 tags:
 - Threads
 - Programming

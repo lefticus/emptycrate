@@ -4,9 +4,9 @@ title: How Do You Know If You Have a Hash Collision?
 published: true
 date: '2009-03-26 05:00:00'
 redirect_from:
-- content/how-do-you-know-if-you-have-hash-collision
-- node/4353
-- import_node/380
+- content/how-do-you-know-if-you-have-hash-collision/
+- node/4353/
+- import_node/380/
 tags:
 - Programming
 ---

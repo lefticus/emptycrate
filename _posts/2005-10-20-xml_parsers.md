@@ -4,9 +4,9 @@ title: XML Parsers
 published: true
 date: '2005-10-20 22:30:14'
 redirect_from:
-- content/xml-parsers
-- node/4194
-- import_node/42
+- content/xml-parsers/
+- node/4194/
+- import_node/42/
 ---
 
 The plan moving forward is to allow object trees and scripting to be loaded from XML files. Right now, I'm trying to pick an XML parser. There's several choices, and thier all difficult.

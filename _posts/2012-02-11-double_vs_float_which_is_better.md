@@ -4,9 +4,9 @@ title: Double vs. Float, Which is Better?
 published: true
 date: '2012-02-11 08:16:28'
 redirect_from:
-- content/double-vs-float-which-better
-- node/4417
-- import_node/470
+- content/double-vs-float-which-better/
+- node/4417/
+- import_node/470/
 tags:
 - Programming
 - C++

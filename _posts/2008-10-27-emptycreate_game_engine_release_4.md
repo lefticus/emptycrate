@@ -4,9 +4,9 @@ title: EmptyCreate Game Engine Release 4
 published: true
 date: '2008-10-27 09:54:56'
 redirect_from:
-- content/emptycreate-game-engine-release-4
-- node/4308
-- import_node/324
+- content/emptycreate-game-engine-release-4/
+- node/4308/
+- import_node/324/
 tags:
 - EmptyCrate Game Engine
 - Changelog

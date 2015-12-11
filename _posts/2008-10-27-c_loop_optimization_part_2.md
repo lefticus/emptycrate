@@ -4,9 +4,9 @@ title: 'C++ Loop Optimization: Part 2'
 published: true
 date: '2008-10-27 19:57:33'
 redirect_from:
-- content/c-loop-optimization-part-2
-- node/4309
-- import_node/325
+- content/c-loop-optimization-part-2/
+- node/4309/
+- import_node/325/
 tags:
 - Programming
 - Optimization

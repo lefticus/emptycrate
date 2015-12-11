@@ -4,9 +4,9 @@ title: 'Nobody Understands C++: Intro'
 published: true
 date: '2007-07-19 19:53:08'
 redirect_from:
-- content/nobody-understands-c-intro
-- node/4268
-- import_node/268
+- content/nobody-understands-c-intro/
+- node/4268/
+- import_node/268/
 tags:
 - Programming
 - Nobody Understands

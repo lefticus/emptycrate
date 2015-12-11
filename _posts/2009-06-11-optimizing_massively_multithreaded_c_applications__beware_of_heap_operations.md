@@ -4,9 +4,9 @@ title: Optimizing Massively Multithreaded C++ Applications - Beware of Heap Oper
 published: true
 date: '2009-06-11 05:00:00'
 redirect_from:
-- content/optimizing-massively-multithreaded-c-applications-beware-heap-operations
-- node/4388
-- import_node/436
+- content/optimizing-massively-multithreaded-c-applications-beware-heap-operations/
+- node/4388/
+- import_node/436/
 tags:
 - Threads
 - RAII

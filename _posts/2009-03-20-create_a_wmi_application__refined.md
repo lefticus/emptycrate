@@ -4,9 +4,9 @@ title: Create a WMI Application - Refined
 published: true
 date: '2009-03-20 19:39:30'
 redirect_from:
-- content/create-wmi-application-refined
-- node/4350
-- import_node/376
+- content/create-wmi-application-refined/
+- node/4350/
+- import_node/376/
 tags:
 - RAII
 - C++

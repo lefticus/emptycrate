@@ -4,9 +4,9 @@ title: Nokia N800 Review
 published: true
 date: '2008-03-27 20:30:52'
 redirect_from:
-- content/nokia-n800-review
-- node/4276
-- import_node/280
+- content/nokia-n800-review/
+- node/4276/
+- import_node/280/
 tags:
 - Review
 - N800

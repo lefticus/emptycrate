@@ -4,9 +4,9 @@ title: Paid Enhancements to Swig Starter Kit Coming Soon
 published: true
 date: '2009-04-28 05:00:00'
 redirect_from:
-- content/paid-enhancements-swig-starter-kit-coming-soon
-- node/4374
-- import_node/413
+- content/paid-enhancements-swig-starter-kit-coming-soon/
+- node/4374/
+- import_node/413/
 tags:
 - Swig Starter Kit
 ---

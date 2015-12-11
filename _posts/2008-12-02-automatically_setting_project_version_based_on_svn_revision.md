@@ -4,9 +4,9 @@ title: Automatically Setting Project Version Based on SVN Revision
 published: true
 date: '2008-12-02 09:18:20'
 redirect_from:
-- content/automatically-setting-project-version-based-svn-revision
-- node/4320
-- import_node/345
+- content/automatically-setting-project-version-based-svn-revision/
+- node/4320/
+- import_node/345/
 tags:
 - autoconf
 - subversion

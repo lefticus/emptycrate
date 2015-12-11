@@ -4,9 +4,9 @@ title: Microsoft's Failing Support For C++
 published: true
 date: '2011-01-06 19:20:29'
 redirect_from:
-- content/microsofts-failing-support-c
-- node/4412
-- import_node/465
+- content/microsofts-failing-support-c/
+- node/4412/
+- import_node/465/
 tags:
 - Microsoft
 - C++

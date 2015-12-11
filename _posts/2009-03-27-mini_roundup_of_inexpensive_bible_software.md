@@ -4,9 +4,9 @@ title: Mini Roundup of Inexpensive Bible Software
 published: true
 date: '2009-03-27 05:00:00'
 redirect_from:
-- content/mini-roundup-inexpensive-bible-software
-- node/4354
-- import_node/385
+- content/mini-roundup-inexpensive-bible-software/
+- node/4354/
+- import_node/385/
 tags:
 - Xiphos
 - WORDsearch

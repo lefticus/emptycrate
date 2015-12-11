@@ -4,9 +4,9 @@ title: iPhone Puzzle Game - In a Weekend
 published: true
 date: '2009-10-09 11:18:53'
 redirect_from:
-- content/iphone-puzzle-game-weekend
-- node/4398
-- import_node/447
+- content/iphone-puzzle-game-weekend/
+- node/4398/
+- import_node/447/
 tags:
 - Objective-C
 - iPhone

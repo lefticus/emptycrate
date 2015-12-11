@@ -4,16 +4,13 @@ title: 'C++ Templates: Euclid''s Algorithm'
 published: true
 date: '2008-03-24 21:57:20'
 redirect_from:
-- content/c-templates-euclids-algorithm
-- node/4271
-- import_node/279
-- node/279
+- content/c-templates-euclids-algorithm/
+- node/4271/
+- import_node/279/
+- node/279/
 tags:
 - Templates
-- Templates
 - Programming
-- Programming
-- C++
 - C++
 ---
 

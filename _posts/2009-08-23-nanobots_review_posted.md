@@ -4,9 +4,9 @@ title: Nanobots Review Posted
 published: true
 date: '2009-08-23 21:39:57'
 redirect_from:
-- content/nanobots-review-posted
-- node/4395
-- import_node/441
+- content/nanobots-review-posted/
+- node/4395/
+- import_node/441/
 tags:
 - Adventure Gaming
 - Reviews

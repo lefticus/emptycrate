@@ -4,8 +4,8 @@ title: ChaiScript 6 Years Later
 published: true
 date: '2015-07-17 16:50:21'
 redirect_from:
-- content/chaiscript-6-years-later
-- node/4605
+- content/chaiscript-6-years-later/
+- node/4605/
 tags:
 - ChaiScript
 - C++
@@ -107,6 +107,7 @@ Added new `class` syntax. (The old way still works).
       def MyClass() { /* constructor */ }
       var a;
     };
+
 
 
 `method_missing` support

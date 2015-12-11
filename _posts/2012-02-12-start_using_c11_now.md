@@ -4,9 +4,9 @@ title: Start Using C++11 Now
 published: true
 date: '2012-02-12 21:47:45'
 redirect_from:
-- content/start-using-c11-now
-- node/4418
-- import_node/471
+- content/start-using-c11-now/
+- node/4418/
+- import_node/471/
 tags:
 - Crossplatform
 - C++11

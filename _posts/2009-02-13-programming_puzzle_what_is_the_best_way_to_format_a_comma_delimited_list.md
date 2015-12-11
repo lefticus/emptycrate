@@ -4,9 +4,9 @@ title: 'Programming Puzzle: What is the best way to format a comma delimited lis
 published: true
 date: '2009-02-13 11:37:37'
 redirect_from:
-- content/programming-puzzle-what-best-way-format-comma-delimited-list
-- node/4344
-- import_node/369
+- content/programming-puzzle-what-best-way-format-comma-delimited-list/
+- node/4344/
+- import_node/369/
 tags:
 - Puzzle
 - Programming

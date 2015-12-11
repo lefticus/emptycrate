@@ -4,8 +4,8 @@ title: Adding std::future support to ChaiScript
 published: true
 date: '2015-01-07 10:47:05'
 redirect_from:
-- content/adding-stdfuture-support-chaiscript
-- node/4602
+- content/adding-stdfuture-support-chaiscript/
+- node/4602/
 tags:
 - ChaiScript
 - C++11

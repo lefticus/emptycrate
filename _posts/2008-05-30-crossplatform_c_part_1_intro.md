@@ -4,9 +4,9 @@ title: 'Crossplatform C++: Part 1: Intro'
 published: true
 date: '2008-05-30 20:18:10'
 redirect_from:
-- content/crossplatform-c-part-1-intro
-- node/4299
-- import_node/312
+- content/crossplatform-c-part-1-intro/
+- node/4299/
+- import_node/312/
 tags:
 - Crossplatform
 - C++

@@ -4,9 +4,9 @@ title: 'Nobody Understands C++: Part 7: C++ Coding Standards'
 published: true
 date: '2009-01-03 11:00:33'
 redirect_from:
-- content/nobody-understands-c-part-7-c-coding-standards
-- node/4326
-- import_node/355
+- content/nobody-understands-c-part-7-c-coding-standards/
+- node/4326/
+- import_node/355/
 tags:
 - C++
 - Programming

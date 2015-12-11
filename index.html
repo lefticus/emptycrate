@@ -1,0 +1,64 @@
+---
+title: Homepage
+---
+
+
+<!DOCTYPE HTML>
+
+<head>
+  {% include head.html %}
+</head>
+
+<body>
+
+  {% include common_body.html %}
+
+  <div class='container'>
+
+    {% for post in paginator.posts %}
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    <p class="author">
+    <span class="date">{{ post.date }}</span>
+    </p>
+    <div class="content">
+      {{ post.excerpt}}
+    </div>
+    {% endfor %}
+
+
+    <nav>
+      <ul class="pagination">
+        <li>
+          {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_path_path }}" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+          {% endif %}
+        </li>
+
+
+        {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+        <li class="active"><a href="#">{{ page }}</a></li>
+        {% elsif page == 1 %}
+        <li class="enabled"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+        {% else %}
+        <li class="enabled"><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+        {% endif %}
+        {% endfor %}
+
+
+        <li>
+          {% if paginator.next_page %}
+          <a href="{{ paginator.next_path_path }}" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+          {% endif %}
+        </li>
+      </ul>
+    </nav>
+
+
+</body>
+
+

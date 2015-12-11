@@ -4,9 +4,9 @@ title: Reflections on Trusting Trust - by Ken Thompson
 published: true
 date: '2009-03-09 19:44:29'
 redirect_from:
-- content/reflections-trusting-trust-ken-thompson
-- node/4346
-- import_node/371
+- content/reflections-trusting-trust-ken-thompson/
+- node/4346/
+- import_node/371/
 tags:
 - Security
 - Programming

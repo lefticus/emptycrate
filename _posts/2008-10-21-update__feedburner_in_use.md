@@ -4,9 +4,9 @@ title: Update - Feedburner In Use
 published: true
 date: '2008-10-21 21:58:39'
 redirect_from:
-- content/update-feedburner-use
-- node/4307
-- import_node/322
+- content/update-feedburner-use/
+- node/4307/
+- import_node/322/
 tags:
 - Blogging
 ---

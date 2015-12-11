@@ -4,9 +4,9 @@ title: 'Blogging the C++ Language: asm'
 published: true
 date: '2006-08-29 13:37:52'
 redirect_from:
-- content/blogging-c-language-asm
-- node/4245
-- import_node/243
+- content/blogging-c-language-asm/
+- node/4245/
+- import_node/243/
 tags:
 - Programming
 ---

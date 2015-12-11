@@ -4,9 +4,9 @@ title: 'Templated Constructors in C++: Using the "explicit" Keyword'
 published: true
 date: '2009-02-12 12:01:05'
 redirect_from:
-- content/templated-constructors-c-using-explicit-keyword
-- node/4341
-- import_node/367
+- content/templated-constructors-c-using-explicit-keyword/
+- node/4341/
+- import_node/367/
 tags:
 - Templates
 - Programming

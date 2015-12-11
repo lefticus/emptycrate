@@ -4,9 +4,9 @@ title: The Cost of Owning Stuff
 published: true
 date: '2008-10-11 19:20:29'
 redirect_from:
-- content/cost-owning-stuff
-- node/4302
-- import_node/316
+- content/cost-owning-stuff/
+- node/4302/
+- import_node/316/
 tags:
 - finance
 ---

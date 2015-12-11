@@ -4,9 +4,9 @@ title: 'Multithreaded C++: Part 1: Pthreads'
 published: true
 date: '2008-03-12 18:59:11'
 redirect_from:
-- content/multithreaded-c-part-1-pthreads
-- node/4404
-- import_node/270
+- content/multithreaded-c-part-1-pthreads/
+- node/4404/
+- import_node/270/
 tags:
 - Threads
 - Programming

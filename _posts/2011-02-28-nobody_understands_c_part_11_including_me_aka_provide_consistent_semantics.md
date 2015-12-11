@@ -4,9 +4,9 @@ title: 'Nobody Understands C++: Part 11: Including Me (aka, Provide Consistent S
 published: true
 date: '2011-02-28 20:11:10'
 redirect_from:
-- content/nobody-understands-c-part-11-including-me-aka-provide-consistent-semantics
-- node/4414
-- import_node/467
+- content/nobody-understands-c-part-11-including-me-aka-provide-consistent-semantics/
+- node/4414/
+- import_node/467/
 tags:
 - Nobody Understands
 - C++

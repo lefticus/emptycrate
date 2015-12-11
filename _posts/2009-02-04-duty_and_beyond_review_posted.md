@@ -4,9 +4,9 @@ title: Duty and Beyond Review Posted
 published: true
 date: '2009-02-04 13:53:30'
 redirect_from:
-- content/duty-and-beyond-review-posted
-- node/4339
-- import_node/364
+- content/duty-and-beyond-review-posted/
+- node/4339/
+- import_node/364/
 tags:
 - Reviews
 - Adventure Gaming

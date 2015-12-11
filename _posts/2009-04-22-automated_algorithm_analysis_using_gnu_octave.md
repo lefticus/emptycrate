@@ -4,9 +4,9 @@ title: Automated Algorithm Analysis Using GNU Octave
 published: true
 date: '2009-04-22 05:00:00'
 redirect_from:
-- content/automated-algorithm-analysis-using-gnu-octave
-- node/4371
-- import_node/404
+- content/automated-algorithm-analysis-using-gnu-octave/
+- node/4371/
+- import_node/404/
 tags:
 - Programming
 - Octave

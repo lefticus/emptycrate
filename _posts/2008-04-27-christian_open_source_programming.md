@@ -4,9 +4,9 @@ title: Christian Open Source Programming
 published: true
 date: '2008-04-27 19:35:48'
 redirect_from:
-- content/christian-open-source-programming
-- node/4337
-- import_node/301
+- content/christian-open-source-programming/
+- node/4337/
+- import_node/301/
 - christianprogramming
 tags:
 - Programming

@@ -4,9 +4,9 @@ title: Building Visual Studio Express Projects From the Command Line
 published: true
 date: '2009-04-09 05:00:00'
 redirect_from:
-- content/building-visual-studio-express-projects-command-line
-- node/4361
-- import_node/393
+- content/building-visual-studio-express-projects-command-line/
+- node/4361/
+- import_node/393/
 tags:
 - Visual Studio
 - Programming

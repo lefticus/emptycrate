@@ -4,9 +4,9 @@ title: Trigraphs, Digraphs and Alternative Tokens
 published: true
 date: '2012-02-13 08:29:41'
 redirect_from:
-- content/trigraphs-digraphs-and-alternative-tokens
-- node/4419
-- import_node/472
+- content/trigraphs-digraphs-and-alternative-tokens/
+- node/4419/
+- import_node/472/
 tags:
 - C++
 - Programming

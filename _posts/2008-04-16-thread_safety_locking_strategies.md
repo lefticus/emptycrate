@@ -4,9 +4,9 @@ title: Thread Safety Locking Strategies
 published: true
 date: '2008-04-16 08:32:24'
 redirect_from:
-- content/thread-safety-locking-strategies
-- node/4282
-- import_node/289
+- content/thread-safety-locking-strategies/
+- node/4282/
+- import_node/289/
 tags:
 - Threads
 - Programming

@@ -4,8 +4,8 @@ title: Understand Boost to Understand C++ 0x
 published: false
 date: '2010-04-16 21:23:07'
 redirect_from:
-- import_node/464
-- node/4407
+- import_node/464/
+- node/4407/
 ---
 
 I've met some people who think that [boost](http://www.boost.org) should not be used, at all. They have lots of reasons: size, complexity, compile time. But there's one positive reason to use boost that trumps all of the negatives: C++ 0x. Some 14 boost libraries have been approved for C++0x and will be in the next official version of C++. By getting familiar with them now, you can get a leg up as the new compilers are released. We'll reference the [final committee draft](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2010/n3092.pdf) sections that are implemented in boost.

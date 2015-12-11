@@ -4,9 +4,9 @@ title: EmptyCreate Game Engine Release 5
 published: true
 date: '2009-01-25 11:19:25'
 redirect_from:
-- content/emptycreate-game-engine-release-5
-- node/4331
-- import_node/360
+- content/emptycreate-game-engine-release-5/
+- node/4331/
+- import_node/360/
 tags:
 - EmptyCrate Game Engine
 - Changelog

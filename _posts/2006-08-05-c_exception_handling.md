@@ -4,9 +4,9 @@ title: C++ Exception Handling
 published: true
 date: '2006-08-05 09:52:20'
 redirect_from:
-- content/c-exception-handling
-- node/4242
-- import_node/240
+- content/c-exception-handling/
+- node/4242/
+- import_node/240/
 tags:
 - Programming
 ---

@@ -4,9 +4,9 @@ title: BoostCon and More
 published: true
 date: '2007-05-26 08:28:23'
 redirect_from:
-- content/boostcon-and-more
-- node/4261
-- import_node/260
+- content/boostcon-and-more/
+- node/4261/
+- import_node/260/
 tags:
 - Boost
 - Programming

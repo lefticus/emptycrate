@@ -4,9 +4,9 @@ title: Ireland is in My Blood
 published: true
 date: '2007-06-26 20:24:33'
 redirect_from:
-- content/ireland-my-blood
-- node/4254
-- import_node/265
+- content/ireland-my-blood/
+- node/4254/
+- import_node/265/
 tags:
 - Travel
 ---

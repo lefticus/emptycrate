@@ -4,9 +4,9 @@ title: 'When to use #include "" verses #include <>'
 published: true
 date: '2009-03-25 05:00:00'
 redirect_from:
-- content/when-use-include-verses-include
-- node/4352
-- import_node/379
+- content/when-use-include-verses-include/
+- node/4352/
+- import_node/379/
 tags:
 - Programming
 - C++

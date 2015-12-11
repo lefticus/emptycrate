@@ -4,8 +4,8 @@ title: Complex Object Initialization Optimization with IIFE in C++11
 published: true
 date: '2014-12-16 09:05:26'
 redirect_from:
-- content/complex-object-initialization-optimization-iife-c11
-- node/4601
+- content/complex-object-initialization-optimization-iife-c11/
+- node/4601/
 tags:
 - C++
 - C++11

@@ -4,8 +4,8 @@ title: ChaiScript (almost) 5 Years Later
 published: true
 date: '2014-04-22 14:36:32'
 redirect_from:
-- content/chaiscript-almost-5-years-later
-- node/4599
+- content/chaiscript-almost-5-years-later/
+- node/4599/
 tags:
 - C++
 - ChaiScript

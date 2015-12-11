@@ -4,9 +4,9 @@ title: Javascript Mandelbrot Browser
 published: true
 date: '2009-01-24 19:33:23'
 redirect_from:
-- content/javascript-mandelbrot-browser
-- node/4330
-- import_node/359
+- content/javascript-mandelbrot-browser/
+- node/4330/
+- import_node/359/
 tags:
 - Programming
 - Mandelbrot
