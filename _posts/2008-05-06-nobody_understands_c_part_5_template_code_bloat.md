@@ -8,7 +8,7 @@ redirect_from:
 - node/4294/
 - import_node/307/
 tags:
-- Nobody Understands
+- Nobody Understands C++
 - C++
 - Programming
 - Articles

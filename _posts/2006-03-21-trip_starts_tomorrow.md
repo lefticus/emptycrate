@@ -7,6 +7,8 @@ redirect_from:
 - content/trip-starts-tomorrow/
 - node/4220/
 - import_node/117/
+tags:
+- Travel
 ---
 
 We leave on our European Vacation tomorrow. We will try and keep this blog updated about our goings on, come back often and see what we are up to!

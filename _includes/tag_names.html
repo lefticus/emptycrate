@@ -1,0 +1,7 @@
+
+<ol class="breadcrumb">
+  <li class="active"><span class="date">{{ current_post.date }}</span></li>
+{% for tag_name in current_post.tags %}
+<li class="active">{{tag_name}}</li>
+{% endfor %}
+</ol>

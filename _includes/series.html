@@ -1,0 +1,22 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Related</div>
+  <div class="panel-body">
+{% assign numtags = page.tags | size %}
+{% for other in site.posts %}
+{% if other.url != page.url %}
+  {% assign count = 0 %}
+  {% for othertag in other.tags %}
+    {% if page.tags contains othertag %}
+      {% assign count = count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+  <ul>
+  {% if count > 2 || (count > 1 && count == numtags) %}
+    <li><a href="{{ other.url }}">{{other.title}}</a></li>
+  {% endif %}
+  </ul>
+{% endif %}
+{% endfor %}
+
+  </div>
+</div>

@@ -15,7 +15,9 @@ tags:
 - Multithreaded C++ Series
 ---
 
-([All articles](/tags/multithreaded-c-series) in this series.) This is the beginning of a series of articles on multithreaded programming in C++. In this first article we will look at [pthreads](https://computing.llnl.gov/tutorials/pthreads/), which are generally considered to be the "assembly language of threading." We will start at the bottom and work our way up to higher concepts. Pthreads represent the lowest level multithreaded concept that is available on every major platform. On [some](http://sourceware.org/pthreads-win32/) platforms, pthreads are a wrapper for the operating system specific threads. On [other](http://en.wikipedia.org/wiki/Native_POSIX_Thread_Library) platforms pthreads are native to the OS. First, a couple of definitions to get us started.
+([All articles](/tags/multithreaded-c-series) in this series.) 
+
+This is the beginning of a series of articles on multithreaded programming in C++. In this first article we will look at [pthreads](https://computing.llnl.gov/tutorials/pthreads/), which are generally considered to be the "assembly language of threading." We will start at the bottom and work our way up to higher concepts. Pthreads represent the lowest level multithreaded concept that is available on every major platform. On [some](http://sourceware.org/pthreads-win32/) platforms, pthreads are a wrapper for the operating system specific threads. On [other](http://en.wikipedia.org/wiki/Native_POSIX_Thread_Library) platforms pthreads are native to the OS. First, a couple of definitions to get us started.
 
 [thread](http://en.wikipedia.org/wiki/Thread_%28computer_science%29)  
 A path of execution separate from the main path of execution and running parallel to it. A thread provides a method by which you can have two parts of your code executing at the same time.

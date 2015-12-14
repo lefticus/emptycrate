@@ -12,7 +12,7 @@ tags:
 - Programming
 - C++
 - Articles
-- Nobody Understands
+- Nobody Understands C++
 ---
 
 Understanding [RAII](http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initialization) is critical to understanding good C++ design. RAII stands for "Resource Acquisition Is Initialization." The basic idea is that an object fully manages all of its own resources. Understanding object lifetime is critical to understanding RAII. For the purposes of this article we will only be discussing objects created on the stack, not on the heap. That is, objects not created with "new." There are just a couple of simple rules to understanding lifetime:

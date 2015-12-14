@@ -10,7 +10,7 @@ redirect_from:
 tags:
 - C++
 - Programming
-- Nobody Understands
+- Nobody Understands C++
 ---
 
 We've now completed 5 articles in the "Nobody Understands C++" series so here we are going to recap the misconceptions we have covered.

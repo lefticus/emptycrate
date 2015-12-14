@@ -8,7 +8,7 @@ redirect_from:
 - node/4325/
 - import_node/354/
 tags:
-- Nobody Understands
+- Nobody Understands C++
 - C++
 - Programming
 - Pointers

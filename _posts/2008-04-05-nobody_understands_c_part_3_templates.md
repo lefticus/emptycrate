@@ -10,7 +10,7 @@ redirect_from:
 tags:
 - Templates
 - Programming
-- Nobody Understands
+- Nobody Understands C++
 - C++
 - Articles
 ---

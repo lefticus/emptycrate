@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+
+<head>
+  {% include head.html %}
+</head>
+
+<body>
+
+  {% include common_body.html %}
+
+  <div class='container'>
+    {% for post in site.posts %}
+      {% if post.tags contains page.current_tag %}
+        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        <p class="author">
+        <span class="date">{{ post.date }}</span>
+        </p>
+        <div class="content">
+          {{ post.excerpt}}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+
+</body>
+

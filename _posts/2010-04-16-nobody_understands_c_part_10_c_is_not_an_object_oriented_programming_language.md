@@ -11,7 +11,7 @@ redirect_from:
 tags:
 - Programming
 - OOP
-- Nobody Understands
+- Nobody Understands C++
 - C++
 ---
 

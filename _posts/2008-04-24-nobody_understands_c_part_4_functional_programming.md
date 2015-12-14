@@ -9,7 +9,7 @@ redirect_from:
 - import_node/294/
 tags:
 - Programming
-- Nobody Understands
+- Nobody Understands C++
 - Functional
 - C++
 - Articles

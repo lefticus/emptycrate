@@ -9,7 +9,7 @@ redirect_from:
 - import_node/268/
 tags:
 - Programming
-- Nobody Understands
+- Nobody Understands C++
 - C++
 - Articles
 ---
