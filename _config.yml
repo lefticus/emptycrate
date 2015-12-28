@@ -9,8 +9,14 @@ kramdown:
 
 gems:
   - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-mentions
 
 whitelist:
   - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-mentions
 
 paginate: 10
