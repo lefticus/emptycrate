@@ -21,11 +21,15 @@ The process of running and returning a WQL query from C++ has several steps to i
 I will not quote the full original code here, but I will comment on it. It makes a pretty good object lesson in how to not program in C++.
 
 1.  The MFC regularly returns [pointers](/content/nobody-understands-c-part-6-are-you-still-using-pointers) to new objects.
+
    While not a fault of the code sample author it is a no-no and does result in making memory management much harder. Also, it leads right into point #2.
+
 2.  There are at least two known memory leaks in the sample.
+
    It fails to call `pclsObj->Release()` after each inner loop operation and also fails to call `pEnumerator->Release()` after the query execution is completed. I commented on this on the MSDN page, hopefully the sample will get fixed.
    
    I verified these memory leaks by watching memory usage in debug mode of Visual Studio.
+
 3.  There are many examples of code repeating that could be eliminated.
    ```cpp
    if (FAILED(hres))
@@ -38,7 +42,9 @@ I will not quote the full original code here, but I will comment on it. It makes
    ```
    
    The above is repeated in whole or in part five times throughout the example.
+
 4.  [RAII](/content/nobody-understands-c-part-2-raii) is not used to manage the resources or the state of the code
+
    Without RAII techniques it is very difficult to guarantee that all resources will be freed and the state of `CoInitialize()` will be returned to normal when an error occurs or even when the code exits normally.
    
    By putting RAII to use we are able to reduce our error handling code to simple C++ exception throwing and we can let the process of stack unwinding cleanup the state of the system for us.
