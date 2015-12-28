@@ -7,6 +7,8 @@ redirect_from:
 - content/example-game-working/
 - node/4192/
 - import_node/38/
+tags:
+- Game Programming
 ---
 
 I now have the ConsoleRenderingEngine working and a sample game to go with it. I'm not going to make an official release announcment until I have a better world for the game, probably something with items in it :) All of the source and documentation are available through CVS and the project page on this site. 

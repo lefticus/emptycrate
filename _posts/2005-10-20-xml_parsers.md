@@ -7,9 +7,12 @@ redirect_from:
 - content/xml-parsers/
 - node/4194/
 - import_node/42/
+tags:
+- XML
+- Game Programming
 ---
 
-The plan moving forward is to allow object trees and scripting to be loaded from XML files. Right now, I'm trying to pick an XML parser. There's several choices, and thier all difficult.
+The plan moving forward is to allow object trees and scripting to be loaded from XML files. Right now, I'm trying to pick an XML parser. There's several choices, and they're all difficult.
 
 1.  Xerces - DOM Compliant - Fairly Big
 2.  expat - Event based parser, but not SAX compliant, simple and small

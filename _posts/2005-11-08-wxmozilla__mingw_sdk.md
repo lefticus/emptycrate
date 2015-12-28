@@ -9,4 +9,6 @@ redirect_from:
 - import_node/81/
 ---
 
-I have posted a compiled SDK for developing wxMozilla based applications with the MinGW compiler on the wxMozilla [website](http://sourceforge.net/projects/wxmozilla). You can post questions here or on the wxMozilla mailing list.
+I have posted a compiled SDK for developing wxMozilla based applications with the MinGW compiler on the wxMozilla [website](http://sourceforge.net/projects/wxmozilla). 
+
+You can post questions here or on the wxMozilla mailing list.

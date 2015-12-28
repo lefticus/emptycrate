@@ -7,6 +7,8 @@ redirect_from:
 - content/first-example-game-way/
 - node/4191/
 - import_node/37/
+tags:
+- Game Programming
 ---
 
 A lot of work has gone into the ConsoleRenderingEngine this weekend, which will allow a game to be played from the command line. 

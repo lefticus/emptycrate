@@ -7,6 +7,8 @@ redirect_from:
 - content/biblestudy-20-alpha-released/
 - node/4198/
 - import_node/53/
+tags:
+- BibleStudio
 ---
 
 BibleStudy 2.0 alpha has been released to the sourceforge project [page](http://sourceforge.net/projects/christiangame). Some notes:
