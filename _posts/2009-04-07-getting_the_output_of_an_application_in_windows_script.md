@@ -14,7 +14,7 @@ tags:
 
 If you are programming a Windows Script in VBScript and need to retrieve the output of an external command you can use the following simple function: 
 
-```visualbasic
+```vbnet
 Function GetCommandOutput(filename)  
   Dim WshShell, oExec  
   Set WshShell = CreateObject("WScript.Shell")  
