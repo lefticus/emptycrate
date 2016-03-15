@@ -13,7 +13,7 @@ tags:
 - Boost
 ---
 
-The boost spirit library allows for direct translation of a BNF grammar into C++ code which generates a parser at compile time. The following example, from <http://spirit.sourceforge.net/distrib/spirit_1_8_3/libs/spirit/doc/introduction.html> truly does this concept more justice than I could: BNF Example:
+The boost spirit library allows for direct translation of a BNF grammar into C++ code which generates a parser at compile time. The following example, from http://spirit.sourceforge.net/distrib/spirit_1_8_3/libs/spirit/doc/introduction.html truly does this concept more justice than I could: BNF Example:
 
     group      ::= '(' expression ')'
     factor     ::= integer | group

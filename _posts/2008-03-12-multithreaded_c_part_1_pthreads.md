@@ -15,6 +15,8 @@ tags:
 - Multithreaded C++ Series
 ---
 
+***Note that some of the details on `volatile` are out of date now - 2016-03-15***
+
 ([All articles](/tags/multithreaded-c-series) in this series.) 
 
 This is the beginning of a series of articles on multithreaded programming in C++. In this first article we will look at [pthreads](https://computing.llnl.gov/tutorials/pthreads/), which are generally considered to be the "assembly language of threading." We will start at the bottom and work our way up to higher concepts. Pthreads represent the lowest level multithreaded concept that is available on every major platform. On [some](http://sourceware.org/pthreads-win32/) platforms, pthreads are a wrapper for the operating system specific threads. On [other](http://en.wikipedia.org/wiki/Native_POSIX_Thread_Library) platforms pthreads are native to the OS. First, a couple of definitions to get us started.
@@ -110,7 +112,8 @@ The pthread library is written in C. As such, we need a C compatible way of call
 
 While this code works and is an all too common way of using threads in C++, it has several disadvantages. Note markers are made in the code and will be explained here.
 
-Note 1  
+### Note 1  
+
 Because we are required to pass a C style function pointer into the `pthread_create` function we end up with at least 2 (and in our case 3) functions to actually kick off the thread.
 
 `go()` (the public interface for starting the work) calls `pthread_create()` which calls
@@ -119,19 +122,26 @@ Because we are required to pass a C style function pointer into the `pthread_cre
 
 `do_work()` the object level private entry into the thread.
 
-Note 2  
+### Note 2  
+
 `stop()` shuts down the thread and calls `pthread_join()` which does not return until the thread has been fully shutdown. What happens here if we forget to call stop? We may end up with a runaway thread that we have no way of shutting down in the best case. In the worst case we get a crash. The crash occurs when the `threaded_class` gets destroyed by the main thread of execution but the `do_work` thread is still running and is now trying to work on destructed data.
 
-Note 3  
+### Note 3  
+
 `pthread_mutex_lock()` is used to get an exclusive lock on the variable `m_mutex`. The locks in both `get_fibonacci_number` and `do_work` ensure that a user trying to get a fibonacci value will not try to access `m_fibonacci_values` at the same time that it is being updated by `do_work`. If an update and a read were to occur at the same time a crash is likely to happen. This is because the std::vector class resizes itself when new data is added to it.
 
-Note 4  
+### Note 4  
+
 What happens if `int value = m_fibonacci_values.get(which);` throws an exception? If it were to, the function `pthread_mutex_unlock` immediately below it would never get executed. If the lock is never unlocked a condition known as a [deadlock](http://en.wikipedia.org/wiki/Deadlock) occurs. When a deadlock occurs one or more threads are stopped and cannot do any work because they cannot acquire the resources they need (in our case a mutex lock). In fact, this code is susceptible to an exception being thrown if the requested fibonacci value has not yet been calculated.
 
-Note 5  
-`m_stoprequested` must be defined volatile for code correctness. There is a chance it would work if it were not, but without volatile it is possible to create a situation where the thread would never exit because it would not know that `m_stoprequested` had changed to `true` See the [volatile article](/import_node/272) for more details.
+### Note 5  
 
-Note 6  
+`m_stoprequested` must be defined `volatile` for code correctness. There is a chance it would work if it were not, but without volatile it is possible to create a situation where the thread would never exit because it would not know that `m_stoprequested` had changed to `true` See the [volatile article](/import_node/272) for more details.
+
+### Note 6  
+
 If we were to forget the line `pthread_mutex_unlock(&m_mutex);` a deadlock would be created just as it would have if an exception were thrown in "Note 4."
+
+---------------------------------------------------------------------------------------------------------
 
 Coming up next, boost::threads, the "C" of multithreaded programming. [Part 2](/import_node/277) [All articles in the series.](/tags/multithreaded-c-series)

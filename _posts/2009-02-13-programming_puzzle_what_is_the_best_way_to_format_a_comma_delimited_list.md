@@ -12,10 +12,17 @@ tags:
 - Programming
 ---
 
-Say you have a list, array, vector, storage format doesn't matter: ` std::vector vec; vec.push_back(1); vec.push_back(17); vec.push_back(9);`
+Say you have a list, array, vector, storage format doesn't matter: 
+
+```
+std::vector<int> vec; 
+vec.push_back(1); 
+vec.push_back(17); 
+vec.push_back(9);
+```
 
 And you want to format this list into a comma delimited string *without the trailing comma*, what is the best way to do this? Example output:
 
 > 1,17,9
 
-In any language, with any list type. Post your answers here. Be sure to use code formatting for your answer, to make it easier for everyone to read. ` --my code solution`
+In any language, with any list type. Post your answers here. Be sure to use code formatting for your answer, to make it easier for everyone to read. 

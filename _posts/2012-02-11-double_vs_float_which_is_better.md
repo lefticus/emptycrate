@@ -24,21 +24,29 @@ Neither [C++ Coding Standards](http://www.amazon.com/gp/product/0321113586/ref=a
 
 The default floating point type is `double`, that is, `typeid(3.3)` is `double`.
 
-f suffix  
-If you want a `float` constant, you must specify this with the `f` suffix: `3.3f`.
+ - f suffix  
+   
+   If you want a `float` constant, you must specify this with the `f` suffix: `3.3f`.
 
-L suffix  
-Similarly, a `long double` constant must be specified with the `L` suffix: `3.3L`.
+ - L suffix  
 
-**Guidance Provided by Stroustrup** In all of my C++ resources, the only guidance I can find is in the [C++ Programming Language](http://en.wikipedia.org/wiki/The_C%2B%2B_Programming_Language) by [Bjarne Stroustrup](http://en.wikipedia.org/wiki/Bjarne_Stroustrup) (the creator of C++).
+   Similarly, a `long double` constant must be specified with the `L` suffix: `3.3L`.
+
+**Guidance Provided by Stroustrup** 
+
+In all of my C++ resources, the only guidance I can find is in the [C++ Programming Language](http://en.wikipedia.org/wiki/The_C%2B%2B_Programming_Language) by [Bjarne Stroustrup](http://en.wikipedia.org/wiki/Bjarne_Stroustrup) (the creator of C++).
 
 > "The exact meaning of single-, double-, and extended-precision is implementation-defined. Choosing the right precision for a problem where the choice matters requires significant understanding of floating-point computation. If you don't have that understanding, get advice, take the time to learn, or *use double and hope for the best.*" [emphasis added]
 
-**Standard Library Implementation** Where there is only one version of a standard library floating point operation, the library defaults to working with `double`. This includes the functions `atof` and `strtod`. In [C89](http://en.wikipedia.org/wiki/C89_(C_version)#C89) the only data type supported by all [math.h](http://en.wikipedia.org/wiki/C_mathematical_functions#Overview_of_functions) functions was `double`. **Performance** On modern hardware `double` outperforms `float` in every case. In the higher optimization levels `long double` even outperforms float. The test code was compiled with the command line
+**Standard Library Implementation** 
+
+Where there is only one version of a standard library floating point operation, the library defaults to working with `double`. This includes the functions `atof` and `strtod`. In [C89](http://en.wikipedia.org/wiki/C89_(C_version)#C89) the only data type supported by all [math.h](http://en.wikipedia.org/wiki/C_mathematical_functions#Overview_of_functions) functions was `double`. **Performance** On modern hardware `double` outperforms `float` in every case. In the higher optimization levels `long double` even outperforms float. The test code was compiled with the command line
 
     g++ floatdouble.cpp -std=c++0x -O3 -march=native
 
-> Type name: f Size in bytes: 4 Summation time in s: 2.82 summed value: 6.71089e+07 // float Type name: d Size in bytes: 8 Summation time in s: 2.78585 summed value: 6.6e+09 // double Type name: e Size in bytes: 16 Summation time in s: 2.76812 summed value: 6.6e+09 // long double
+> Type name: f Size in bytes: 4 Summation time in s: 2.82 summed value: 6.71089e+07 // float 
+> Type name: d Size in bytes: 8 Summation time in s: 2.78585 summed value: 6.6e+09 // double 
+> Type name: e Size in bytes: 16 Summation time in s: 2.76812 summed value: 6.6e+09 // long double
 
 The test code was:
 
@@ -75,7 +83,9 @@ The test code was:
       std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
     }
 
-**Conclusion** `double` should be your preferred floating point type in nearly every situation.
+**Conclusion** 
+
+`double` should be your preferred floating point type in nearly every situation.
 
 1.  It's faster.
 2.  It's the default in C and C++.

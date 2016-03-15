@@ -13,7 +13,41 @@ tags:
 - C++
 ---
 
-Sometimes, in the course of C++ template based programming it might be desirable to have a constructor that is templated, like the following contrived exampled: ` #include <iostream>  struct TestClass {   template     TestClass(const T &t)     {       std::cout << "Constructed a TestClass " << t << std::endl;     } };`
-By creating a templated constructor, however, we have created an infinite number of automatic type conversions. That is, the following code does compile: ` void TakeATestClass(const TestClass &t) { }  int main() {   TakeATestClass("Bob"); }`
-Is the above something that we really expected to compile? Probably not, but even if it is, the chance that we will lose track of it down the road and it will come back to bite us is pretty high. In fact, this takes principle \#40 from [C++ Coding Standards](http://www.amazon.com/gp/product/0321113586?ie=UTF8&tag=empcra-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0321113586)![](http://www.assoc-amazon.com/e/ir?t=empcra-20&l=as2&o=1&a=0321113586), "Avoid providing implicit conversions," and raises it to the Nth degree. The solution is simple. We can still retain the flexibility of the templated constructor while eliminating the accidental conversions by adding the "explicit" keyword to our constructor. ` struct TestClass {   template     explicit TestClass(const T &t)     {       std::cout << "Constructed a TestClass " << t << std::endl;     } };`
+Sometimes, in the course of C++ template based programming it might be desirable to have a constructor that is templated, like the following contrived exampled: 
+
+```cpp
+#include <iostream>  
+
+struct TestClass {   
+  template<typename T>
+  TestClass(const T &t) {       
+    std::cout << "Constructed a TestClass " << t << std::endl;     
+  } 
+};
+```
+
+By creating a templated constructor, however, we have created an infinite number of automatic type conversions. That is, the following code does compile: 
+
+```
+void TakeATestClass(const TestClass &t) { }  
+
+int main() {   
+  TakeATestClass("Bob"); 
+}
+```
+
+
+Is the above something that we really expected to compile? Probably not, but even if it is, the chance that we will lose track of it down the road and it will come back to bite us is pretty high. In fact, this takes principle \#40 from [C++ Coding Standards](http://www.amazon.com/gp/product/0321113586?ie=UTF8&tag=empcra-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0321113586)![](http://www.assoc-amazon.com/e/ir?t=empcra-20&l=as2&o=1&a=0321113586), "Avoid providing implicit conversions," and raises it to the Nth degree. 
+
+The solution is simple. We can still retain the flexibility of the templated constructor while eliminating the accidental conversions by adding the "explicit" keyword to our constructor. 
+
+```cpp
+struct TestClass {   
+  template<typename T>     
+  explicit TestClass(const T &t) {       
+    std::cout << "Constructed a TestClass " << t << std::endl;     
+  } 
+};
+```
+
 Our new version should eliminate all unintended constructions of our new class.

@@ -14,7 +14,9 @@ tags:
 - Programming
 ---
 
-Recently, while watching the [GoingNative](http://channel9.msdn.com/Events/GoingNative/GoingNative-2012) conference, I learned about the new `std::shared_ptr` helper function `std::make_shared`. In the [talk](http://channel9.msdn.com/Events/GoingNative/GoingNative-2012/STL11-Magic-Secrets) Stephan T. Lavavej discusses the performance improvements they've made. It seems `std::make_shared` can save a few extra allocations and a bit of memory overhead. This can be significant if you dynamically create lots of objects. Back in the real world I found myself wondering if boost supported this little gem for `boost::shared_ptr`. Seems it does. And has since 1.39.0 in 2009. How is it possible that I've overlooked this? Example usage: Instead of doing this:
+Recently, while watching the [GoingNative](http://channel9.msdn.com/Events/GoingNative/GoingNative-2012) conference, I learned about the new `std::shared_ptr` helper function `std::make_shared`. 
+
+In the [talk](http://channel9.msdn.com/Events/GoingNative/GoingNative-2012/STL11-Magic-Secrets) Stephan T. Lavavej discusses the performance improvements they've made. It seems `std::make_shared` can save a few extra allocations and a bit of memory overhead. This can be significant if you dynamically create lots of objects. Back in the real world I found myself wondering if boost supported this little gem for `boost::shared_ptr`. Seems it does. And has since 1.39.0 in 2009. How is it possible that I've overlooked this? Example usage: Instead of doing this:
 
     boost::shared_ptr ptr(new MyClass(param1, param2));
     std::shared_ptr ptr2(new MyClass(param1, param2));

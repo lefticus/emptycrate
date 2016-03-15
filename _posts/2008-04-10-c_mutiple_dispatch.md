@@ -14,7 +14,11 @@ tags:
 - Boost
 ---
 
-In my [last posting](/import_node/287) about C++ Multiple Dispatch I wondered if it was really any different than function overloading. I now appreciate that it is something that needs to occur at runtime, not compile time. With a little help from the Boost libraries, I threw together this example of how one could do Multiple Dispatch in C++. Note that in this version the first matching function is called, which means the generic "Thing, Thing" version must be registered last to get the appropriate behavior. Also, note that this template version is reusable and could actually be put to use for something. It is, however, limited to only 2 parameters, but it would be fairly trivial to increase/decrease the number. Most of this code is reusable, I put a comment where the user bits begin.
+In my [last posting](/import_node/287) about C++ Multiple Dispatch I wondered if it was really any different than function overloading. I now appreciate that it is something that needs to occur at runtime, not compile time. 
+
+With a little help from the Boost libraries, I threw together this example of how one could do Multiple Dispatch in C++. Note that in this version the first matching function is called, which means the generic "Thing, Thing" version must be registered last to get the appropriate behavior. 
+
+Also, note that this template version is reusable and could actually be put to use for something. It is, however, limited to only 2 parameters, but it would be fairly trivial to increase/decrease the number. Most of this code is reusable, I put a comment where the user bits begin.
 
     #include <iostream>
     #include <stdexcept>

@@ -16,14 +16,16 @@ tags:
 - Multithreaded C++ Series
 ---
 
-We've covered the "[Assembly Language](/import_node/270)", "[C](/import_node/277)" and "[C++](/import_node/282)" of the C++ threading world, and now we are going to try and move beyond that. In the "C++" example we showed a object that automatically managed a thread's life time and used the thread to calculate the Fibonacci sequence in the background. Using [templates](/taxonomy/term/32) we should be able to make a generic version of the Fibonacci calculator thread. We will not go into all of the implementation details here, but will instead focus on the possibilities.
+We've covered the "[Assembly Language](/import_node/270)", "[C](/import_node/277)" and "[C++](/import_node/282)" of the C++ threading world, and now we are going to try and move beyond that. 
+
+In the "C++" example we showed a object that automatically managed a thread's life time and used the thread to calculate the Fibonacci sequence in the background. Using [templates](/taxonomy/term/32) we should be able to make a generic version of the Fibonacci calculator thread. We will not go into all of the implementation details here, but will instead focus on the possibilities.
 
 Future  
 A future is a method of letting a value calculate in the background and doing a block-wait for it when you want the value.
 
-    future Fib1 = boost::bind(&calculatefib, 1);
-    future Fib2 = boost::bind(&calculatefib, 2);
-    future Fib3 = boost::bind(&calculatefib, 3);
+    future<int> Fib1 = boost::bind(&calculatefib, 1);
+    future<int> Fib2 = boost::bind(&calculatefib, 2);
+    future<int> Fib3 = boost::bind(&calculatefib, 3);
 
 Three threads were created in the above example and each began calculating its respective Fibonacci value. If the user were to try and access a future value the application would either return the value immediately if it were already available or block until it became available.
 
@@ -34,7 +36,7 @@ A worker performs work in the background, without handling a return value and cl
 
     vector parallelfibcalculator()
     {
-      vector values(4);
+      vector<int> values(4);
       worker w0 = boost::bind(&calculatefib, 0, boost::ref(values[0]));
       worker w1 = boost::bind(&calculatefib, 1, boost::ref(values[1]));
       worker w2 = boost::bind(&calculatefib, 2, boost::ref(values[2]));

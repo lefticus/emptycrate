@@ -12,9 +12,10 @@ redirect_from:
 - content/template-code-bloat-revisited/
 ---
 
-*Note 2015-05-01 - fixed typos in first example* *Note 2015-05-04 - fixed typos in second example*
 
 Back in 2008 I wrote an article on [template code bloat](/content/nobody-understands-c-part-5-template-code-bloat). In that article I concluded that the use of templates does not necessarily cause your binary code to bloat and may actually result in smaller code! This ended up becoming one of my more significant articles and has been referenced on wikipedia.
+
+*Note 2015-05-01 - fixed typos in first example* *Note 2015-05-04 - fixed typos in second example*
 
 However, after spending the last few months optimizing and evaluating [ChaiScript](http://chaiscript.com) I've learned that the *misuse* of templates, particularly when inheritance is involved, can have a huge impact on code size.
 

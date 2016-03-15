@@ -14,7 +14,44 @@ tags:
 - Articles
 ---
 
-After the [first article](/content/c-loop-optimization) on loop optimization my cousin pointed out to me that in some cases, tail recursion can actually be [faster](http://ygingras.net/b/2008/4/tail-call-elimination-is-good-in-c-too) then loops in C with the help of tail recursion elimination. It took several tries to come up with a version that the compiler was able to optimize. I knew I got the version correct when the application stopped segfaulting (I believe it was running out of stack space). My experimentation shows that some optimized cases are faster (unoptimized versions will not complete execution) then loops. If anyone has any more experience with this, please attach a better optimized version and I'll give it a run on my machine. ` struct Increment {   int m_value;    Increment(int i)     : m_value(i)   {    }    int operator()()   {     return m_value++;   } };  template uint64_t sum(InItr begin, const InItr &end, uint64_t sumsofar) {   if (begin == end)    {     return sumsofar;   } else {     ++begin;     return sum(begin, end, sumsofar + *begin);   } }  int main() {   std::vector vec;    std::generate_n(back_inserter(vec), 10000000, Increment(0));    for (int i = 0; i < 1000; ++i)   {     std::cout << sum(vec.begin(), vec.end(), 0) << std::endl;   } }`
+After the [first article](/content/c-loop-optimization) on loop optimization my cousin pointed out to me that in some cases, tail recursion can actually be [faster](http://ygingras.net/b/2008/4/tail-call-elimination-is-good-in-c-too) then loops in C with the help of tail recursion elimination. 
+
+It took several tries to come up with a version that the compiler was able to optimize. I knew I got the version correct when the application stopped segfaulting (I believe it was running out of stack space). My experimentation shows that some optimized cases are faster (unoptimized versions will not complete execution) then loops. If anyone has any more experience with this, please attach a better optimized version and I'll give it a run on my machine. 
+
+```cpp
+struct Increment {   
+  int m_value;    
+  
+  Increment(int i)     
+    : m_value(i)   
+  {    }    
+  
+  int operator()()   
+  {     
+    return m_value++;   
+  } 
+};  
+
+template<InItr> 
+uint64_t sum(InItr begin, const InItr &end, uint64_t sumsofar) {   
+  if (begin == end) {     
+    return sumsofar;   
+  } else {     
+    ++begin;     
+    return sum(begin, end, sumsofar + *begin);   
+  } 
+}  
+
+int main() {   
+  std::vector<uint64_t> vec;    
+  std::generate_n(back_inserter(vec), 10000000, Increment(0));    
+  for (int i = 0; i < 1000; ++i)   {     
+    std::cout << sum(vec.begin(), vec.end(), 0) << std::endl;   
+  }
+}
+```
+
+
 **Tail Recursion Timings**
 |-------|--------|
 | *-O2* | 44.113 |

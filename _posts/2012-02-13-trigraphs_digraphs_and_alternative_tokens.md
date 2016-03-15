@@ -26,7 +26,45 @@ Quick, which language is the following code written in?
       %>
     ??>
 
-If you guessed standard C++, you'd be correct. C and C++ support a set of alternative tokens and character sequences to account for languages and keyboards that do not have easy access to characters that those of us with US keyboards consider to be normal. **Trigraph Sequences** The trigraph replacements are performed before any other part of the parsing process. `??=` becomes `#` `??(` becomes `[` `??<` becomes `{` `??/` becomes `\` `??)` becomes `]` `??>` becomes `}` `??’` becomes `ˆ` `??!` becomes `|` `??-` becomes `∼` **Bigraphs and Alternative Tokens** Alternative: `<%` primary: `{` Alternative: `%>` primary: `}` Alternative: `<:` primary: `[` Alternative: `:>` primary: `]` Alternative: `%:` primary: `#` Alternative: `%:%:` primary: `##` Alternative: `bitor` primary: `|` Alternative: `or_eq` primary: `|=` Alternative: `and` primary: `&&` Alternative: `and_eq` primary: `&=` Alternative: `or` primary: `||` Alternative: `xor_eq` primary: `ˆ=` Alternative: `xor` primary: `ˆ` Alternative: `not` primary: `!` Alternative: `compl` primary: `∼` Alternative: `not_eq` primary: `!=` Alternative: `bitand` primary: `&` **Translation of Example** Our example above now becomes:
+If you guessed standard C++, you'd be correct. C and C++ support a set of alternative tokens and character sequences to account for languages and keyboards that do not have easy access to characters that those of us with US keyboards consider to be normal. 
+
+**Trigraph Sequences** 
+
+The trigraph replacements are performed before any other part of the parsing process. 
+
+ * `??=` becomes `#` 
+ * `??(` becomes `[` 
+ * `??<` becomes `{` 
+ * `??/` becomes `\` 
+ * `??)` becomes `]` 
+ * `??>` becomes `}` 
+ * `??’` becomes `ˆ` 
+ * `??!` becomes `|` 
+ * `??-` becomes `∼` 
+  
+**Bigraphs and Alternative Tokens** 
+
+ * Alternative: `<%` primary: `{` 
+ * Alternative: `%>` primary: `}` 
+ * Alternative: `<:` primary: `[` 
+ * Alternative: `:>` primary: `]` 
+ * Alternative: `%:` primary: `#` 
+ * Alternative: `%:%:` primary: `##` 
+ * Alternative: `bitor` primary: `|` 
+ * Alternative: `or_eq` primary: `|=` 
+ * Alternative: `and` primary: `&&` 
+ * Alternative: `and_eq` primary: `&=` 
+ * Alternative: `or` primary: `||` 
+ * Alternative: `xor_eq` primary: `ˆ=` 
+ * Alternative: `xor` primary: `ˆ` 
+ * Alternative: `not` primary: `!` 
+ * Alternative: `compl` primary: `∼` 
+ * Alternative: `not_eq` primary: `!=` 
+ * Alternative: `bitand` primary: `&` 
+
+**Translation of Example** 
+
+Our example above now becomes:
 
     #include <iostream>
 

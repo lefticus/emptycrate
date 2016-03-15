@@ -12,7 +12,9 @@ tags:
 - Adventure Gaming
 ---
 
-I recently released the [EmptyCrate Game Engine](http://emptycrategameengine.googlecode.com) and have since written [6 games](http://game.emptycrate.com) for the engine. These 6 games represent the first adventure games I have ever worked on, so I thought I would take the time here to share some of what I have learned in the process. The primary goal of the EmptyCrate Game Engine was to make it possible to release new adventure games quickly and easily, and it has succeeded at that goal, as I have managed to release 5 games with 6 weeks of work (the [Covered City](http://game.emptycrate.com/coveredcity) series). However, some of the games have been better received than others. **What Works**
+I recently released the [EmptyCrate Game Engine](http://emptycrategameengine.googlecode.com) and have since written [6 games](http://game.emptycrate.com) for the engine. These 6 games represent the first adventure games I have ever worked on, so I thought I would take the time here to share some of what I have learned in the process. The primary goal of the EmptyCrate Game Engine was to make it possible to release new adventure games quickly and easily, and it has succeeded at that goal, as I have managed to release 5 games with 6 weeks of work (the [Covered City](http://game.emptycrate.com/coveredcity) series). However, some of the games have been better received than others. 
+
+**What Works**
 
 -   Varied locations
 -   Puzzles

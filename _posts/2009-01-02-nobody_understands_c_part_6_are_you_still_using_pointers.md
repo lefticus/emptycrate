@@ -15,9 +15,67 @@ tags:
 - Articles
 ---
 
-*2014-04-12 Note: the `boost::shared_ptr` comments apply to `std::shared_ptr` in c++11 as well* It is best to avoid using pointers in C++ as much as possible. The use of pointers can lead to confusion of ownership which can directly or indirectly lead to memory leaks. Even if object ownership is well managed simple (and difficult to find) bugs can also lead to memory leaks. *Security Risks* Also, by avoiding the use of pointers we can avoid and sometimes eliminate common security holes such as buffer overruns. See the last example for more information about this. *Examples* Common instances were pointer usage can be avoided: **Passing an Object to Be Edited** ` //Pointer way void SetSomeParam(SomeObject *o) {   o->someParam(0); }  //Reference way, avoiding pointers: void SetSomeParam(SomeObject &o) {   o.someParam(0); }`
 
-**Complex Member Object Initialization** ` //Pointer way class MyClass {   private:     ComplexType *ct;    public:     MyClass(std::string param1, std::string param2, int param3)     {       ct = new ComplexType(param2, param2);     }     ~MyClass()     {       delete ct;     } };  // Member initialization list way class MyClass {   private:     ComplexType ct;    public:     MyClass(std::string param1, std::string param2, int param3)       : ct(param1, param2) // Call the ComplexType constructor with the params we want     {     }     ~MyClass()     {       // Nothing to do     } };  `
+It is best to avoid using pointers in C++ as much as possible. The use of pointers can lead to confusion of ownership which can directly or indirectly lead to memory leaks. Even if object ownership is well managed simple (and difficult to find) bugs can also lead to memory leaks. 
+
+*2014-04-12 Note: the `boost::shared_ptr` comments apply to `std::shared_ptr` in c++11 as well* 
+
+*Security Risks* 
+
+Also, by avoiding the use of pointers we can avoid and sometimes eliminate common security holes such as buffer overruns. See the last example for more information about this. *Examples* Common instances were pointer usage can be avoided: 
+
+**Passing an Object to Be Edited** 
+
+```cpp
+//Pointer way 
+void SetSomeParam(SomeObject *o) {   
+  o->someParam(0); 
+}  
+```
+
+```cpp
+//Reference way, avoiding pointers: 
+void SetSomeParam(SomeObject &o) 
+{   
+  o.someParam(0); 
+}
+```
+
+**Complex Member Object Initialization** 
+
+```cpp
+//Pointer way 
+class MyClass {   
+  private:     
+    ComplexType *ct;    
+  public:     
+    MyClass(std::string param1, std::string param2, int param3)     
+    {       
+      ct = new ComplexType(param2, param2);     
+    }     
+    
+    ~MyClass()     
+    {       
+      delete ct;     
+    } 
+};  
+```
+
+```cpp
+// Member initialization list way 
+class MyClass {   
+  private:     
+    ComplexType ct;    
+    
+  public:     
+    MyClass(std::string param1, std::string param2, int param3)       
+      : ct(param1, param2) // Call the ComplexType constructor with the params we want     
+    {     }     
+    
+    // shouldn't even define a destructor
+    // ~MyClass()     {       // Nothing to do     } 
+};
+```
 
 **Returning an Editable Member**
 

@@ -13,7 +13,9 @@ tags:
 - C++
 ---
 
-[Jon](http://www.jonathanturner.org/) and I released the first release of [ChaiScript](http://chaiscript.com) earlier today. ChaiScript is designed to make it trivially easy to use scripting in your C++ application and to expose your C++ to the scripting system. ChaiScript is a header only implementation. It requires no external libraries and is distributed under the BSD license, making it free and easy to distribute. So, how easy is easy, really? How does 3 lines of code sound for a classic hello world example? 
+[Jon](http://www.jonathanturner.org/) and I released the first release of [ChaiScript](http://chaiscript.com) earlier today. ChaiScript is designed to make it trivially easy to use scripting in your C++ application and to expose your C++ to the scripting system. 
+
+ChaiScript is a header only implementation. It requires no external libraries and is distributed under the BSD license, making it free and easy to distribute. So, how easy is easy, really? How does 3 lines of code sound for a classic hello world example? 
 
 ```cpp
 #include <iostream>  
