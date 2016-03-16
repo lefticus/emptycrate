@@ -7,6 +7,7 @@ redirect_from:
 - content/homeless-arrests-la-ruled-unconstitutional/
 - node/4223/
 - import_node/212/
+- node/212/
 tags:
 - Unconstitutional
 ---

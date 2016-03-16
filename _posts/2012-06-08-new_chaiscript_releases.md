@@ -7,6 +7,7 @@ redirect_from:
 - content/new-chaiscript-releases/
 - node/4423/
 - import_node/476/
+- node/476/
 tags:
 - ChaiScript
 - C++11

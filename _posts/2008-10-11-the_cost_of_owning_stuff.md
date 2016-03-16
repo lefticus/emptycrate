@@ -7,6 +7,7 @@ redirect_from:
 - content/cost-owning-stuff/
 - node/4302/
 - import_node/316/
+- node/316/
 tags:
 - finance
 ---

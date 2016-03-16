@@ -7,6 +7,7 @@ redirect_from:
 - content/court-homeland-security-department-trial-rule-unconstitutional/
 - node/4224/
 - import_node/211/
+- node/211/
 tags:
 - Unconstitutional
 ---

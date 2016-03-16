@@ -7,6 +7,7 @@ redirect_from:
 - content/soundex-algorithm/
 - node/4363/
 - import_node/378/
+- node/378/
 tags:
 - Soundex
 - Programming

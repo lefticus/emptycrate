@@ -7,6 +7,7 @@ redirect_from:
 - content/blogging-c-language-cast-operators/
 - node/4262/
 - import_node/254/
+- node/254/
 tags:
 - Programming
 - C++

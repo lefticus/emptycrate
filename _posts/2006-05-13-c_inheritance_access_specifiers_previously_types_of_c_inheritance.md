@@ -7,6 +7,7 @@ redirect_from:
 - content/c-inheritance-access-specifiers-previously-types-c-inheritance/
 - node/4343/
 - import_node/226/
+- node/226/
 tags:
 - Programming
 - C++

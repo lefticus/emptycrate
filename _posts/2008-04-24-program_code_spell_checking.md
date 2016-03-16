@@ -7,6 +7,7 @@ redirect_from:
 - content/program-code-spell-checking/
 - node/4287/
 - import_node/296/
+- node/296/
 tags:
 - Programming
 ---

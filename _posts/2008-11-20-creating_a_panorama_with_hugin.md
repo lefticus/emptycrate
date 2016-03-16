@@ -7,6 +7,7 @@ redirect_from:
 - content/creating-panorama-hugin/
 - node/4317/
 - import_node/342/
+- node/342/
 tags:
 - Ireland
 - Hugin

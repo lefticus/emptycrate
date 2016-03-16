@@ -7,6 +7,7 @@ redirect_from:
 - content/multithreaded-c-part-1-pthreads/
 - node/4404/
 - import_node/270/
+- node/270/
 tags:
 - Threads
 - Programming

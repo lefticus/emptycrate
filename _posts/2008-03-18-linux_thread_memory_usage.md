@@ -7,6 +7,7 @@ redirect_from:
 - content/linux-thread-memory-usage/
 - node/4263/
 - import_node/275/
+- node/275/
 tags:
 - Threads
 - Programming

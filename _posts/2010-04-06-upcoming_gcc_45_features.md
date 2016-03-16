@@ -7,6 +7,7 @@ redirect_from:
 - content/upcoming-gcc-45-features/
 - node/4403/
 - import_node/457/
+- node/457/
 tags:
 - GCC
 - C++

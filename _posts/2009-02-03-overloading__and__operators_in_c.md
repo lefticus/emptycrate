@@ -7,6 +7,7 @@ redirect_from:
 - content/overloading-and-operators-c/
 - node/4338/
 - import_node/363/
+- node/363/
 tags:
 - Programming
 - Operator Overloading

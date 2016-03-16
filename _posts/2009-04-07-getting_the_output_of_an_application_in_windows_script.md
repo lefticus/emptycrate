@@ -7,6 +7,7 @@ redirect_from:
 - content/getting-output-application-windows-script/
 - node/4360/
 - import_node/392/
+- node/392/
 tags:
 - Windows Script
 - Programming

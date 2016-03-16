@@ -7,6 +7,7 @@ redirect_from:
 - content/windows-xp-netbook-backup-options/
 - node/4356/
 - import_node/387/
+- node/387/
 tags:
 - Recovery
 - Netbook

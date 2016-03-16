@@ -7,6 +7,7 @@ redirect_from:
 - content/crate-game-engine-snapshot-20080330-release/
 - node/4272/
 - import_node/281/
+- node/281/
 tags:
 - Crate Game Engine
 - Changelog

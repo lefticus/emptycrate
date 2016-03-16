@@ -7,6 +7,7 @@ redirect_from:
 - content/building-boost-visual-studio/
 - node/4376/
 - import_node/414/
+- node/414/
 tags:
 - Visual Studio
 - Boost

@@ -7,6 +7,7 @@ redirect_from:
 - content/are-you-working-too-hard-c-developer/
 - node/4319/
 - import_node/318/
+- node/318/
 tags:
 - Programming
 - C++

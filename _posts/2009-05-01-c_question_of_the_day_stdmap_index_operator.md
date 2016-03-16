@@ -7,6 +7,7 @@ redirect_from:
 - content/c-question-day-stdmap-index-operator/
 - node/4378/
 - import_node/423/
+- node/423/
 tags:
 - Question of the Day
 - Programming

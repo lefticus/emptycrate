@@ -7,6 +7,7 @@ redirect_from:
 - content/crate-gallery-friday-fun/
 - node/4358/
 - import_node/389/
+- node/389/
 tags:
 - Fun
 - EmptyCrate

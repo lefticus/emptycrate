@@ -7,6 +7,7 @@ redirect_from:
 - content/real-world-haskell/
 - node/4328/
 - import_node/356/
+- node/356/
 tags:
 - Haskell
 - Programming

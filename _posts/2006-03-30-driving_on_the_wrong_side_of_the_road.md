@@ -7,6 +7,7 @@ redirect_from:
 - content/driving-wrong-side-road/
 - node/4221/
 - import_node/118/
+- node/118/
 tags:
 - Travel
 ---

@@ -7,6 +7,7 @@ redirect_from:
 - content/blogging-c-language-break-statement/
 - node/4247/
 - import_node/245/
+- node/245/
 tags:
 - Programming
 ---

@@ -7,6 +7,7 @@ redirect_from:
 - content/multithreaded-c-part-2-boost-threads/
 - node/4267/
 - import_node/277/
+- node/277/
 tags:
 - Threads
 - Programming

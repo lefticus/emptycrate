@@ -7,6 +7,7 @@ redirect_from:
 - content/online-c-resources/
 - node/4392/
 - import_node/432/
+- node/432/
 tags:
 - C++
 ---

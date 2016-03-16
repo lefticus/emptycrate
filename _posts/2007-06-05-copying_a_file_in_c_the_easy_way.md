@@ -7,6 +7,7 @@ redirect_from:
 - content/copying-file-c-easy-way/
 - node/4258/
 - import_node/264/
+- node/264/
 tags:
 - Programming
 - C++

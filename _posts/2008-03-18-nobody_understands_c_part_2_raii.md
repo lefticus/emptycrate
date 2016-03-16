@@ -7,6 +7,7 @@ redirect_from:
 - content/nobody-understands-c-part-2-raii/
 - node/4264/
 - import_node/274/
+- node/274/
 tags:
 - RAII
 - Programming

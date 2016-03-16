@@ -7,6 +7,7 @@ redirect_from:
 - content/iphone-puzzle-game-weekend/
 - node/4398/
 - import_node/447/
+- node/447/
 tags:
 - Objective-C
 - iPhone

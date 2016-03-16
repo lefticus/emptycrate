@@ -7,6 +7,7 @@ redirect_from:
 - content/boostspirit-bnf-parser-generator/
 - node/4286/
 - import_node/266/
+- node/266/
 tags:
 - Programming
 - C++

@@ -7,6 +7,7 @@ redirect_from:
 - content/templates-real-world/
 - node/4260/
 - import_node/261/
+- node/261/
 tags:
 - Programming
 - C++

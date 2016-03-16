@@ -7,6 +7,7 @@ redirect_from:
 - content/christian-open-source-programming/
 - node/4337/
 - import_node/301/
+- node/301/
 - christianprogramming
 tags:
 - Programming

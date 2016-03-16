@@ -7,6 +7,7 @@ redirect_from:
 - content/more-netbook-backup-and-recovery-options/
 - node/4408/
 - import_node/460/
+- node/460/
 tags:
 - Windows
 - Recovery

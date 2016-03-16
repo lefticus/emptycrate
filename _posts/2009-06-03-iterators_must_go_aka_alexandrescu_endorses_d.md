@@ -7,6 +7,7 @@ redirect_from:
 - content/iterators-must-go-aka-alexandrescu-endorses-d/
 - node/4382/
 - import_node/427/
+- node/427/
 tags:
 - Programming
 - D

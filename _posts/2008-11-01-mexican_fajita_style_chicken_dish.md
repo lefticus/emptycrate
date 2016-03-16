@@ -7,6 +7,7 @@ redirect_from:
 - content/mexican-fajita-style-chicken-dish/
 - node/4315/
 - import_node/331/
+- node/331/
 tags:
 - Recipe
 - Cooking

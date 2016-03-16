@@ -7,6 +7,7 @@ redirect_from:
 - content/automatically-setting-project-version-based-svn-revision/
 - node/4320/
 - import_node/345/
+- node/345/
 tags:
 - autoconf
 - subversion

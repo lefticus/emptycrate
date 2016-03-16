@@ -7,6 +7,7 @@ redirect_from:
 - content/milestone-2-reached/
 - node/4193/
 - import_node/41/
+- node/41/
 tags:
 - Game Programming
 ---

@@ -7,6 +7,7 @@ redirect_from:
 - content/boostcon-and-more/
 - node/4261/
 - import_node/260/
+- node/260/
 tags:
 - Boost
 - Programming

@@ -7,6 +7,7 @@ redirect_from:
 - content/optimizing-massively-multithreaded-c-applications-beware-heap-operations/
 - node/4388/
 - import_node/436/
+- node/436/
 tags:
 - Threads
 - RAII

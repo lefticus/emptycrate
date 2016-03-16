@@ -7,6 +7,7 @@ redirect_from:
 - content/nobody-understands-c-part-4-functional-programming/
 - node/4288/
 - import_node/294/
+- node/294/
 tags:
 - Programming
 - Nobody Understands C++

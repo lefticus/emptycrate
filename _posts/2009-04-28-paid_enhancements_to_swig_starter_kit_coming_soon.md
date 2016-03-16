@@ -7,6 +7,7 @@ redirect_from:
 - content/paid-enhancements-swig-starter-kit-coming-soon/
 - node/4374/
 - import_node/413/
+- node/413/
 tags:
 - Swig Starter Kit
 ---

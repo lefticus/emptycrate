@@ -7,6 +7,7 @@ redirect_from:
 - content/ex-astris-release-2008-04-29-available/
 - node/4293/
 - import_node/302/
+- node/302/
 tags:
 - Ex Astris
 - Changelog

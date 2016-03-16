@@ -7,6 +7,7 @@ redirect_from:
 - content/c-partial-specialization-templates/
 - node/4415/
 - import_node/468/
+- node/468/
 tags:
 - C++
 - Programming

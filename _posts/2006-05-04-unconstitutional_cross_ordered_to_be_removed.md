@@ -7,6 +7,7 @@ redirect_from:
 - content/unconstitutional-cross-ordered-be-removed/
 - node/4234/
 - import_node/223/
+- node/223/
 tags:
 - Unconstitutional
 ---

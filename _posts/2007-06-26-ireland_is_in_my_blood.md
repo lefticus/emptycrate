@@ -7,6 +7,7 @@ redirect_from:
 - content/ireland-my-blood/
 - node/4254/
 - import_node/265/
+- node/265/
 tags:
 - Travel
 ---

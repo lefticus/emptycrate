@@ -7,6 +7,7 @@ redirect_from:
 - content/crate-game-engine-snapshot-20080313-release/
 - node/4270/
 - import_node/273/
+- node/273/
 tags:
 - Programming
 - Crate Game Engine

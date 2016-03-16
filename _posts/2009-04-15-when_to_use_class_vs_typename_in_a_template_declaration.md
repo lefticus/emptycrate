@@ -7,6 +7,7 @@ redirect_from:
 - content/when-use-class-vs-typename-template-declaration/
 - node/4366/
 - import_node/397/
+- node/397/
 tags:
 - Templates
 - Programming

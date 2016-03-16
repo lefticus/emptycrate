@@ -7,6 +7,7 @@ redirect_from:
 - content/celeste-cloud-detection-hugin/
 - node/4351/
 - import_node/377/
+- node/377/
 tags:
 - Hugin
 ---

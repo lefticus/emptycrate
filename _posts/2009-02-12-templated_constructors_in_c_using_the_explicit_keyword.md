@@ -7,6 +7,7 @@ redirect_from:
 - content/templated-constructors-c-using-explicit-keyword/
 - node/4341/
 - import_node/367/
+- node/367/
 tags:
 - Templates
 - Programming

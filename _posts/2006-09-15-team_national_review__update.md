@@ -7,6 +7,7 @@ redirect_from:
 - content/team-national-review-update/
 - node/4253/
 - import_node/250/
+- node/250/
 ---
 
 This page has been removed.

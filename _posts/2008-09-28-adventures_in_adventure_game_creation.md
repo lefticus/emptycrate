@@ -7,6 +7,7 @@ redirect_from:
 - content/adventures-adventure-game-creation/
 - node/4305/
 - import_node/315/
+- node/315/
 tags:
 - EmptyCrate Game Engine
 - Adventure Gaming

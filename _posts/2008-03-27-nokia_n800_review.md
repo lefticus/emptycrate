@@ -7,6 +7,7 @@ redirect_from:
 - content/nokia-n800-review/
 - node/4276/
 - import_node/280/
+- node/280/
 tags:
 - Review
 - N800

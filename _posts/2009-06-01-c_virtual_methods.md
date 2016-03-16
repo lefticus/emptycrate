@@ -7,6 +7,7 @@ redirect_from:
 - content/c-virtual-methods/
 - node/4380/
 - import_node/430/
+- node/430/
 tags:
 - Virtual
 - Programming

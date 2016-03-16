@@ -7,6 +7,7 @@ redirect_from:
 - content/pythons-and-monkeys-and-luas-oh-my/
 - node/4182/
 - import_node/25/
+- node/25/
 ---
 
 I've been investigating scripting langauges to use in the game engine. I've narrowed it to three possibilities:

@@ -7,6 +7,7 @@ redirect_from:
 - content/c-exception-handling/
 - node/4242/
 - import_node/240/
+- node/240/
 tags:
 - Programming
 ---

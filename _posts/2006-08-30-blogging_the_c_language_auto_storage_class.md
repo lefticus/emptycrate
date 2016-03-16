@@ -7,6 +7,7 @@ redirect_from:
 - content/blogging-c-language-auto-storage-class/
 - node/4246/
 - import_node/244/
+- node/244/
 tags:
 - Programming
 ---

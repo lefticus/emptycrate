@@ -7,6 +7,7 @@ redirect_from:
 - content/programming-portability-mind/
 - node/4379/
 - import_node/424/
+- node/424/
 tags:
 - Visual Studio
 - Programming

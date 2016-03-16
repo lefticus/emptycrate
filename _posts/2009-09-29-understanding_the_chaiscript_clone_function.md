@@ -7,6 +7,7 @@ redirect_from:
 - content/understanding-chaiscript-clone-function/
 - node/4397/
 - import_node/444/
+- node/444/
 tags:
 - ChaiScript
 - C++

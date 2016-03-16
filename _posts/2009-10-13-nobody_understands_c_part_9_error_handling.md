@@ -7,6 +7,7 @@ redirect_from:
 - content/nobody-understands-c-part-9-error-handling/
 - node/4399/
 - import_node/449/
+- node/449/
 tags:
 - Programming
 - Nobody Understands C++

@@ -7,6 +7,7 @@ redirect_from:
 - content/c0x-final-committee-draft/
 - node/4405/
 - import_node/456/
+- node/456/
 tags:
 - C++
 ---

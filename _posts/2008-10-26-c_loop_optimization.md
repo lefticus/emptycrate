@@ -7,6 +7,7 @@ redirect_from:
 - content/c-loop-optimization/
 - node/4310/
 - import_node/323/
+- node/323/
 tags:
 - Programming
 - Optimization

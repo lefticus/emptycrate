@@ -7,6 +7,7 @@ redirect_from:
 - content/c-templates-using-templates-generate-fibonacci-sequence/
 - node/4256/
 - import_node/271/
+- node/271/
 tags:
 - Programming
 - C++

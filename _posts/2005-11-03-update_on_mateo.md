@@ -7,6 +7,7 @@ redirect_from:
 - content/update-mateo/
 - node/4199/
 - import_node/73/
+- node/73/
 ---
 
 The last word that I got from my family last night is that my new premature nephew, Mateo, has started having seizures due to pressure in his brain from bleeding, but otherwise is doing well. Please continue to pray for his healing.

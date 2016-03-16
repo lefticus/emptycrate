@@ -7,6 +7,7 @@ redirect_from:
 - content/dont-join-yourself/
 - node/4266/
 - import_node/276/
+- node/276/
 tags:
 - Threads
 - Programming

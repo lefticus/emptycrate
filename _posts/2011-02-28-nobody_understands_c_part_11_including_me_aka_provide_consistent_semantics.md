@@ -7,6 +7,7 @@ redirect_from:
 - content/nobody-understands-c-part-11-including-me-aka-provide-consistent-semantics/
 - node/4414/
 - import_node/467/
+- node/467/
 tags:
 - Nobody Understands C++
 - C++

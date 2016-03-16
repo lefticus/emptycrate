@@ -7,6 +7,7 @@ redirect_from:
 - content/how-build-wxmozilla-based-app-cygwinmingw/
 - node/4203/
 - import_node/57/
+- node/57/
 tags:
 - wxWidgets
 - C++

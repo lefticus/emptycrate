@@ -7,6 +7,7 @@ redirect_from:
 - content/start-using-c11-now/
 - node/4418/
 - import_node/471/
+- node/471/
 tags:
 - Crossplatform
 - C++11

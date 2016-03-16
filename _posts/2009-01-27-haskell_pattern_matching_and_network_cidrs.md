@@ -7,6 +7,7 @@ redirect_from:
 - content/haskell-pattern-matching-and-network-cidrs/
 - node/4332/
 - import_node/361/
+- node/361/
 tags:
 - Pattern Matching
 - Haskell

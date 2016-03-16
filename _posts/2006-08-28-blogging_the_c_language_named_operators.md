@@ -7,6 +7,7 @@ redirect_from:
 - content/blogging-c-language-named-operators/
 - node/4244/
 - import_node/242/
+- node/242/
 tags:
 - Programming
 ---

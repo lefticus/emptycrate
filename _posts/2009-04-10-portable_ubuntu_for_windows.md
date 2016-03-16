@@ -7,6 +7,7 @@ redirect_from:
 - content/portable-ubuntu-windows/
 - node/4362/
 - import_node/394/
+- node/394/
 tags:
 - Ubuntu
 - Linux

@@ -7,6 +7,7 @@ redirect_from:
 - content/value-open-source-experience/
 - node/4368/
 - import_node/400/
+- node/400/
 tags:
 - Programming
 - Open Source

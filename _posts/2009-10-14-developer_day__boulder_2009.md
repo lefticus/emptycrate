@@ -7,6 +7,7 @@ redirect_from:
 - content/developer-day-boulder-2009/
 - node/4400/
 - import_node/450/
+- node/450/
 tags:
 - Programming
 - Developer Day

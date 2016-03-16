@@ -7,6 +7,7 @@ redirect_from:
 - content/google-chrome-20-beta-released/
 - node/4348/
 - import_node/374/
+- node/374/
 tags:
 - Google Chrome
 - Acer Aspire One

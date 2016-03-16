@@ -7,6 +7,7 @@ redirect_from:
 - content/trip-starts-tomorrow/
 - node/4220/
 - import_node/117/
+- node/117/
 tags:
 - Travel
 ---

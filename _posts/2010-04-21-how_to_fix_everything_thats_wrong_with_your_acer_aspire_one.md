@@ -7,6 +7,7 @@ redirect_from:
 - content/how-fix-everything-thats-wrong-your-acer-aspire-one/
 - node/4409/
 - import_node/463/
+- node/463/
 tags:
 - Acer Aspire One
 ---

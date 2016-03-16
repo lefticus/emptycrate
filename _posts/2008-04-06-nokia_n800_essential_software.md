@@ -7,6 +7,7 @@ redirect_from:
 - content/nokia-n800-essential-software/
 - node/4277/
 - import_node/286/
+- node/286/
 tags:
 - N800
 ---

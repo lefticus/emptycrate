@@ -7,6 +7,7 @@ redirect_from:
 - content/traveling-nokia-internet-tablet/
 - node/4306/
 - import_node/319/
+- node/319/
 tags:
 - Travel
 - Maemo

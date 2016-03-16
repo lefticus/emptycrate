@@ -7,6 +7,7 @@ redirect_from:
 - content/random-c-tidbits/
 - node/4235/
 - import_node/224/
+- node/224/
 tags:
 - Programming
 ---

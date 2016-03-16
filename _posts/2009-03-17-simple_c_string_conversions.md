@@ -7,6 +7,7 @@ redirect_from:
 - content/simple-c-string-conversions/
 - node/4347/
 - import_node/372/
+- node/372/
 tags:
 - Programming
 - C++

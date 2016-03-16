@@ -7,6 +7,7 @@ redirect_from:
 - content/thread-safety-locking-strategies/
 - node/4282/
 - import_node/289/
+- node/289/
 tags:
 - Threads
 - Programming

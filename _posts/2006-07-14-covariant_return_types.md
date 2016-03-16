@@ -7,6 +7,7 @@ redirect_from:
 - content/covariant-return-types/
 - node/4240/
 - import_node/230/
+- node/230/
 tags:
 - Programming
 ---

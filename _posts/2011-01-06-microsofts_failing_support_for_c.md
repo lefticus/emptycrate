@@ -7,6 +7,7 @@ redirect_from:
 - content/microsofts-failing-support-c/
 - node/4412/
 - import_node/465/
+- node/465/
 tags:
 - Microsoft
 - C++

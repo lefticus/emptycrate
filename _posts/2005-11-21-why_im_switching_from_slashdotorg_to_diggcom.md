@@ -7,6 +7,7 @@ redirect_from:
 - content/why-im-switching-slashdotorg-diggcom/
 - node/4207/
 - import_node/87/
+- node/87/
 ---
 
 I've been trying to keep this site, and my blog, mostly free of personal opinions. However, I really want to comment on a recent change that I have made. 

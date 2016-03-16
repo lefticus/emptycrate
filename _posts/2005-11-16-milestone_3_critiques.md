@@ -7,6 +7,7 @@ redirect_from:
 - content/milestone-3-critiques/
 - node/4205/
 - import_node/85/
+- node/85/
 tags:
 - Game Programming
 ---

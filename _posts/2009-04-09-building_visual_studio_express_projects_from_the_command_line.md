@@ -7,6 +7,7 @@ redirect_from:
 - content/building-visual-studio-express-projects-command-line/
 - node/4361/
 - import_node/393/
+- node/393/
 tags:
 - Visual Studio
 - Programming

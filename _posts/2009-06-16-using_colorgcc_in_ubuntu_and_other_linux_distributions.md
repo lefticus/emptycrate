@@ -7,6 +7,7 @@ redirect_from:
 - content/using-colorgcc-ubuntu-and-other-linux-distributions/
 - node/4391/
 - import_node/429/
+- node/429/
 tags:
 - Ubuntu
 - Programming

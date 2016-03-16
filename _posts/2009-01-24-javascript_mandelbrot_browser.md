@@ -7,6 +7,7 @@ redirect_from:
 - content/javascript-mandelbrot-browser/
 - node/4330/
 - import_node/359/
+- node/359/
 tags:
 - Programming
 - Mandelbrot

@@ -7,6 +7,7 @@ redirect_from:
 - content/no-twinkie-database/
 - node/4384/
 - import_node/428/
+- node/428/
 tags:
 - Game Programming
 ---

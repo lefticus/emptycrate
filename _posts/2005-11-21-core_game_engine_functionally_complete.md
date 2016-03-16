@@ -7,6 +7,7 @@ redirect_from:
 - content/core-game-engine-functionally-complete/
 - node/4206/
 - import_node/86/
+- node/86/
 tags:
 - Game Programming
 ---

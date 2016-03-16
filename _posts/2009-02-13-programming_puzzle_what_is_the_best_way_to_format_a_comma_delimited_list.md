@@ -7,6 +7,7 @@ redirect_from:
 - content/programming-puzzle-what-best-way-format-comma-delimited-list/
 - node/4344/
 - import_node/369/
+- node/369/
 tags:
 - Puzzle
 - Programming

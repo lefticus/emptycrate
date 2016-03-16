@@ -7,6 +7,7 @@ redirect_from:
 - content/xml-parsers/
 - node/4194/
 - import_node/42/
+- node/42/
 tags:
 - XML
 - Game Programming

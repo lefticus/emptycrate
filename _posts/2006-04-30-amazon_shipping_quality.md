@@ -7,6 +7,7 @@ redirect_from:
 - content/amazon-shipping-quality/
 - node/4228/
 - import_node/216/
+- node/216/
 ---
 
 I recently ordered a book from [Amazon.com](http://amazon.com) with the free Super Saver Shipping (TM, I'm sure) on April 21. Shortly after placing the order my wife tells me that her friends have complained that it is taking Amazon MUCH longer than it used to to process orders. I'm thinking "that's OK, I'm still saving $10 by ordering it." Well, the order was processed and shipped on April 26, which seemed like a fairly long time, but could be worse. Then I notice that the estimated arrival date is May 2 - May 4, shipping via USPS. I'm thinking, "Now THAT's ridiculous!" Fortunately, I did receive the book on April 29, cause the USPS is bad, but not THAT bad. So, why am I blogging about this? Two reasons.

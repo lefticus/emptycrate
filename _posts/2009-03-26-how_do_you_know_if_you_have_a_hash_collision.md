@@ -7,6 +7,7 @@ redirect_from:
 - content/how-do-you-know-if-you-have-hash-collision/
 - node/4353/
 - import_node/380/
+- node/380/
 tags:
 - Programming
 ---

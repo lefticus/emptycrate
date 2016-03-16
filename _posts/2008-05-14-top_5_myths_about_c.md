@@ -7,6 +7,7 @@ redirect_from:
 - content/top-5-myths-about-c/
 - node/4295/
 - import_node/308/
+- node/308/
 tags:
 - C++
 - Programming

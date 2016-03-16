@@ -7,6 +7,7 @@ redirect_from:
 - content/game-loading/
 - node/4201/
 - import_node/82/
+- node/82/
 tags:
 - C++
 - XML

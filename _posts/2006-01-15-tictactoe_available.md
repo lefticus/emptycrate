@@ -7,6 +7,7 @@ redirect_from:
 - content/tictactoe-available/
 - node/4215/
 - import_node/101/
+- node/101/
 ---
 
 I decided to branch out a little over the past couple of weeks and have refreshed myself on .NET and C\# programming. 

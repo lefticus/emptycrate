@@ -7,6 +7,7 @@ redirect_from:
 - content/creating-bad-code-thats-still-great/
 - node/4349/
 - import_node/375/
+- node/375/
 tags:
 - Programming
 - Articles

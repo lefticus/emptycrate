@@ -7,6 +7,7 @@ redirect_from:
 - content/multithreaded-c-part-4-futures-and-other-thread-handlers/
 - node/4280/
 - import_node/290/
+- node/290/
 tags:
 - C++
 - Threads

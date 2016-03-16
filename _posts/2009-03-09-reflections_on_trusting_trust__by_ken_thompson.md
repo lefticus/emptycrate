@@ -7,6 +7,7 @@ redirect_from:
 - content/reflections-trusting-trust-ken-thompson/
 - node/4346/
 - import_node/371/
+- node/371/
 tags:
 - Security
 - Programming

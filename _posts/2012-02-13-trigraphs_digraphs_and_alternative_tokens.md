@@ -7,6 +7,7 @@ redirect_from:
 - content/trigraphs-digraphs-and-alternative-tokens/
 - node/4419/
 - import_node/472/
+- node/472/
 tags:
 - C++
 - Programming

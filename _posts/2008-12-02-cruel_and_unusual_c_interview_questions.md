@@ -7,6 +7,7 @@ redirect_from:
 - content/cruel-and-unusual-c-interview-questions/
 - node/4321/
 - import_node/346/
+- node/346/
 tags:
 - Interviewing
 - C++

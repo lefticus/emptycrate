@@ -7,6 +7,7 @@ redirect_from:
 - content/are-you-using-makeshared-yet/
 - node/4421/
 - import_node/474/
+- node/474/
 tags:
 - C++
 - Boost

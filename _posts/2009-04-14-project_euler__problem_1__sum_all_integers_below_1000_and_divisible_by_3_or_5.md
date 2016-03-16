@@ -8,6 +8,7 @@ redirect_from:
 - content/project-euler-problem-1-sum-all-integers-below-1000-and-divisible-3-or-5/
 - node/4365/
 - import_node/396/
+- node/396/
 tags:
 - Templates
 - Puzzle

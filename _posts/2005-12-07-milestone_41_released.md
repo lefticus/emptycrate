@@ -7,6 +7,7 @@ redirect_from:
 - content/milestone-41-released/
 - node/4213/
 - import_node/95/
+- node/95/
 ---
 
 Milestone 4.1 was released to [sourceforge](http://sf.net/projects/emptycrate). This release includes minor API and documentation updates. Also new in this release is a logging system.

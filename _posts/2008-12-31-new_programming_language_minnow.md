@@ -7,6 +7,7 @@ redirect_from:
 - content/new-programming-language-minnow/
 - node/4327/
 - import_node/353/
+- node/353/
 tags:
 - Programming
 - Minnow

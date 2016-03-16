@@ -7,6 +7,7 @@ redirect_from:
 - content/c-multiple-dispatch/
 - node/4281/
 - import_node/287/
+- node/287/
 tags:
 - Programming
 - C++

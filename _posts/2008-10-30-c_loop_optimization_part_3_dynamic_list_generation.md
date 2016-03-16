@@ -7,6 +7,7 @@ redirect_from:
 - content/c-loop-optimization-part-3-dynamic-list-generation/
 - node/4312/
 - import_node/328/
+- node/328/
 tags:
 - Articles
 - C++

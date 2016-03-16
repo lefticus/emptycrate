@@ -7,6 +7,7 @@ redirect_from:
 - content/retro-sierra-gaming/
 - node/4413/
 - import_node/466/
+- node/466/
 tags:
 - Sierra
 - Retro

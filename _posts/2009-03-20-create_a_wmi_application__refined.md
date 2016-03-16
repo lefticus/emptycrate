@@ -7,6 +7,7 @@ redirect_from:
 - content/create-wmi-application-refined/
 - node/4350/
 - import_node/376/
+- node/376/
 tags:
 - RAII
 - C++

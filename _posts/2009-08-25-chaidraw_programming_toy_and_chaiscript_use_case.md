@@ -7,6 +7,7 @@ redirect_from:
 - content/chaidraw-programming-toy-and-chaiscript-use-case/
 - node/4396/
 - import_node/443/
+- node/443/
 tags:
 - C++
 - Programming

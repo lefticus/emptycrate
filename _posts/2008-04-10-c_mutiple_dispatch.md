@@ -7,6 +7,7 @@ redirect_from:
 - content/c-mutiple-dispatch/
 - node/4279/
 - import_node/288/
+- node/288/
 tags:
 - Templates
 - Programming

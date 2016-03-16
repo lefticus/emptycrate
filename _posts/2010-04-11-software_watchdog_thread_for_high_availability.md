@@ -5,6 +5,7 @@ published: false
 date: '2010-04-11 22:30:32'
 redirect_from:
 - import_node/462/
+- node/462/
 - node/4402/
 ---
 

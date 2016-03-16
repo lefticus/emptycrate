@@ -7,6 +7,7 @@ redirect_from:
 - content/site-updates/
 - node/4255/
 - import_node/269/
+- node/269/
 ---
 
 I just updated the site with a new version of [Drupal](http://drupal.org/) and am still working out some problems. Currently the image module doesn't work correctly, so images will be missing. I'll be tracking the updates to the modules and will get things back up as I can. In the meantime all the content is available. 

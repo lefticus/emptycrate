@@ -7,6 +7,7 @@ redirect_from:
 - content/mini-roundup-inexpensive-bible-software/
 - node/4354/
 - import_node/385/
+- node/385/
 tags:
 - Xiphos
 - WORDsearch

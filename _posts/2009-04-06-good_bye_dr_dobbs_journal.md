@@ -7,6 +7,7 @@ redirect_from:
 - content/good-bye-dr-dobbs-journal/
 - node/4359/
 - import_node/391/
+- node/391/
 tags:
 - Dr. Dobb's Journal
 ---

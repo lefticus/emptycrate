@@ -7,6 +7,7 @@ redirect_from:
 - content/nobody-understands-c-part-5-template-code-bloat/
 - node/4294/
 - import_node/307/
+- node/307/
 tags:
 - Nobody Understands C++
 - C++

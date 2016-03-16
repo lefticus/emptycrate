@@ -7,6 +7,7 @@ redirect_from:
 - content/update-feedburner-use/
 - node/4307/
 - import_node/322/
+- node/322/
 tags:
 - Blogging
 ---

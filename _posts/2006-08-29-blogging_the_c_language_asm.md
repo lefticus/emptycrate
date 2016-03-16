@@ -7,6 +7,7 @@ redirect_from:
 - content/blogging-c-language-asm/
 - node/4245/
 - import_node/243/
+- node/243/
 tags:
 - Programming
 ---

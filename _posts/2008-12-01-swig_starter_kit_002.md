@@ -7,6 +7,7 @@ redirect_from:
 - content/swig-starter-kit-002/
 - node/4334/
 - import_node/344/
+- node/344/
 tags:
 - Templates
 - Swig Starter Kit

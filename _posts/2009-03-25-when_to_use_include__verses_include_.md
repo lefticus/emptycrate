@@ -7,6 +7,7 @@ redirect_from:
 - content/when-use-include-verses-include/
 - node/4352/
 - import_node/379/
+- node/379/
 tags:
 - Programming
 - C++

@@ -7,6 +7,7 @@ redirect_from:
 - content/blogging-c-language-const-qualifier/
 - node/4251/
 - import_node/249/
+- node/249/
 tags:
 - Programming
 ---

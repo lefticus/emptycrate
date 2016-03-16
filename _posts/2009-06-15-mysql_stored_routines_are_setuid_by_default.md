@@ -7,6 +7,7 @@ redirect_from:
 - content/mysql-stored-routines-are-setuid-default/
 - node/4390/
 - import_node/431/
+- node/431/
 tags:
 - Security
 - MySQL

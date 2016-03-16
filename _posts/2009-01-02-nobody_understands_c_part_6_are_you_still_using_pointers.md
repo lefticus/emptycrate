@@ -7,6 +7,7 @@ redirect_from:
 - content/nobody-understands-c-part-6-are-you-still-using-pointers/
 - node/4325/
 - import_node/354/
+- node/354/
 tags:
 - Nobody Understands C++
 - C++

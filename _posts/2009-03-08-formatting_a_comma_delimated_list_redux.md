@@ -7,6 +7,7 @@ redirect_from:
 - content/formatting-comma-delimated-list-redux/
 - node/4345/
 - import_node/370/
+- node/370/
 tags:
 - Programming
 - Puzzle

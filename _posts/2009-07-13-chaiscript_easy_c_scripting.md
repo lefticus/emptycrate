@@ -7,6 +7,7 @@ redirect_from:
 - content/chaiscript-easy-c-scripting/
 - node/4393/
 - import_node/438/
+- node/438/
 tags:
 - Programming
 - ChaiScript

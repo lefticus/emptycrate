@@ -7,6 +7,7 @@ redirect_from:
 - content/commodore-notebook/
 - node/4316/
 - import_node/332/
+- node/332/
 tags:
 - commodore
 - hardware

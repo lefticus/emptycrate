@@ -7,6 +7,7 @@ redirect_from:
 - content/do-you-know-what-i-and-i-really-do/
 - node/4313/
 - import_node/329/
+- node/329/
 tags:
 - Programming
 - Articles

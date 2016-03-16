@@ -7,6 +7,7 @@ redirect_from:
 - content/design-completed/
 - node/4185/
 - import_node/29/
+- node/29/
 tags:
 - Game Programming
 ---

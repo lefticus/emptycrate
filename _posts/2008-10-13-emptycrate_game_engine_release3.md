@@ -7,6 +7,7 @@ redirect_from:
 - content/emptycrate-game-engine-release3/
 - node/4303/
 - import_node/317/
+- node/317/
 tags:
 - EmptyCrate Game Engine
 - Changelog

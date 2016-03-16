@@ -7,6 +7,7 @@ redirect_from:
 - content/making-linux-daemon/
 - node/4284/
 - import_node/219/
+- node/219/
 tags:
 - Programming
 - Linux

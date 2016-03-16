@@ -7,6 +7,7 @@ redirect_from:
 - content/swigsword-project-recreated/
 - node/4336/
 - import_node/362/
+- node/362/
 tags:
 - SWORD
 - SwigSword

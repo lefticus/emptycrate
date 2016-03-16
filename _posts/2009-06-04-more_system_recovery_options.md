@@ -7,6 +7,7 @@ redirect_from:
 - content/more-system-recovery-options/
 - node/4383/
 - import_node/426/
+- node/426/
 tags:
 - XP
 - Windows

@@ -7,6 +7,7 @@ redirect_from:
 - content/milestone-35-released/
 - node/4208/
 - import_node/88/
+- node/88/
 tags:
 - Game Programming
 ---

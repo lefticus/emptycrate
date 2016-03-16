@@ -7,6 +7,7 @@ redirect_from:
 - content/biblestudy-20-alpha-released/
 - node/4198/
 - import_node/53/
+- node/53/
 tags:
 - BibleStudio
 ---

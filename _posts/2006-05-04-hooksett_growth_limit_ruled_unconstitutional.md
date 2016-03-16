@@ -7,6 +7,7 @@ redirect_from:
 - content/hooksett-growth-limit-ruled-unconstitutional/
 - node/4232/
 - import_node/221/
+- node/221/
 tags:
 - Unconstitutional
 ---

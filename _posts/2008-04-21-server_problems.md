@@ -7,6 +7,7 @@ redirect_from:
 - content/server-problems/
 - node/4283/
 - import_node/293/
+- node/293/
 tags:
 - EmptyCrate
 ---

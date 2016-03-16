@@ -7,6 +7,7 @@ redirect_from:
 - content/maemo-game-creation-challenge-3/
 - node/4291/
 - import_node/299/
+- node/299/
 tags:
 - Game
 - Maemo

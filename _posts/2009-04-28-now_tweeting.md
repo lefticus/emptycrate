@@ -7,6 +7,7 @@ redirect_from:
 - content/now-tweeting/
 - node/4375/
 - import_node/422/
+- node/422/
 tags:
 - Twitter
 - Drupal

@@ -7,6 +7,7 @@ redirect_from:
 - content/using-non-standard-resolutions-virtualbox-rdp/
 - node/4420/
 - import_node/473/
+- node/473/
 tags:
 - VirtualBox
 - Windows

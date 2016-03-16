@@ -7,6 +7,7 @@ redirect_from:
 - content/what-c-virtual-inheritance/
 - node/4381/
 - import_node/425/
+- node/425/
 tags:
 - Virtual
 - Programming

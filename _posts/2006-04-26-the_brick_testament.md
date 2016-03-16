@@ -7,6 +7,7 @@ redirect_from:
 - content/brick-testament/
 - node/4222/
 - import_node/209/
+- node/209/
 ---
 
 You have to see this to believe it. [The Brick Testament](http://www.thebricktestament.com/).

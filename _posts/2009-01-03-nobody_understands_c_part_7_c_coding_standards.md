@@ -7,6 +7,7 @@ redirect_from:
 - content/nobody-understands-c-part-7-c-coding-standards/
 - node/4326/
 - import_node/355/
+- node/355/
 tags:
 - C++
 - Programming

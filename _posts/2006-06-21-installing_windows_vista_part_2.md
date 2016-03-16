@@ -7,6 +7,7 @@ redirect_from:
 - content/installing-windows-vista-part-2/
 - node/4238/
 - import_node/228/
+- node/228/
 ---
 
 Yesterday after making my last blog posting I decided these were the steps I was going to take when I got home:

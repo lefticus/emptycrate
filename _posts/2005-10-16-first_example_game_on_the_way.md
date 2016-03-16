@@ -7,6 +7,7 @@ redirect_from:
 - content/first-example-game-way/
 - node/4191/
 - import_node/37/
+- node/37/
 tags:
 - Game Programming
 ---

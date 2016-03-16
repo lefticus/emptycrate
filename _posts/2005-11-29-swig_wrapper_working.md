@@ -7,6 +7,7 @@ redirect_from:
 - content/swig-wrapper-working/
 - node/4209/
 - import_node/89/
+- node/89/
 tags:
 - C++
 - SWIG

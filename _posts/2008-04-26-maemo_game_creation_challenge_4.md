@@ -7,6 +7,7 @@ redirect_from:
 - content/maemo-game-creation-challenge-4/
 - node/4292/
 - import_node/300/
+- node/300/
 tags:
 - Programming
 - Maemo

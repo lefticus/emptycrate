@@ -7,6 +7,7 @@ redirect_from:
 - content/blogging-c-language-case-keyword/
 - node/4248/
 - import_node/246/
+- node/246/
 tags:
 - Programming
 ---

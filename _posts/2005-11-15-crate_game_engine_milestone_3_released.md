@@ -7,6 +7,7 @@ redirect_from:
 - content/crate-game-engine-milestone-3-released/
 - node/4204/
 - import_node/84/
+- node/84/
 tags:
 - Game Programming
 ---

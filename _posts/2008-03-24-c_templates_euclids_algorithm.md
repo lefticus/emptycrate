@@ -8,6 +8,7 @@ redirect_from:
 - node/4271/
 - import_node/279/
 - node/279/
+- node/279/
 tags:
 - Templates
 - Programming

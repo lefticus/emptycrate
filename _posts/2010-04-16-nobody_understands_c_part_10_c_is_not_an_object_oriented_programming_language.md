@@ -8,6 +8,7 @@ redirect_from:
 - content/nobody-understands-c-part-10-c-not-object-oriented-programming-language/
 - node/4406/
 - import_node/458/
+- node/458/
 tags:
 - Programming
 - OOP

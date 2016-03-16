@@ -7,6 +7,7 @@ redirect_from:
 - content/multithreaded-c-part-3-raii-and-threads/
 - node/4273/
 - import_node/282/
+- node/282/
 tags:
 - Boost
 - Articles

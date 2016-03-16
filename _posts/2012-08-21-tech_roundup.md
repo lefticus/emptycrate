@@ -7,6 +7,7 @@ redirect_from:
 - content/tech-roundup/
 - node/4424/
 - import_node/477/
+- node/477/
 tags:
 - technology
 - Programming

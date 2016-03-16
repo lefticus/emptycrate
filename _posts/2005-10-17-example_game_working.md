@@ -7,6 +7,7 @@ redirect_from:
 - content/example-game-working/
 - node/4192/
 - import_node/38/
+- node/38/
 tags:
 - Game Programming
 ---

@@ -7,6 +7,7 @@ redirect_from:
 - content/pinheads-now-award-winning-game/
 - node/4311/
 - import_node/327/
+- node/327/
 tags:
 - EmptyCrate Game Engine
 - Pinheads

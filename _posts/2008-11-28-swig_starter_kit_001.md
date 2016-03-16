@@ -7,6 +7,7 @@ redirect_from:
 - content/swig-starter-kit-001/
 - node/4318/
 - import_node/343/
+- node/343/
 tags:
 - Swig Starter Kit
 - Lua

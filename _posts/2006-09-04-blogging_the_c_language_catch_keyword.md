@@ -7,6 +7,7 @@ redirect_from:
 - content/blogging-c-language-catch-keyword/
 - node/4249/
 - import_node/247/
+- node/247/
 tags:
 - Programming
 ---

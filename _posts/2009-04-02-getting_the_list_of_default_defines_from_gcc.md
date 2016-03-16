@@ -7,6 +7,7 @@ redirect_from:
 - content/getting-list-default-defines-gcc/
 - node/4357/
 - import_node/390/
+- node/390/
 tags:
 - Programming
 - GCC

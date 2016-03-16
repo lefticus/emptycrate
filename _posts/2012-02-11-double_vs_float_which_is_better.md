@@ -7,6 +7,7 @@ redirect_from:
 - content/double-vs-float-which-better/
 - node/4417/
 - import_node/470/
+- node/470/
 tags:
 - Programming
 - C++

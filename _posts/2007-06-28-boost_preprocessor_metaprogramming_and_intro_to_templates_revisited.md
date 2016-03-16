@@ -7,6 +7,7 @@ redirect_from:
 - content/boost-preprocessor-metaprogramming-and-intro-templates-revisited/
 - node/4257/
 - import_node/267/
+- node/267/
 tags:
 - Templates
 - Programming

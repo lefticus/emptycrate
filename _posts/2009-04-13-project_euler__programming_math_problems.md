@@ -7,6 +7,7 @@ redirect_from:
 - content/project-euler-programming-math-problems/
 - node/4364/
 - import_node/395/
+- node/395/
 tags:
 - Puzzle
 - Project Euler

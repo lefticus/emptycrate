@@ -7,6 +7,7 @@ redirect_from:
 - content/nobody-understands-c-part-3-templates/
 - node/4278/
 - import_node/284/
+- node/284/
 tags:
 - Templates
 - Programming

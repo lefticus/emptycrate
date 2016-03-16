@@ -7,6 +7,7 @@ redirect_from:
 - content/installing-windows-vista-part-1/
 - node/4237/
 - import_node/227/
+- node/227/
 ---
 
 I know, it's been a long time since I have posted a blog entry, and this one is going to be a bit of a rant. I hope you don't mind indulging me for a few minutes.

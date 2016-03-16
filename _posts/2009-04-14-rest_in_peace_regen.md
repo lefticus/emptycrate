@@ -7,6 +7,7 @@ redirect_from:
 - content/rest-peace-regen/
 - node/4367/
 - import_node/398/
+- node/398/
 ---
 
 This Monday I had to put down my 11 year old Rottweiler. She had just turned 11 this week, in fact. For nearly 1.5 years now we had struggled with her health. She had been a picky eater for most of her life but had gotten much worse about it, so my wife started making her homemade food. She would take a new food for a few days and quickly start refusing it, which made feeding her very difficult. 

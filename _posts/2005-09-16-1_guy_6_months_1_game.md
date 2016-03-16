@@ -7,6 +7,7 @@ redirect_from:
 - content/1-guy-6-months-1-game/
 - node/4189/
 - import_node/24/
+- node/24/
 ---
 
 Now begins the whensdinner.com Winter of Code. By March 15th I plan to have written a commercially viable game. 

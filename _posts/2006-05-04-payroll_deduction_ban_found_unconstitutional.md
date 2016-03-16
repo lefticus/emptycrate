@@ -7,6 +7,7 @@ redirect_from:
 - content/payroll-deduction-ban-found-unconstitutional/
 - node/4233/
 - import_node/222/
+- node/222/
 tags:
 - Unconstitutional
 ---

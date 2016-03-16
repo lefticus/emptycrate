@@ -7,6 +7,7 @@ redirect_from:
 - content/pseudo-random-number-generator-quality/
 - node/4304/
 - import_node/306/
+- node/306/
 tags:
 - Programming
 - Ex Astris

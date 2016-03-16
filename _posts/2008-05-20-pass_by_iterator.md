@@ -7,6 +7,7 @@ redirect_from:
 - content/pass-iterator/
 - node/4298/
 - import_node/311/
+- node/311/
 tags:
 - Templates
 - Programming

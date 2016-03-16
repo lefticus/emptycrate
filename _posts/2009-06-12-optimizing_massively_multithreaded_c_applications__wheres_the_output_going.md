@@ -7,6 +7,7 @@ redirect_from:
 - content/optimizing-massively-multithreaded-c-applications-wheres-output-going/
 - node/4389/
 - import_node/437/
+- node/437/
 tags:
 - Threads
 - Programming

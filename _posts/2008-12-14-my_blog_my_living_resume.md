@@ -7,6 +7,7 @@ redirect_from:
 - content/my-blog-my-living-resume/
 - node/4323/
 - import_node/350/
+- node/350/
 tags:
 - Blogging
 - Resume

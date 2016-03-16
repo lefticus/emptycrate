@@ -7,6 +7,7 @@ redirect_from:
 - content/when-use-reinterpretcast-vs-staticcast/
 - node/4410/
 - import_node/388/
+- node/388/
 tags:
 - Programming
 - C++

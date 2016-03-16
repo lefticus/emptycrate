@@ -7,6 +7,7 @@ redirect_from:
 - content/dr-dobb-where-art-thou/
 - node/4322/
 - import_node/349/
+- node/349/
 tags:
 - Dr. Dobb's Journal
 ---

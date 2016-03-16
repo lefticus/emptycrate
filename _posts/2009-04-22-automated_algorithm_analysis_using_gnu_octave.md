@@ -7,6 +7,7 @@ redirect_from:
 - content/automated-algorithm-analysis-using-gnu-octave/
 - node/4371/
 - import_node/404/
+- node/404/
 tags:
 - Programming
 - Octave

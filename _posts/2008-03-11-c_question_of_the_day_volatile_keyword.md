@@ -7,6 +7,7 @@ redirect_from:
 - content/c-question-day-volatile-keyword/
 - node/4265/
 - import_node/272/
+- node/272/
 tags:
 - Programming
 - C++

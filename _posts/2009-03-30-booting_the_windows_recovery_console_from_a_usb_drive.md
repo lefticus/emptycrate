@@ -7,6 +7,7 @@ redirect_from:
 - content/booting-windows-recovery-console-usb-drive/
 - node/4355/
 - import_node/386/
+- node/386/
 tags:
 - Windows
 - Recovery

@@ -7,6 +7,7 @@ redirect_from:
 - content/real-world-haskell-chapters-1-2/
 - node/4329/
 - import_node/357/
+- node/357/
 tags:
 - Haskell
 - C++

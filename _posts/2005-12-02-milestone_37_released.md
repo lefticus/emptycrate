@@ -7,6 +7,7 @@ redirect_from:
 - content/milestone-37-released/
 - node/4211/
 - import_node/92/
+- node/92/
 tags:
 - C++
 - Game Programming

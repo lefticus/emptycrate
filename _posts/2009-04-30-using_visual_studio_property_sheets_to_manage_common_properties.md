@@ -7,6 +7,7 @@ redirect_from:
 - content/using-visual-studio-property-sheets-manage-common-properties/
 - node/4377/
 - import_node/421/
+- node/421/
 tags:
 - Visual Studio
 - Programming

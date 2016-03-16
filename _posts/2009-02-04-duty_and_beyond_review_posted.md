@@ -7,6 +7,7 @@ redirect_from:
 - content/duty-and-beyond-review-posted/
 - node/4339/
 - import_node/364/
+- node/364/
 tags:
 - Reviews
 - Adventure Gaming

@@ -7,6 +7,7 @@ redirect_from:
 - content/opensolaris-200811-mini-review/
 - node/4324/
 - import_node/351/
+- node/351/
 tags:
 - OpenSolaris
 - Review

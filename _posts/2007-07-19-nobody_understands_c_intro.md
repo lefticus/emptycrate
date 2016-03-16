@@ -7,6 +7,7 @@ redirect_from:
 - content/nobody-understands-c-intro/
 - node/4268/
 - import_node/268/
+- node/268/
 tags:
 - Programming
 - Nobody Understands C++

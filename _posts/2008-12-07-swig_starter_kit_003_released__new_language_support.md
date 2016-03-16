@@ -7,6 +7,7 @@ redirect_from:
 - content/swig-starter-kit-003-released-new-language-support/
 - node/4335/
 - import_node/347/
+- node/347/
 tags:
 - Swig Starter Kit
 - Ruby

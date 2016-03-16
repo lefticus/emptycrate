@@ -7,6 +7,7 @@ redirect_from:
 - content/crossplatform-c-part-1-intro/
 - node/4299/
 - import_node/312/
+- node/312/
 tags:
 - Crossplatform
 - C++

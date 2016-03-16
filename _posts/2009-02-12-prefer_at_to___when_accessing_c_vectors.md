@@ -7,6 +7,7 @@ redirect_from:
 - content/prefer-when-accessing-c-vectors/
 - node/4340/
 - import_node/366/
+- node/366/
 tags:
 - C++
 - Programming

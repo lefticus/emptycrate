@@ -7,6 +7,7 @@ redirect_from:
 - content/optimizing-massively-multithreaded-c-applications-dont-forget-obvious/
 - node/4386/
 - import_node/434/
+- node/434/
 tags:
 - Threads
 - Programming

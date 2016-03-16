@@ -7,6 +7,7 @@ redirect_from:
 - content/installing-windows-vista-part-3/
 - node/4239/
 - import_node/229/
+- node/229/
 ---
 
 The install that I started yesterday worked! Well, mostly. The bootloader for some reason is messed up, but the autofix mechanism of the Vista install DVD cleared that up. Also, the pausing problems can be REALLY bad. Updating the Nvidia display driver always reduces them, BUT changing the effects settings has now affect.

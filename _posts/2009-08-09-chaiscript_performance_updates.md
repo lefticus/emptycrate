@@ -7,6 +7,7 @@ redirect_from:
 - content/chaiscript-performance-updates/
 - node/4394/
 - import_node/439/
+- node/439/
 tags:
 - Optimization
 - ChaiScript
