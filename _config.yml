@@ -12,11 +12,13 @@ gems:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-mentions
+  - jekyll-paginate
 
 whitelist:
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-mentions
+  - jekyll-paginate
 
 paginate: 10

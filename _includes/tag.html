@@ -11,13 +11,18 @@
   <div class='container'>
     {% for post in site.posts %}
       {% if post.tags contains page.current_tag %}
-        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        <p class="author">
-        <span class="date">{{ post.date }}</span>
-        </p>
-        <div class="content">
-          {{ post.excerpt}}
-        </div>
+
+      {% assign current_post = post %}
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      <p class="author">
+      {% include tag_names.html %}
+      </p>
+      <div class="content">
+        {{ post.excerpt}}
+        <br/>
+        <br/>
+      </div>
+
       {% endif %}
     {% endfor %}
   </div>

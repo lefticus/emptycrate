@@ -1,7 +1,31 @@
 
 <ol class="breadcrumb">
-  <li class="active"><span class="date">{{ current_post.date }}</span></li>
-{% for tag_name in current_post.tags %}
-<li class="active">{{tag_name}}</li>
-{% endfor %}
+  <li class="active"><span class="date">{{ current_post.date | slice:0, 10 }}</span></li>
+
+  {% comment %}
+  {% for tag_name in current_post.tags %}
+    <li class="active">{{tag_name}}</li>
+  {% endfor %}
+  {% endcomment %}
+
+  {% for tag_name in current_post.tags %}
+     {% assign tag_url = null %}
+     {% for tag_page in site.html_pages %}
+       {% if tag_page.current_tag == tag_name %}
+         {% assign tag_url = tag_page.url %}
+         {% break %}
+       {% endif %}
+     {% endfor %}
+
+     {% if tag_url %}
+       <li class='active'><a href="{{ tag_url }}">{{ tag_name }}</a></li>
+     {% else %}
+       <li class='active'>{{ tag_name }}</li>
+     {% endif %}
+ {% endfor %}
+
+
 </ol>
+
+
+
