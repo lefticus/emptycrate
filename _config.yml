@@ -21,4 +21,11 @@ whitelist:
   - jekyll-mentions
   - jekyll-paginate
 
+author:
+  name: Jason Turner
+
+feed:
+  path: /feed.xml
+
+
 paginate: 10
