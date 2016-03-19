@@ -25,7 +25,7 @@ author:
   name: Jason Turner
 
 feed:
-  path: /feed.xml
+  path: node/feed.xml
 
 
 paginate: 10
