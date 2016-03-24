@@ -13,6 +13,24 @@
 
     <div class="row">
       <div class="col-md-8">
+        <!-- AddToAny BEGIN -->
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+          <a class="a2a_button_reddit"></a>
+          <a class="a2a_button_linkedin"></a>
+          <a class="a2a_button_hacker_news"></a>
+          <a class="a2a_button_twitter"></a>
+          <a class="a2a_button_google_plus"></a>
+        </div>
+        <script>
+//var a2a_config = a2a_config || {};
+//a2a_config.linkname = "TestPage";
+//a2a_config.linkurl = "TestUrl";
+        </script>
+        <script async src="https://static.addtoany.com/menu/page.js"></script>
+        <!-- AddToAny END -->
+
+        <br/><br/>
+
         {{ content }}
       </div>
       <div class="col-md-4">
@@ -31,10 +49,6 @@
 
     <div id="disqus_thread"></div>
     <script>
-    /**
-     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-     */
      var disqus_config = function () {
        this.page.url = "http://articles.emptycrate.com{{page.url}}";  // Replace PAGE_URL with your page's canonical URL variable
        this.page.identifier = "{{page.id}}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable

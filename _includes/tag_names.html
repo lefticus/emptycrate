@@ -1,13 +1,6 @@
 
 <ol class="breadcrumb">
   <li class="active"><span class="date">{{ current_post.date | slice:0, 10 }}</span></li>
-  <li class="active">
-    <script type="text/javascript">
-reddit_url = "http://articles.emptycrate.com{{ current_post.url }}";
-reddit_target= "cpp";
-    </script>
-    <script type="text/javascript" src="//www.reddit.com/buttonlite.js?i=1"></script>
-  </li>
   <li class="active"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> <a href="{{ current_post.url}}#disqus_thread"> Comments</a></li>
 
   {% comment %}
