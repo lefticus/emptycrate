@@ -11,7 +11,7 @@ tags:
 - C++
 ---
 
-It's been a little more than a year since our [last update](content/chaiscript-almost-5-years-later).
+It's been a little more than a year since our [last update](/content/chaiscript-almost-5-years-later).
 
 In the past year there has been a heavy focus on ChaiScript performance and correctness, with a side of features.
 
