@@ -1,0 +1,35 @@
+
+<div class="panel panel-default">
+  <div class="panel-heading">My Videos</div>
+  <div class="panel-body">
+
+    <a href="http://www.jdoqocy.com/click-4720029-11290546?url=http%3A%2F%2Fshop.oreilly.com%2Fproduct%2F0636920049814.do%3Fcmp%3Daf-code-books-video-product_cj_0636920049814_%25zp&cjsku=0636920049814">
+      <img src="/learningcppbestpractices.gif"/>
+      <br/>
+      <strong>Learning C++ Best Practices</strong>
+      <br/>
+      By Jason Turner
+      <br/>
+      Available at O'Reilly
+    </a>
+
+    <!--    <iframe src="http://www.oreilly.com/authors/widgets/687.html" height="500px" width="200px" scrolling="no" frameborder="0"></iframe> -->
+
+    {% assign num_posts = 0 %}
+    {% for post in site.posts %}
+      {% if post.youtube_id != null and post.url != page.url %}
+        {% assign num_posts = num_posts | plus: 1 %}
+        {% if num_posts > 4 %}
+          {% break %}
+        {% endif %}
+        <br/>
+        <br/>
+        <div>
+          <a href="{{ post.url }}"><div class="youtube_thumbnail"><img src="http://img.youtube.com/vi/{{ post.youtube_id }}/default.jpg" align='left'/></div> {{post.title}}</a>
+        </div>
+      {% endif %}
+    {% endfor %}
+
+
+  </div>
+</div>

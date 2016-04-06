@@ -9,14 +9,22 @@
   {% include common_body.html %}
 
   <div class='container'>
-    {% for post in site.posts %}
-      {% if post.tags contains page.current_tag %}
+    <div class="row">
+      <div class="col-md-8">
+        {% for post in site.posts %}
+          {% if post.tags contains page.current_tag %}
 
-        {% assign current_post = post %}
-        {% include post_synopsis.html %}
+            {% assign current_post = post %}
+            {% include post_synopsis.html %}
 
-      {% endif %}
-    {% endfor %}
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="col-md-4">
+        {% include oreilly.html %}
+      </div>
+    </div>
+
   </div>
 
   <script id="dsq-count-scr" src="//emptycrate.disqus.com/count.js" async></script>
