@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: C++ Weekly With Jason Turner - Ep4 Variadic Template Refactor
+title: C++ Weekly - Ep4 Variadic Template Refactor
 youtube_id: VXi0AOQ0PF0
 tags:
 - C++

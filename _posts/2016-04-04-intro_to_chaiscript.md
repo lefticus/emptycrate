@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: C++ Weekly With Jason Turner - Ep5 Intro To ChaiScript
+title: C++ Weekly - Ep5 Intro To ChaiScript
 youtube_id: CeHSHEZg-PQ
 tags:
 - C++

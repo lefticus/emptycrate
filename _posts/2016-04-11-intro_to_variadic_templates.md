@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: C++ Weekly With Jason Turner - Ep6 Intro To Variadic Templates
+title: C++ Weekly - Ep6 Intro To Variadic Templates
 youtube_id: o1EvPhz6UNE
 tags:
 - C++
