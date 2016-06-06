@@ -77,4 +77,28 @@ a:visited.cs-blue { color:white; }
 
 </script>
 
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@lefticus">
+<meta name="twitter:creator" content="@lefticus">
+{% if page.title %}
+  <meta name="twitter:title" content="{{ page.title }}">
+{% else %}
+  <meta name="twitter:title" content="{{ site.title }}">
+{% endif %}
+{% if page.url %}
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+{% endif %}
+{% if page.description %}
+  <meta name="twitter:description" content="{{ page.description }}">
+{% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+{% if page.youtube_id %}
+  <meta name="twitter:image:src" content="http://img.youtube.com/vi/{{ page.youtube_id }}/default.jpg">
+{% else % }
+  <meta name="twitter:image:src" content="{{ site.url }}/logo.png">
+{% endif %}
+
+
 {% feed_meta %}
