@@ -27,5 +27,6 @@ author:
 feed:
   path: node/feed.xml
 
+url: http://articles.emptycrate.com
 
 paginate: 10
