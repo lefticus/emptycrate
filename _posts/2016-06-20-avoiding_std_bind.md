@@ -1,7 +1,7 @@
 ---
 layout: blog_post
-title: "C++ Weekly - Ep 15 Using `std::bind`"
-youtube_id: JtUZmkvroKg
+title: "C++ Weekly - Ep 16 Avoiding `std::bind`"
+youtube_id: ZlHi8txU4aQ
 tags:
 - C++
 - C++ Weekly
