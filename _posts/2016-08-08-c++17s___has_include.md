@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: "C++ Weekly - Ep 22 C++17's __has_include"
+title: "C++ Weekly - Ep 23 C++17's __has_include"
 youtube_id: miODwx7gv6o
 tags:
 - C++
