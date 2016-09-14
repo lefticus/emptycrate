@@ -125,7 +125,7 @@ main:                                   # @main
 
 This looks pretty good, but how does it compare to doing it by hand?
 
-```
+```cpp
 #include <cstdint>
 #include <array>
 #include <vector>
