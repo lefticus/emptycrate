@@ -46,7 +46,7 @@ auto destructure(T &t)
 }
 ```
 
-We use `std::forward_as_tuple` which takes a set of parameters and generates a tuple of references to the values, so we end up with something like `std::tuple<int &, int &, int *>` being returned from our `destructure` function.
+We use `std::forward_as_tuple` which takes a set of parameters and generates a tuple of references to the values, so we end up with something like `std::tuple<int &, int &, int &>` being returned from our `destructure` function.
 
 We can further extend it to do an offset and length:
 
