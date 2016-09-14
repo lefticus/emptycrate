@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: "C++ Weekly - Ep 27 Language Features Removed In C++17"
+title: "C++ Weekly - Ep 27 C++17 Sequence Container Changes"
 youtube_id: QlI65u6MPL8
 tags:
 - C++

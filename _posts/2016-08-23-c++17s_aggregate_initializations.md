@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: "C++ Weekly - Ep 24 C++17's Aggregate Initializations"
+title: "C++ Weekly - Ep 25 C++17's Aggregate Initializations"
 youtube_id: qMqWoT016cA
 tags:
 - C++
