@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: "C++ Weekly - Ep 27 Language Features Removed In C++17"
+title: "C++ Weekly - Ep 26 Language Features Removed In C++17"
 youtube_id: uCRkBXQhud0
 tags:
 - C++
