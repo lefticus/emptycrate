@@ -90,9 +90,9 @@ a:visited.cs-blue { color:white; }
   <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
 {% endif %}
 {% if page.excerpt %}
-  <meta name="twitter:description" content="{{ page.excerpt }}">
+  <meta name="twitter:description" content="{{ page.excerpt | xml_escape }}">
 {% else %}
-  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:description" content="{{ site.description | xml_escape }}">
 {% endif %}
 {% if page.youtube_id %}
   <meta name="twitter:image:src" content="http://img.youtube.com/vi/{{ page.youtube_id }}/default.jpg">
