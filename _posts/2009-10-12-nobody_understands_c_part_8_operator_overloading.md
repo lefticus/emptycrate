@@ -51,7 +51,7 @@ bool operator!=(const Type &lhs, const Type &rhs); // no equal
 //Other operators
 Type operator+(const Type &lhs, const Type &rhs); // Addition
 Type operator+(const Type &lhs); // Unary plus
-Type operator-(const Type &lhs, const Type &rhs) const; // Subtraction
+Type operator-(const Type &lhs, const Type &rhs); // Subtraction
 Type operator-(const Type &lhs) const; // Unary minus
 ContainedType* operator&(const Type &lhs); // Address of
 Type operator&(const Type &lhs, const Type &rhs); // Bitwise and
