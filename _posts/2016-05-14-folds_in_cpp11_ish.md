@@ -45,7 +45,7 @@ int j = (++i, ++i, ++i);
 
 Is valid and has well-defined behavior. That is, `j` is equal to `3` (the result of the right-most expression in the list of comma separated statements) on every compliant compiler (which should be all of them at this point).
 
-The most excellent http://gcc.godblot.org can show us this [simply](https://godbolt.org/g/7Ofdp6).
+The most excellent http://gcc.godbolt.org can show us this [simply](https://godbolt.org/g/7Ofdp6).
 
 Note that the compiler does not generate any warnings at all.
 
