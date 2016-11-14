@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: "C++ Weekly - Ep 37 Stateful Lambdas
+title: "C++ Weekly - Ep 37 Stateful Lambdas"
 youtube_id: _1X9D8Z5huA
 tags:
 - C++
