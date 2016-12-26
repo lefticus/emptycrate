@@ -14,7 +14,7 @@ tags:
 - Book Reviews
 ---
 
-The book [Real World Haskell](http://www.amazon.com/gp/product/0596514980?ie=UTF8&tag=empcra-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0596514980)![](http://www.assoc-amazon.com/e/ir?t=empcra-20&l=as2&o=1&a=0596514980) is receiving some amazing reviews on Amazon, with comments like
+The book [Real World Haskell](http://www.amazon.com/gp/product/0596514980?ie=UTF8&tag=emptycrate-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0596514980)![](http://www.assoc-amazon.com/e/ir?t=emptycrate-20&l=as2&o=1&a=0596514980) is receiving some amazing reviews on Amazon, with comments like
 
 > This by far is one of the best programming books not only on Haskell as the language, but also the fundamentals of pure functional programming in general. This book in my opinion is a game changer to bring Haskell to the forefront of people's attentions. Whether you've been a programmer for years or just starting out, this book fits both needs quite nicely. If only other books could live up to this standard.
 

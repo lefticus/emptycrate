@@ -14,7 +14,7 @@ tags:
 - Book Reviews
 ---
 
-Chapter 4 of [Real World Haskell](http://www.amazon.com/gp/product/0596514980?ie=UTF8&tag=empcra-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0596514980)![](http://www.assoc-amazon.com/e/ir?t=empcra-20&l=as2&o=1&a=0596514980) begins with some details about functions with side effects and interacting with the outside world. Normally, a Haskell function is pure and may not have any side effects outside of itself. However, it is necessary to allow for side effects for reading and writing files, including standard input and output. The "do" keyword is used when we may have interactions with the outside world. 
+Chapter 4 of [Real World Haskell](http://www.amazon.com/gp/product/0596514980?ie=UTF8&tag=emptycrate-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0596514980)![](http://www.assoc-amazon.com/e/ir?t=emptycrate-20&l=as2&o=1&a=0596514980) begins with some details about functions with side effects and interacting with the outside world. Normally, a Haskell function is pure and may not have any side effects outside of itself. However, it is necessary to allow for side effects for reading and writing files, including standard input and output. The "do" keyword is used when we may have interactions with the outside world. 
 
 **Infix Functions**
 

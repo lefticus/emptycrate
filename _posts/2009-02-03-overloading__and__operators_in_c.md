@@ -14,7 +14,7 @@ tags:
 - C++
 ---
 
-Short answer: don't do it! Long answer: As the C++ example from the article on [Real World Haskell](http://www.amazon.com/gp/product/0596514980?ie=UTF8&tag=empcra-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0596514980)![](http://www.assoc-amazon.com/e/ir?t=empcra-20&l=as2&o=1&a=0596514980) [Chapter 1-2](/import_node/357) showed: 
+Short answer: don't do it! Long answer: As the C++ example from the article on [Real World Haskell](http://www.amazon.com/gp/product/0596514980?ie=UTF8&tag=emptycrate-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0596514980)![](http://www.assoc-amazon.com/e/ir?t=emptycrate-20&l=as2&o=1&a=0596514980) [Chapter 1-2](/import_node/357) showed: 
 
 ```cpp
 #include <iostream>

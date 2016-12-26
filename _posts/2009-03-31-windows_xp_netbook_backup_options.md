@@ -14,7 +14,7 @@ tags:
 - Acer Aspire One
 ---
 
-After a recent problem with my master boot record on my [netbook](http://www.amazon.com/gp/product/B001EYV9TM?ie=UTF8&tag=empcra-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B001EYV9TM)![](http://www.assoc-amazon.com/e/ir?t=empcra-20&l=as2&o=1&a=B001EYV9TM), I decided it was time to make sure I had a backup and recovery option. 
+After a recent problem with my master boot record on my [netbook](http://www.amazon.com/gp/product/B001EYV9TM?ie=UTF8&tag=emptycrate-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B001EYV9TM)![](http://www.assoc-amazon.com/e/ir?t=emptycrate-20&l=as2&o=1&a=B001EYV9TM), I decided it was time to make sure I had a backup and recovery option. 
 
 Generally speaking, I'm not too worried about backups. All of the files I'm concerned about either exist on my network drive or on the internet. However, in the case of a catastrophic failure where I am not concerned about getting the data missing but and more concerned about actually getting the notebook booting again, a netbook offers few options. 
 

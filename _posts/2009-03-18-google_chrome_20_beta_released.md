@@ -13,7 +13,7 @@ tags:
 - Acer Aspire One
 ---
 
-OS News [announced yesterday](http://www.osnews.com/story/21151/Google_Releases_Chrome_2_0_Beta_Opens_Beta_Channel) that [Google Chrome 2.0 Beta](http://www.google.com/intl/en/landing/chrome/beta/index.html) was just released. I've been searching for the perfect browser for my new [Acer Aspire One](http://www.amazon.com/gp/product/B001EYV9TM?ie=UTF8&tag=empcra-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B001EYV9TM)![](http://www.assoc-amazon.com/e/ir?t=empcra-20&l=as2&o=1&a=B001EYV9TM) for a couple of weeks now and ended up settling on the stable version of Chrome. It works well because:
+OS News [announced yesterday](http://www.osnews.com/story/21151/Google_Releases_Chrome_2_0_Beta_Opens_Beta_Channel) that [Google Chrome 2.0 Beta](http://www.google.com/intl/en/landing/chrome/beta/index.html) was just released. I've been searching for the perfect browser for my new [Acer Aspire One](http://www.amazon.com/gp/product/B001EYV9TM?ie=UTF8&tag=emptycrate-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B001EYV9TM)![](http://www.assoc-amazon.com/e/ir?t=emptycrate-20&l=as2&o=1&a=B001EYV9TM) for a couple of weeks now and ended up settling on the stable version of Chrome. It works well because:
 
 1.  It has a very minimal UI and does not take up too much screen real estate.
 2.  It does not have the memory usage issues of firefox.

@@ -20,7 +20,7 @@ Jon asks:
 
 Yes, you can. The result of `x["bob"]` is an `std::vector &` If the particular key you are trying to access does not exist yet, it is created first. 
 
-According to [C++ in a Nutshell](http://www.amazon.com/gp/product/059600298X?ie=UTF8&tag=empcra-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=059600298X)![](http://www.assoc-amazon.com/e/ir?t=empcra-20&l=as2&o=1&a=059600298X) (pg 607) the definition of `map<>::operator[]` is: `(*((insert(std::make_pair(x, T(  )))).first)).second`. 
+According to [C++ in a Nutshell](http://www.amazon.com/gp/product/059600298X?ie=UTF8&tag=emptycrate-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=059600298X)![](http://www.assoc-amazon.com/e/ir?t=emptycrate-20&l=as2&o=1&a=059600298X) (pg 607) the definition of `map<>::operator[]` is: `(*((insert(std::make_pair(x, T(  )))).first)).second`. 
 
 This means a few things. First of all, there is additional overhead with using `operator[]`. It must create a T with its default constructor and attempt to insert it. The `map<>::insert` method attempts the insert of the new object. If the key already exists, the existing object is returned. If not, the newly added object is returned. So, to use `map<>::operator[]` effectively, our contained type must have a default constructor and must be assignable. Also, because the index operator attempts an insert, there is no const version of the method. Therefor, you cannot use the index operator on a const map. 
 

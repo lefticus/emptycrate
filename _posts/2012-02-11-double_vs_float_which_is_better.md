@@ -13,7 +13,7 @@ tags:
 - C++
 ---
 
-Neither [C++ Coding Standards](http://www.amazon.com/gp/product/0321113586/ref=as_li_tf_tl?ie=UTF8&tag=empcra-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0321113586)![](http://www.assoc-amazon.com/e/ir?t=empcra-20&l=as2&o=1&a=0321113586) nor [Effective C++](http://www.amazon.com/gp/product/0321334876/ref=as_li_tf_tl?ie=UTF8&tag=empcra-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0321334876)![](http://www.assoc-amazon.com/e/ir?t=empcra-20&l=as2&o=1&a=0321334876) addresses the question of which float point type is best to use and in what situations. There are three floating point types in C and C++:
+Neither [C++ Coding Standards](http://www.amazon.com/gp/product/0321113586/ref=as_li_tf_tl?ie=UTF8&tag=emptycrate-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0321113586)![](http://www.assoc-amazon.com/e/ir?t=emptycrate-20&l=as2&o=1&a=0321113586) nor [Effective C++](http://www.amazon.com/gp/product/0321334876/ref=as_li_tf_tl?ie=UTF8&tag=emptycrate-20&linkCode=as2&camp=1789&creative=9325&creativeASIN=0321334876)![](http://www.assoc-amazon.com/e/ir?t=emptycrate-20&l=as2&o=1&a=0321334876) addresses the question of which float point type is best to use and in what situations. There are three floating point types in C and C++:
 
 1.  `float`
 2.  `double`

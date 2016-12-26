@@ -15,7 +15,7 @@ tags:
 - Bible
 ---
 
-My [Acer Aspire One](http://www.amazon.com/gp/product/B001EYV9TM?ie=UTF8&tag=empcra-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B001EYV9TM)![](http://www.assoc-amazon.com/e/ir?t=empcra-20&l=as2&o=1&a=B001EYV9TM) is quickly becoming the only "book" that I carry. To be a complete replacement for books that I like to have around, it was necessary to find some Bible software for it, so here's a quick wrap up of what I found. I had a few requirements:
+My [Acer Aspire One](http://www.amazon.com/gp/product/B001EYV9TM?ie=UTF8&tag=emptycrate-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=B001EYV9TM)![](http://www.assoc-amazon.com/e/ir?t=emptycrate-20&l=as2&o=1&a=B001EYV9TM) is quickly becoming the only "book" that I carry. To be a complete replacement for books that I like to have around, it was necessary to find some Bible software for it, so here's a quick wrap up of what I found. I had a few requirements:
 
 1.  Cheap or free
 2.  At least the commercial [NET](http://www.bible.org/) notes module available

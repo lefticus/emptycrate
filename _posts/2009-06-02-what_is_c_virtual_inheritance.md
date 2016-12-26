@@ -15,7 +15,7 @@ tags:
 - C++
 ---
 
-From [C++ in a Nutshell](http://www.amazon.com/gp/product/059600298X?ie=UTF8&tag=empcra-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=059600298X)![](http://www.assoc-amazon.com/e/ir?t=empcra-20&l=as2&o=1&a=059600298X):
+From [C++ in a Nutshell](http://www.amazon.com/gp/product/059600298X?ie=UTF8&tag=emptycrate-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=059600298X)![](http://www.assoc-amazon.com/e/ir?t=emptycrate-20&l=as2&o=1&a=059600298X):
 
 > A base class can be declared with the virtual specifier, which is important when a class has multiple base classes. Ordinarily, each time a class is named in an inheritance graph, the most-derived class is organized so that an object has a distinct subobject for each occurrence of each base class. Virtual base classes, however, are combined into a single subobject. That is, each nonvirtual base class results in a distinct subobject, and each virtual base class gets a single subobject, no matter how many times that base class appears in the inheritance graph.
 
