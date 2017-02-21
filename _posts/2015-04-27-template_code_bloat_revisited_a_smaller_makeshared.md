@@ -21,55 +21,55 @@ However, after spending the last few months optimizing and evaluating [ChaiScrip
 
 Take the case of type-erasure, where you want to wrap an unknown type inside of a known type to provide a common interface. (For examples of type erasure, the end results of it are objects like `std::function<>` and `boost::any`)
 
+```cpp
+class Interface
+{
+  public:
+    Interface() {}
+    virtual ~Interface() = default;
+    virtual std::string get_name() const = 0;
+};
 
-    class Interface
-    {
-      public:
-        Interface() {}
-        virtual ~Interface() = default;
-        virtual std::string get_name() const = 0;
+template<typename T>
+struct Interface_Impl : Interface
+{
+  public:
+    Interface_Impl() : m_name(typeid(T).name()) {}
+    virtual std::string get_name() const {
+      return m_name;
     };
-
-    template<typename T>
-    struct Interface_Impl : Interface
-    {
-      public:
-        Interface_Impl() : m_name(typeid(T).name()) {}
-        virtual std::string get_name() const {
-          return m_name;
-        };
-      private:
-        std::string m_name
-    };
-
+  private:
+    std::string m_name
+};
+```
 
 Versus:
 
+```cpp
+class Interface
+{
+  public:
+    Interface(std::string t_name) : m_name(std::move(t_name)) { }
+    std::string get_name() const { return m_name; }
 
-    class Interface
-    {
-      public:
-        Interface(std::string t_name) : m_name(std::move(t_name)) { }
-        std::string get_name() const { return m_name; }
+  private:
+    std::string m_name;
+};
 
-      private:
-        std::string m_name;
-    };
-
-    template<typename T>
-    struct Interface_Impl : Interface
-    {
-      public:
-        Interface_Impl() : Interface(typeid(T).name()) {}
-    };
-
+template<typename T>
+struct Interface_Impl : Interface
+{
+  public:
+    Interface_Impl() : Interface(typeid(T).name()) {}
+};
+```
 
 The first option is one that you might happen upon if being a bit too "object oriented" in your approach. It is, however:
 
--   Potentially slower: Virtual function dispatch on `get_name`
--   Larger: Each `Interface_Impl<>` that is instantiated must have its own `m_name` object defined. This adds extra symbols and code to the binaries
--   Longer compile time: Instantiating more symbols means more compile time for the compiler.
--   Did I mention slower?: A larger binary with more code paths also reduces cache friendliness.
+- Potentially slower: Virtual function dispatch on `get_name`
+- Larger: Each `Interface_Impl<>` that is instantiated must have its own `m_name` object defined. This adds extra symbols and code to the binaries
+- Longer compile time: Instantiating more symbols means more compile time for the compiler.
+- Did I mention slower?: A larger binary with more code paths also reduces cache friendliness.
 
 The second option is pretty much better in every way, avoiding the pitfalls of the first.
 
@@ -80,9 +80,9 @@ So what does this have to do with `make_shared`? An `std::shared_ptr` is a relat
 
 Taking one of our examples above: say we want to reason about an `Interface` object and pass it around.
 
-
-    std::shared_ptr<Interface> p = std::make_shared<Interface_Impl<int>>(); 
-
+```cpp
+std::shared_ptr<Interface> p = std::make_shared<Interface_Impl<int>>(); 
+```
 
 `make_shared` offers us several advantages. It does one dynamic allocation vs two compared to `std::shared_ptr<Interface_Impl<int>>(new Interface_Impl<int>());`, is less code, and provides exception guarantees if something goes wrong during construction or allocation.
 
@@ -91,19 +91,20 @@ But it also presents a problem. We have now an instantiation of `std::shared_ptr
 You can avoid the extra instantiations if you force the compiler's hand, doing something like:
 
 
-    std::shared_ptr<Interface> p(std::static_cast<Interface*>(new Interface_Impl<int>()));
-
+```cpp
+std::shared_ptr<Interface> p(std::static_cast<Interface*>(new Interface_Impl<int>()));
+```
 
 Pros
 ----
 
--   Significantly reduced compile time and compile size in large projects
+- Significantly reduced compile time and compile size in large projects
 
 Cons
 ----
 
--   Ugly
--   Must do virtual destructor calls from `~Interface` through to `~Interface_Impl`
+- Ugly
+- Must do virtual destructor calls from `~Interface` through to `~Interface_Impl`
 
 Performance
 -----------
@@ -117,13 +118,13 @@ I'm proposing a version of `make_shared` that takes 2 template parameters. The t
 
 A prototype version of this is:
 
-
-    template<typename B, typename D, typename ...Arg>
-    inline std::shared_ptr<B> make_shared(Arg && ... arg)
-    {
-      return std::shared_ptr<B>(static_cast<B*>(new D(std::forward<Arg>(arg)...)));
-    }
-
+```cpp
+template<typename B, typename D, typename ...Arg>
+inline std::shared_ptr<B> make_shared(Arg && ... arg)
+{
+  return std::shared_ptr<B>(static_cast<B*>(new D(std::forward<Arg>(arg)...)));
+}
+```
 
 It has all of the problems mentioned above. I believe these could be sorted out, except for perhaps the virtual destructor call of the contained object.
 
