@@ -5,7 +5,7 @@
 
 Jason is a C++ programmer, speaker, and trainer with over 15 years of professional experience. He has won awards for his conference sessions, published 5-star reviewed video training series with O'Reilly Media, and is a Microsoft MVP for his contribution to the C++ community.
 
-Jason co-hosts CppCast, the podcast for C++ developers, and hosts C++ Weekly, a YouTube channel for C++ developers.
+Jason co-hosts [CppCast](http://cppcast.com), the podcast for C++ developers, and hosts [C++ Weekly](https://www.youtube.com/c/JasonTurner-lefticus), a YouTube channel for C++ developers.
 
 
 ## The Advantages to Jason's Training
