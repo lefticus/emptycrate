@@ -31,27 +31,27 @@ Below are a few suggested curriculae for various types of organizations.
 
 ## Exploring C++ - For the organization that wants to know why C++ should be a consideration
 
- * Why C++?: A 1 to 4 hour seminar on the unique advantages that C++ offers
+ * [Why C++?](#why-c)
 
 ## Moving to C++ - For the organization that is interested in moving to C++ from C or another language
 
 2 day class:
 
- * Day 1: [Why C++?](#why-c) & Moving to C++
- * Day 2: Best Practices
+ * Day 1: [Why C++?](#why-c) & [Moving to C++](#moving-to-c)
+ * Day 2: [Best Practices](#best-practices)
 
 3 day class:
 
- * Day 1: [Why C++?](#why-c) & Moving to C++
- * Day 2: Understanding Object Lifetime
- * Day 3: Best Practices
+ * Day 1: [Why C++?](#why-c) & [Moving to C++](#moving-to-c)
+ * Day 2: [Understanding Object Lifetime](#understanding-object-lifetime)
+ * Day 3: [Best Practices](#best-practices)
 
 4 day class:
 
- * Day 1: [Why C++?](#why-c) & Moving to C++
- * Day 2: Understanding Object Lifetime
- * Day 3: Inheritance and Polymorphism
- * Day 4: Best Practices
+ * Day 1: [Why C++?](#why-c) & [Moving to C++](#moving-to-c)
+ * Day 2: [Understanding Object Lifetime](#understanding-object-lifetime)
+ * Day 3: [Inheritance and Polymorphism](#inheritance-and-polymorphism)
+ * Day 4: [Best Practices](#best-practices)
   
  
 ## Updating to C++11 and beyond - For the organization that is already using C++ but is interested in updating to the latest standards and cleaning up their code in the process
@@ -59,40 +59,40 @@ Below are a few suggested curriculae for various types of organizations.
 2 day class:
 
  * Day 1: Demystifying C++11 and Beyond & Moving to C++ 11 and Beyond
- * Day 2: Best Practices & Best Practices in C++17
+ * Day 2: [Best Practices](#best-practices) & Best Practices in C++17
 
 3 day class:
 
  * Day 1: Demystifying C++11 and Beyond & Moving to C++ 11 and Beyond
- * Day 2: Understanding Object Lifetime
- * Day 3: Best Practices & Best Practices in C++17
+ * Day 2: [Understanding Object Lifetime](#understanding-object-lifetime)
+ * Day 3: [Best Practices](#best-practices) & Best Practices in C++17
 
 4 day class:
 
  * Day 1: Demystifying C++11 and Beyond & Moving to C++ 11 and Beyond
- * Day 2: Understanding Object Lifetime
- * Day 3: Inheritance and Polymorphism
- * Day 4: Best Practices & Best Practices in C++17
+ * Day 2: [Understanding Object Lifetime](#understanding-object-lifetime)
+ * Day 3: [Inheritance and Polymorphism](#inheritance-and-polymorphism)
+ * Day 4: [Best Practices](#best-practices) & Best Practices in C++17
 
 
 ## Honing skills and increasing code quality - For the organization that is already using C++11 and is intersted in improving their overall code quality while increasing performance
 
 2 day class:
 
- * Day 1: Best Practices
+ * Day 1: [Best Practices](#best-practices)
  * Day 2: Best Practices in C++17 & Best Practices for the Library Author
 
 3 day class:
 
- * Day 1: Understanding Object Lifetime
- * Day 2: Demystifying C++11 and Beyond & Best Practices
+ * Day 1: [Understanding Object Lifetime](#understanding-object-lifetime)
+ * Day 2: Demystifying C++11 and Beyond & [Best Practices](#best-practices)
  * Day 3: Best Practices in C++17 & Best Practices for the Library Author
 
 4 day class:
 
- * Day 1: Understanding Object Lifetime
- * Day 2: Zero Cost C++
- * Day 3: Demystifying C++11 and Beyond & Best Practices
+ * Day 1: [Understanding Object Lifetime](#understanding-object-lifetime)
+ * Day 2: [Zero Cost C++](#zero-cost-c)
+ * Day 3: Demystifying C++11 and Beyond & [Best Practices](#best-practices)
  * Day 4: Best Practices in C++17 & Best Practices for the Library Author
 
 ------------------------------------------------------------------------------------------------------------------
@@ -240,7 +240,7 @@ We will cover
  * Where to go for help
  
 
-## Demystifying Modern C++
+## Demystifying C++11 And Beyond
 
 C++11, 14 and 17 have added new constucts to the language that may make the experienced C++ programmer question how much overhead is added when utilizing these features and how trustworthy they are.
 
@@ -254,7 +254,7 @@ We will explain:
  * How to implement your own algorithms
  * The difference between C-style arrays and C++11's `std::array`
 
-## Inheritance and Polymorphism in C++
+## Inheritance and Polymorphism
 
 Gain new control of your code through a clear understanding of inheritance and polymorphism in C++. You will learn the basics, the gotchas, the implementation and optimization of polymorphism and inheritance.
 
