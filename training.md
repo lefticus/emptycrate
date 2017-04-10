@@ -58,21 +58,21 @@ Below are a few suggested curriculae for various types of organizations.
 
 2 day class:
 
- * Day 1: Demystifying C++11 and Beyond & Moving to C++ 11 and Beyond
- * Day 2: [Best Practices](#best-practices) & Best Practices in C++17
+ * Day 1: [Demystifying C++11 and Beyond](#demystifying-c11-and-beyond) & [Moving to C++ 11 and Beyond](#moving-to-c11-and-beyond)
+ * Day 2: [Best Practices](#best-practices) & [Best Practices for C++17](#best-practices-for-c17)
 
 3 day class:
 
- * Day 1: Demystifying C++11 and Beyond & Moving to C++ 11 and Beyond
+ * Day 1: [Demystifying C++11 and Beyond](#demystifying-c11-and-beyond) & [Moving to C++ 11 and Beyond](#moving-to-c11-and-beyond)
  * Day 2: [Understanding Object Lifetime](#understanding-object-lifetime)
- * Day 3: [Best Practices](#best-practices) & Best Practices in C++17
+ * Day 3: [Best Practices](#best-practices) & [Best Practices for C++17](#best-practices-for-c17)
 
 4 day class:
 
- * Day 1: Demystifying C++11 and Beyond & Moving to C++ 11 and Beyond
+ * Day 1: [Demystifying C++11 and Beyond](#demystifying-c11-and-beyond) & [Moving to C++ 11 and Beyond](#moving-to-c11-and-beyond)
  * Day 2: [Understanding Object Lifetime](#understanding-object-lifetime)
  * Day 3: [Inheritance and Polymorphism](#inheritance-and-polymorphism)
- * Day 4: [Best Practices](#best-practices) & Best Practices in C++17
+ * Day 4: [Best Practices](#best-practices) & [Best Practices for C++17](#best-practices-for-c17)
 
 
 ## Honing skills and increasing code quality - For the organization that is already using C++11 and is intersted in improving their overall code quality while increasing performance
@@ -80,20 +80,20 @@ Below are a few suggested curriculae for various types of organizations.
 2 day class:
 
  * Day 1: [Best Practices](#best-practices)
- * Day 2: Best Practices in C++17 & Best Practices for the Library Author
+ * Day 2: [Best Practices for C++17](#best-practices-for-c17) & [Best Practices for the Library Author](#best-practices-for-the-library-author)
 
 3 day class:
 
  * Day 1: [Understanding Object Lifetime](#understanding-object-lifetime)
- * Day 2: Demystifying C++11 and Beyond & [Best Practices](#best-practices)
- * Day 3: Best Practices in C++17 & Best Practices for the Library Author
+ * Day 2: [Demystifying C++11 and Beyond](#demystifying-c11-and-beyond) & [Best Practices](#best-practices)
+ * Day 3: [Best Practices for C++17](#best-practices-for-c17) & [Best Practices for the Library Author](#best-practices-for-the-library-author)
 
 4 day class:
 
  * Day 1: [Understanding Object Lifetime](#understanding-object-lifetime)
  * Day 2: [Zero Cost C++](#zero-cost-c)
- * Day 3: Demystifying C++11 and Beyond & [Best Practices](#best-practices)
- * Day 4: Best Practices in C++17 & Best Practices for the Library Author
+ * Day 3: [Demystifying C++11 and Beyond](#demystifying-c11-and-beyond) & [Best Practices](#best-practices)
+ * Day 4: [Best Practices for C++17](#best-practices-for-c17) & [Best Practices for the Library Author](#best-practices-for-the-library-author)
 
 ------------------------------------------------------------------------------------------------------------------
 
