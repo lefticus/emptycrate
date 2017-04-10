@@ -23,7 +23,7 @@ His training focuses on teaching how to write code that:
 ------------------------------------------------------------------------------------------------------------------
 
 
-# Suggested Curriculae
+# Suggested Curricula
 
 Offering a variety of classes, Jason is able to tune a curriculum to the specific needs of your organization. 
 
