@@ -1,3 +1,6 @@
+------------------------------------------------------------------------------------------------------------------
+
+
 # Jason Turner's C++ Class Offerings
 
 Jason is a C++ programmer, speaker, and trainer with over 15 years of professional experience. He has won awards for his conference sessions, published 5-star reviewed video training series with O'Reilly Media, and is a Microsoft MVP for his contribution to the C++ community.
@@ -14,8 +17,10 @@ His training focuses on teaching how to write code that:
  * Takes less time to develop
  * Costs less to develop
  * Is more maintainable
- * Has good performance
+ * Performs well
 
+
+------------------------------------------------------------------------------------------------------------------
 
 
 # Suggested Curriculae
@@ -32,18 +37,18 @@ Below are a few suggested curriculae for various types of organizations.
 
 2 day class:
 
- * Day 1: Why C++? & Moving to C++
+ * Day 1: [Why C++?](#why-c) & Moving to C++
  * Day 2: Best Practices
 
 3 day class:
 
- * Day 1: Why C++? & Moving to C++
+ * Day 1: [Why C++?](#why-c) & Moving to C++
  * Day 2: Understanding Object Lifetime
  * Day 3: Best Practices
 
 4 day class:
 
- * Day 1: Why C++? & Moving to C++
+ * Day 1: [Why C++?](#why-c) & Moving to C++
  * Day 2: Understanding Object Lifetime
  * Day 3: Inheritance and Polymorphism
  * Day 4: Best Practices
@@ -74,14 +79,14 @@ Below are a few suggested curriculae for various types of organizations.
 
 2 day class:
 
- * Day 1: Demystifying C++11 and Beyond & Best Practices
+ * Day 1: Best Practices
  * Day 2: Best Practices in C++17 & Best Practices for the Library Author
 
 3 day class:
 
  * Day 1: Understanding Object Lifetime
- * Day 1: Demystifying C++11 and Beyond & Best Practices
- * Day 2: Best Practices in C++17 & Best Practices for the Library Author
+ * Day 2: Demystifying C++11 and Beyond & Best Practices
+ * Day 3: Best Practices in C++17 & Best Practices for the Library Author
 
 4 day class:
 
@@ -90,7 +95,7 @@ Below are a few suggested curriculae for various types of organizations.
  * Day 3: Demystifying C++11 and Beyond & Best Practices
  * Day 4: Best Practices in C++17 & Best Practices for the Library Author
 
-
+------------------------------------------------------------------------------------------------------------------
 
 # Class Descriptions
 
