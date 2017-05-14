@@ -1,7 +1,7 @@
-------------------------------------------------------------------------------------------------------------------
 
 
-# Jason Turner's C++ Class Offerings
+
+# C++ Class Offerings
 
 Jason is a C++ programmer, speaker, and trainer with over 15 years of professional experience. He has won awards for his conference sessions, published 5-star reviewed video training series with O'Reilly Media, and is a Microsoft MVP for his contribution to the C++ community.
 

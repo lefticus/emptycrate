@@ -1,0 +1,44 @@
+---
+title: Jason's Training
+---
+
+
+<!DOCTYPE HTML>
+
+<head>
+  {% include head.html %}
+</head>
+
+<body>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=410010199165275";
+fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+  {% assign noads="true" %}
+  {% include common_body.html %}
+
+  <div class='container'>
+
+    <div class="row">
+      <div class="col-md-8">
+        {% capture my_include %}{% include training.md %}{% endcapture %}
+        {{ my_include | markdownify }}
+      </div>
+      <div class="col-md-4">
+        <div style="width:195px; text-align:center;" ><iframe  src="https://www.eventbrite.com/calendar-widget?eid=34084060342" frameborder="0" height="552" width="195" marginheight="0" marginwidth="0" scrolling="no" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:195px; text-align:center;" ><a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank" href="http://www.eventbrite.com/">Powered by Eventbrite</a></div></div>
+
+        <div class="fb-page" data-href="https://www.facebook.com/JasonTurnerCpp/events" data-tabs="events" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/JasonTurnerCpp/events" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/JasonTurnerCpp/events">Jason Turner - Programmer and Trainer</a></blockquote></div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
