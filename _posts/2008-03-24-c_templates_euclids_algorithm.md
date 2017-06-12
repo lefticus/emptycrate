@@ -17,28 +17,32 @@ tags:
 
 A while back I was going though the first chapters of Knuth's The Art of Computer Programming and came across Euclid's algorithm for finding the greatest common denominator. I decided to implement the algorithm as a C++ template. Here's the complete example.
 
-    #include <iostream>
 
-    using namespace std;
 
-    template 
-    struct Euclids
-    {
-      enum { value = Euclids::value };
-    };
+```cpp
+#include <iostream>
 
-    template 
-    struct Euclids
-    {
-      enum { value = N };
-    };
+template <int M, int N>
+struct Euclids
+{
+  enum { value = Euclids<N, M%N>::value };
+};
 
-    int main(int, char *[])
-    {
-      cout << "GCD: 5,4: " << Euclids<5,4>::value << endl;
-      cout << "GCD: 10, 5: " << Euclids<10, 5>::value << endl;
-      cout << "GCD: 18, 8: " << Euclids<18, 8>::value << endl;
-      cout << "GCD: 894744, 2312: " << Euclids<894744, 2312>::value << endl;
-      cout << "GCD: 100, 10000: " << Euclids<100, 10000>::value << endl;
-      cout << "GCD: 40, 50: " << Euclids<40,50>::value << endl;
-    }
+template <int N>
+struct Euclids<N, 0>
+{
+  enum { value = N };
+};
+
+int main(int, char *[])
+{
+  std::cout << "GCD: 5,4: " << Euclids<5,4>::value << '\n';
+  std::cout << "GCD: 10, 5: " << Euclids<10, 5>::value << '\n';
+  std::cout << "GCD: 18, 8: " << Euclids<18, 8>::value << '\n';
+  std::cout << "GCD: 894744, 2312: " << Euclids<894744, 2312>::value << '\n';
+  std::cout << "GCD: 100, 10000: " << Euclids<100, 10000>::value << '\n';
+  std::cout << "GCD: 40, 50: " << Euclids<40,50>::value << '\n';
+}
+```
+
+
