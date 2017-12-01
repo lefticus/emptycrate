@@ -8,7 +8,7 @@ Jason is a C++ programmer, speaker, and trainer with over 15 years of profession
 Jason co-hosts [CppCast](http://cppcast.com), the podcast for C++ developers, and hosts [C++ Weekly](https://www.youtube.com/c/JasonTurner-lefticus), a YouTube channel for C++ developers.
 
 
-## The Advantages to Jason's Training
+## The Advantages of Jason's Training
 
 Jason's style of highly interactive teaching in a small group environment ensures that each attendee has the opportunity to participate and ask questions.
 
