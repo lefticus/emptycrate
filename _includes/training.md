@@ -52,27 +52,26 @@ Below are a few suggested curriculae for various types of organizations.
  * Day 2: [Understanding Object Lifetime](#understanding-object-lifetime)
  * Day 3: [Inheritance and Polymorphism](#inheritance-and-polymorphism)
  * Day 4: [Best Practices](#best-practices)
-  
- 
+
 ## Updating to C++11 and beyond - For the organization that is already using C++ but is interested in updating to the latest standards and cleaning up their code in the process
 
 2 day class:
 
- * Day 1: [Demystifying C++11 and Beyond](#demystifying-c11-and-beyond) & [Moving to C++ 11 and Beyond](#moving-to-c11-and-beyond)
- * Day 2: [Best Practices](#best-practices) & [Best Practices for C++17](#best-practices-for-c17)
+ * Day 1: [Demystifying C++11 and Beyond](#demystifying-c11-and-beyond)
+ * Day 2: [Best Practices](#best-practices)
 
 3 day class:
 
- * Day 1: [Demystifying C++11 and Beyond](#demystifying-c11-and-beyond) & [Moving to C++ 11 and Beyond](#moving-to-c11-and-beyond)
+ * Day 1: [Demystifying C++11 and Beyond](#demystifying-c11-and-beyond)
  * Day 2: [Understanding Object Lifetime](#understanding-object-lifetime)
- * Day 3: [Best Practices](#best-practices) & [Best Practices for C++17](#best-practices-for-c17)
+ * Day 3: [Best Practices](#best-practices)
 
 4 day class:
 
- * Day 1: [Demystifying C++11 and Beyond](#demystifying-c11-and-beyond) & [Moving to C++ 11 and Beyond](#moving-to-c11-and-beyond)
+ * Day 1: [Demystifying C++11 and Beyond](#demystifying-c11-and-beyond)
  * Day 2: [Understanding Object Lifetime](#understanding-object-lifetime)
- * Day 3: [Inheritance and Polymorphism](#inheritance-and-polymorphism)
- * Day 4: [Best Practices](#best-practices) & [Best Practices for C++17](#best-practices-for-c17)
+ * Day 3: [Best Practices](#best-practices)
+ * Day 4: [Best Practices 2](#best-practices-2)
 
 
 ## Honing skills and increasing code quality - For the organization that is already using C++11 and is intersted in improving their overall code quality while increasing performance
@@ -80,20 +79,20 @@ Below are a few suggested curriculae for various types of organizations.
 2 day class:
 
  * Day 1: [Best Practices](#best-practices)
- * Day 2: [Best Practices for C++17](#best-practices-for-c17) & [Best Practices for the Library Author](#best-practices-for-the-library-author)
+ * Day 2: [Best Practices 2](#best-practices-2)
 
 3 day class:
 
  * Day 1: [Understanding Object Lifetime](#understanding-object-lifetime)
- * Day 2: [Demystifying C++11 and Beyond](#demystifying-c11-and-beyond) & [Best Practices](#best-practices)
- * Day 3: [Best Practices for C++17](#best-practices-for-c17) & [Best Practices for the Library Author](#best-practices-for-the-library-author)
+ * Day 2: [Demystifying C++11 and Beyond](#demystifying-c11-and-beyond)
+ * Day 3: [Best Practices](#best-practices)
 
 4 day class:
 
  * Day 1: [Understanding Object Lifetime](#understanding-object-lifetime)
  * Day 2: [Zero Cost C++](#zero-cost-c)
- * Day 3: [Demystifying C++11 and Beyond](#demystifying-c11-and-beyond) & [Best Practices](#best-practices)
- * Day 4: [Best Practices for C++17](#best-practices-for-c17) & [Best Practices for the Library Author](#best-practices-for-the-library-author)
+ * Day 3: [Demystifying C++11 and Beyond](#demystifying-c11-and-beyond)
+ * Day 4: [Best Practices](#best-practices)
 
 ------------------------------------------------------------------------------------------------------------------
 
@@ -104,6 +103,8 @@ Below are a few suggested curriculae for various types of organizations.
 Based on the Best Practices that Jason has been developing since 2014 with his cppbestpractices.com website and 
 "Learning C++ Best Practices" video series published with O'Reilly, this series teaches the student how to write code that is more 
 maintainable, simpler, and faster. This course is designed for users that already have a basic working knowledge of C++.
+
+Best Practices assumes the organization is using C++11+ already, or has knowledge of C++11.
 
  * *Time*: 8 hrs
  * *Prerequisites*: A basic working knowledge of C++.
@@ -147,10 +148,13 @@ We will cover:
  * High level threading constructs
  * The impact of `decltype(auto)` on coding standards
 
-## Best Practices For the Library Author
+## Best Practices 2
 
-Library developers write code that affects the entire organization. It is particularly important that their 
-code be efficient at both compile time and run time. It is equally important that the code be proven and maintainable.
+Best Practices 2 picks up with the first Best Practices class leaves off, with a deeper focus on issues that
+affect library developers and other shared code in the organization.
+
+It is particularly important that this code be efficient at both compile time and run time. It is equally 
+important that the code be proven and maintainable.
 
  * *Time*: 4 hours
  * *Prerequisites*: The "Best Practices" class or equivalent knowledge
@@ -171,41 +175,6 @@ We will cover:
  * Considering `auto` return types
 
 
-## Best Practices for C++17
-
-C++17 is coming soon and compilers already have significant support for it. There are several features of C++17 that will affect the
-way we use C++. 
-
- * *Time*: 4 hours
- * *Prerequisites*: The "Best Practices" class or equivalent knowledge
- 
-We will cover
-
- * Using `if constexpr`
- * Designing your classes for class template type deduction
- * When and how to support structured bindings
- * Using `std::scoped_lock`
-
-
-
-## Moving to C++11 and Beyond
-
-In this module we will bring the already experienced C++ developer up to date with “modern” C++ with concrete examples for how C++11 can make code better and safer.
-
- * *Time*: 2 hours
- * *Prerequisites*: An understanding of C++98
-
-We will introduce
-
- * Lambdas
- * `auto`
- * Return type deduction
- * Variadic templates
- * Standard library changes
- * Move semantics
- * `if constexpr` (C++17)
- * structured bindings (C++17)
-
 
 ## Why C++?
 
@@ -224,7 +193,7 @@ The attendee will gain and understanding of what makes C++ unique.
 
 In this course we will help the programmer experienced in other languages develop a basic working understanding of C++
 
- * *Time*: 4 hours
+ * *Time*: 8 hours
  * *Prerequisites*: A strong knowledge of programming in a non-C++ language
  
  *Goal*
@@ -244,7 +213,7 @@ We will cover
 
 C++11, 14 and 17 have added new constucts to the language that may make the experienced C++ programmer question how much overhead is added when utilizing these features and how trustworthy they are.
 
- * *Time*: 4 Hours
+ * *Time*: 8 Hours
  * *Prerequisites*: An understanding of C++98
  
 We will explain:
