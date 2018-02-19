@@ -74,7 +74,7 @@ Below are a few suggested curriculae for various types of organizations.
  * Day 4: [Best Practices 2](#best-practices-2)
 
 
-## Honing skills and increasing code quality - For the organization that is already using C++11 and is intersted in improving their overall code quality while increasing performance
+## Honing skills and increasing code quality - For the organization that is already using C++11 and is interested in improving their overall code quality while increasing performance
 
 2 day class:
 
@@ -156,7 +156,7 @@ affect library developers and other shared code in the organization.
 It is particularly important that this code be efficient at both compile time and run time. It is equally 
 important that the code be proven and maintainable.
 
- * *Time*: 4 hours
+ * *Time*: 8 hours
  * *Prerequisites*: The "Best Practices" class or equivalent knowledge
 
 *Goal*
