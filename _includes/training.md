@@ -267,7 +267,7 @@ We will cover:
 
 C++ has an over arching design goal of providing abstractions that have zero or negative overhead compared to hand-rolled abstractions. In this class we will examine the zero cost abstractions that C++ provides and how to leverage them for high level and high performance code.
 
- * *Time*: 8 Hours
+ * *Time*: 4 Hours
  * *Prerequisites*: An intermediate knowledge of C++
 
 *Goal*
@@ -285,4 +285,47 @@ We will cover:
  * If-init
  * Templates (variadic, recursive)
  * Standard algorithms
+
+
+## Applied `constexpr`
+
+By now we all know now that `constexpr` can be used to generate virtually anything at compile time. But what does this mean for our normal day to day C++ work? How, why, and most importantly where do we use `constexpr` to get the most out of it in our quest for clean efficient C++?
+
+ * *Time*: 8 Hours
+ * *Prerequisites*: A desire to do more work at compile time.
+
+*Goal*
+
+The attendee will be able to identify code that can be executed at compile time and learn how to implement such code regardless of C++ standard used. 
+
+Introduction
+
+ * History and background of C++
+ * Changes from C++11 to C++14
+ * Changes from C++14 to C++17
+ * Limitations of constexpr
+ * Exercises for demonstrating what can or cannot be constexpr
+
+Preparing for constexpr
+
+ * Developing a `constexpr` mindset
+ * General advantages to types that fully support constexpr
+ * Disadvantages to constexpr
+
+Using constexpr
+
+ * What is actually required to be executed at compile time?
+ * Compile-time data verification
+ * Creating compile-time resources
+ * Utilizing compile-time resources
+ * Compile-time sorting
+ * Compile-time testing
+
+Conclusion
+
+ * Maintaining `constexpr` support
+ * Current compiler support status
+ * The future of `constexpr` for C++20
+
+
 
