@@ -7,6 +7,17 @@ Jason is a C++ programmer, speaker, and trainer with over 15 years of profession
 
 Jason co-hosts [CppCast](http://cppcast.com), the podcast for C++ developers, and hosts [C++ Weekly](https://www.youtube.com/c/JasonTurner-lefticus), a YouTube channel for C++ developers.
 
+## Prerequisites For All Classes
+
+ * Most classes are best suited for those who are actively working in C++ today and hoping to refine their knowledge and stills
+ * The "Moving To C++" classes work well for those in a heavy C++ environment who need to get up to speed on existing code
+ * It is assumed that all students can read basic C/C++/Java/C# style syntax with `{ }` scopes; `||`, `&&` logical operators and `++`, `--`, `+=` type operations
+
+For any students hoping to get a head start on the class it is recommended to read the easy to read and well written [Tour of C++](https://amzn.to/2YhLGdg) from Bjarne Stroustrup, the original creator of C++
+
+## Important Notes
+
+ * Classes may not be recorded.
 
 ## The Advantages of Jason's Training
 
