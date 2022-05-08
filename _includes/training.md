@@ -3,9 +3,9 @@
 
 # C++ Class Offerings
 
-Jason is a C++ programmer, speaker, and trainer with over 15 years of professional experience. He has won awards for his conference sessions, published 5-star reviewed video training series with O'Reilly Media, and is a Microsoft MVP for his contribution to the C++ community.
+Jason is a C++ programmer, speaker, and trainer with almost 20 years of professional experience. He has won awards for his conference sessions, published 5-star reviewed video training series with O'Reilly Media, and is a Microsoft MVP for his contribution to the C++ community.
 
-Jason co-hosts [CppCast](http://cppcast.com), the podcast for C++ developers, and hosts [C++ Weekly](https://www.youtube.com/c/JasonTurner-lefticus), a YouTube channel for C++ developers.
+Jason hosts [C++ Weekly](https://www.youtube.com/c/JasonTurner-lefticus), a YouTube channel for C++ developers, and has published [several C++ books](https://leanpub.com/u/jason_turner) and [C++ related puzzle books](https://amzn.to/3kPabYf). 
 
 ## Prerequisites For All Classes
 
@@ -13,7 +13,7 @@ Jason co-hosts [CppCast](http://cppcast.com), the podcast for C++ developers, an
  * The "Moving To C++" classes work well for those in a heavy C++ environment who need to get up to speed on existing code
  * It is assumed that all students can read basic C/C++/Java/C# style syntax with `{ }` scopes; `||`, `&&` logical operators and `++`, `--`, `+=` type operations
 
-For any students hoping to get a head start on the class it is recommended to read the easy to read and well written [Tour of C++](https://amzn.to/2YhLGdg) from Bjarne Stroustrup, the original creator of C++
+For any students hoping to get a head start on the class it is recommended to read Jason's C++ Best Practices book (available in [print](https://amzn.to/38bOiQ0) and [ebook](https://leanpub.com/cppbestpractices/) versions.
 
 ## Important Notes
 
@@ -29,6 +29,37 @@ His training focuses on teaching how to write code that:
  * Costs less to develop
  * Is more maintainable
  * Performs well
+
+
+----------------------------------
+
+
+# Training Details
+
+Jason provides unique, highly interactive, *on-site*, customized training events for organizations.
+
+Jason charges per student per day, plus applicable travel expenses for training. To ensure the best experience for everyone, classes should be between 12 and 30 students. Because Jason uses a per-student per-day fee structure, it is no additional cost to the organization if they split students into smaller classes.
+
+Two or three days is the recommended length of a class, but one to five is possible, depending on the situation.
+
+To schedule a training event with Jason:
+
+* Contact us with the preferred time frame, length, number of students, and curriculum from those listed below.
+* We will coordinate to set a specific time and schedule.
+* Approximately two weeks before the class, Jason will contact your students with a pre-class survey.
+* Jason will use the survey results to customize the curriculum precisely to the students who will attend the class.
+* If you have many students, Jason is also willing to split the classes up for you, based on the results of the pre-class survey, to ensure that everyone has the best possible training experience.
+
+
+------------------------------
+
+# Remote Teaching Options - Code Reviews
+
+If you are interested in a remote interaction with Jason, you can contact him about remote code reviews.
+
+* Almost any budget can be accomodated.
+* Written formal code reviews, adhoc live code reviews, or any combination is available
+
 
 
 ------------------------------------------------------------------------------------------------------------------
