@@ -38,7 +38,7 @@ His training focuses on teaching how to write code that:
 
 Jason provides unique, highly interactive, *on-site*, customized training events for organizations.
 
-Jason charges per student per day, plus applicable travel expenses for training. To ensure the best experience for everyone, classes should be between 12 and 30 students. Because Jason uses a per-student per-day fee structure, it is no additional cost to the organization if they split students into smaller classes.
+Jason charges per student per day, plus applicable travel expenses for training. To ensure the best experience for everyone, classes should be between 12 and 30 students. Because Jason uses a per-student per-day fee structure, there is no additional cost to the organization if they choose to split students into smaller classes.
 
 Two or three days is the recommended length of a class, but one to five is possible, depending on the situation.
 
@@ -62,7 +62,7 @@ If you are interested in a remote interaction with Jason, you can contact him ab
 
 
 
-------------------------------------------------------------------------------------------------------------------
+------------------------------
 
 
 # Suggested Curricula
@@ -71,9 +71,24 @@ Offering a variety of classes, Jason is able to tune a curriculum to the specifi
 
 Below are a few suggested curriculae for various types of organizations.
 
+## Fully Customized Training
+
+1-4 days:
+
+ * Discuss with Jason the needs and interests of your organization
+ * (optionally: select one of the training options below as a starting point)
+ * Jason will send the students a pre-class survey and develop a customized and fully adapting curriculum based on the needs of the organization
+
 ## Exploring C++ - For the organization that wants to know why C++ should be a consideration
 
  * [Why C++?](#why-c)
+
+## Thinking About Performance - For organizations that want to focus on writing well-performing C++ Code without sacrificing correctness
+
+ * Day 1: [Understanding Object Lifetime](#understanding-object-lifetime)
+ * Day 2: [Demystifying C++11 and Beyond](#demystifying-c11-and-beyond)
+ * Day 3: [Zero Cost C++](#zero-cost-c) / [Applied `constexpr`](#applied-constexpr)
+
 
 ## Moving to C++ - For the organization that is interested in moving to C++ from C or another language
 
@@ -95,7 +110,7 @@ Below are a few suggested curriculae for various types of organizations.
  * Day 3: [Inheritance and Polymorphism](#inheritance-and-polymorphism)
  * Day 4: [Best Practices](#best-practices)
 
-## Updating to C++11 and beyond - For the organization that is already using C++ but is interested in updating to the latest standards and cleaning up their code in the process
+## Updating to C++11 and Beyond - For the organization that is already using C++ but is interested in updating to the latest standards and cleaning up their code in the process
 
 2 day class:
 
@@ -116,7 +131,7 @@ Below are a few suggested curriculae for various types of organizations.
  * Day 4: [Best Practices 2](#best-practices-2)
 
 
-## Honing skills and increasing code quality - For the organization that is already using C++11 and is interested in improving their overall code quality while increasing performance
+## Honing Skills and Increasing Code Quality - For the organization that is already using C++11 and is interested in improving their overall code quality while increasing performance
 
 2 day class:
 
