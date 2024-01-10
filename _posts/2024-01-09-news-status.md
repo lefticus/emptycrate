@@ -1,6 +1,7 @@
 ---
 layout: blog_post
 title: "Website Status - News - Updates - Following Jason"
+excerpt_separator: <!--more-->
 tags:
 - C++ Weekly
 ---
@@ -36,5 +37,8 @@ If you're interested in supporting this channel or following me on Patreon
 If you want a T-Shirt, check out my C++ Weekly t-shirt shop!
 
 * [Spring Shirt C++ T-Shirts](https://my-store-d16a2f.creator-spring.com/)
+
+<!--more-->
+
 
 
