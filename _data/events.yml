@@ -1,0 +1,60 @@
+# Training events (upcoming and past)
+# Add entries here and they will automatically appear on /go.html
+# JavaScript sorts by date and splits into upcoming vs. previous sections.
+#
+# Required fields: title, date_start, location, url
+# Optional fields: date_end, time, format, conference, description, image, card_type
+
+- title: "Performance and Safety in C++ Crash Course"
+  date_start: "2026-04-09"
+  time: "12:00–20:00 UTC"
+  format: "Online (1-day workshop)"
+  conference: "C++ Online 2026"
+  location: "Online"
+  description: "A fast-paced overview of writing code that performs well and is safe by default, plus setting up safety rails to enforce your guidelines."
+  url: "https://cpponline.uk/workshop/performance-and-safety-in-cpp-crash-course/"
+  image: "/images/cards/cpponline_2026.png"
+
+- title: "C++ Best Practices"
+  date_start: "2026-05-05"
+  date_end: "2026-05-06"
+  time: "9:00 AM–5:00 PM (UTC-5)"
+  format: "In-person (2-day workshop)"
+  conference: "NDC Toronto 2026"
+  location: "The Westin Harbour Castle, Toronto"
+  description: "Writing clean, safe, maintainable C++ that performs well by default — and using tools to enhance code safety."
+  url: "https://ndctoronto.com/workshops/c-best-practices/fce45061e333"
+  card_type: og
+
+- title: "C++ Best Practices"
+  date_start: "2026-09-12"
+  date_end: "2026-09-13"
+  time: "9:00 AM–5:00 PM MDT"
+  format: "In-person (2-day course)"
+  conference: "CppCon 2026"
+  location: "Gaylord Rockies, Aurora, CO"
+  description: "Enhance your C++ code quality — covering smart pointers, runtime performance, tooling, compile-time performance, cross-platform development, and object lifecycle."
+  url: "https://cppcon.org/class-2026-best-practices/"
+  card_type: og
+
+- title: "C++ Best Practices"
+  date_start: "2025-06-26"
+  date_end: "2025-06-27"
+  time: "10:00–17:00"
+  format: "In-person (2-day workshop)"
+  conference: "C++ on Sea 2025"
+  location: "Folkestone, UK"
+  description: "Interactive class reviewing code quality — what constitutes good, high-quality, maintainable, testable, and performant C++."
+  url: "https://cpponsea.uk/2025/session/cpp-best-practices"
+  card_type: og
+
+- title: "C++ Best Practices"
+  date_start: "2025-09-13"
+  date_end: "2025-09-14"
+  time: "9:00 AM–5:00 PM MDT"
+  format: "In-person (2-day course)"
+  conference: "CppCon 2025"
+  location: "Gaylord Rockies, Aurora, CO"
+  description: "Smart pointers, code modernization, runtime performance, tooling, compile-time efficiency, cross-platform development, and object lifecycle."
+  url: "https://cppcon.org/class-2025-best-practices/"
+  card_type: og

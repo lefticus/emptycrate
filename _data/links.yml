@@ -1,0 +1,77 @@
+# card_type options per link:
+#   screenshot - always use screenshot.11ty.dev (good for most sites)
+#   og         - prefer cached OG image from images/cards/ (good for Amazon, etc.)
+#   (omit)     - default: use cached OG image if available, else screenshot
+
+- section: Upcoming Training Events
+  icon: fas fa-chalkboard-teacher
+  from_events: true
+
+- section: Books
+  icon: fas fa-book
+  links:
+    - url: https://leanpub.com/cppbestpractices/
+      title: "C++ Best Practices (Ebook)"
+      description: "The essential guide to writing clean, maintainable, and efficient C++."
+      card_type: screenshot
+    - url: https://amzn.to/38bOiQ0
+      title: "C++ Best Practices (Print)"
+      description: "Print edition available on Amazon."
+      card_type: og
+    - url: https://amzn.to/3kPabYf
+      title: "C++ Puzzle Books"
+      description: "Test and sharpen your C++ knowledge with these puzzle books."
+      card_type: og
+    - url: https://leanpub.com/u/jason_turner
+      title: "All Books (Leanpub)"
+      description: "Browse all of my ebooks on Leanpub."
+      card_type: screenshot
+
+- section: "Watch & Learn"
+  icon: fab fa-youtube
+  links:
+    - url: https://youtube.com/@cppweekly
+      title: "C++ Weekly"
+      description: "Weekly videos on C++ tips, tricks, and best practices since 2016."
+      card_type: screenshot
+
+- section: Shop
+  icon: fas fa-shopping-bag
+  links:
+    - url: https://jason-turner-shop.fourthwall.com/
+      title: "C++ T-Shirts & Merch"
+      description: "Show your love for C++ with awesome t-shirts and more."
+      card_type: screenshot
+
+- section: Connect
+  icon: fas fa-users
+  no_images: true
+  links:
+    - url: https://twitter.com/lefticus
+      title: "Twitter / X"
+      description: "@lefticus"
+      card_icon: fab fa-twitter
+    - url: https://www.linkedin.com/in/lefticus/
+      title: "LinkedIn"
+      description: "Professional profile and networking."
+      card_icon: fab fa-linkedin
+    - url: https://mas.to/@lefticus
+      title: "Mastodon"
+      description: "lefticus@mas.to"
+      card_icon: fab fa-mastodon
+    - url: https://bsky.app/profile/lefticus.bsky.social
+      title: "Bluesky"
+      description: "@lefticus.bsky.social"
+      card_icon: fab fa-bluesky
+    - url: https://github.com/lefticus/
+      title: "GitHub"
+      description: "Open source projects and contributions."
+      card_icon: fab fa-github
+    - url: https://www.facebook.com/JasonTurnerCpp/
+      title: "Facebook"
+      description: "JasonTurnerCpp"
+      card_icon: fab fa-facebook
+    - url: https://www.patreon.com/lefticus
+      title: "Patreon"
+      description: "Support C++ Weekly and get exclusive content."
+      card_icon: fab fa-patreon

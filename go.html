@@ -1,0 +1,224 @@
+---
+title: Links & Resources
+---
+
+<!DOCTYPE HTML>
+
+<head>
+  {% include head.html %}
+  <style>
+    .link-card {
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .link-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    }
+    .link-card .card-img-top {
+      height: 180px;
+      object-fit: contain;
+      background-color: #f8f9fa;
+      padding: 0.5rem;
+    }
+    .section-heading {
+      border-bottom: 2px solid #31708f;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+      color: #31708f;
+    }
+    .icon-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 80px;
+      font-size: 2.5rem;
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+
+<body>
+  {% assign noads="true" %}
+  {% include common_body.html %}
+
+  <div class="container mb-5">
+
+    {% for section in site.data.links %}
+    <h2 class="section-heading {% if forloop.first %}mt-4{% endif %}"><i class="{{ section.icon }}"></i> {{ section.section }}</h2>
+
+    {% if section.from_events %}
+      {% if site.data.events and site.data.events.size > 0 %}
+      <div id="upcoming-events-row" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-3" style="display:none;"></div>
+      <div id="no-upcoming" style="display:none;">
+        <p class="text-muted mb-3">No upcoming public events scheduled.</p>
+      </div>
+      <div class="alert alert-info mb-5">
+        <i class="fas fa-info-circle"></i> Interested in customized training for your organization?
+        <a href="/contact.html">Contact me</a> to discuss your needs, or see <a href="/training.html">training details</a> for available curricula.
+      </div>
+      <h2 id="past-events-heading" class="section-heading" style="display:none;"><i class="fas fa-history"></i> Previous Training Events</h2>
+      <div id="past-events-row" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5" style="display:none;"></div>
+
+      <template id="event-cards">
+        {% for event in site.data.events %}
+        <div class="col" data-date="{{ event.date_start }}" data-date-end="{{ event.date_end | default: event.date_start }}">
+          <div class="card h-100 link-card">
+            {% assign eslug = event.url | remove: "https://" | remove: "http://" | replace: "/", "_" | replace: ".", "_" | replace: ":", "_" | replace: "?", "_" | replace: "&", "_" | replace: "=", "_" | replace: "@", "_" | replace: "-", "_" | replace: "+", "_" %}
+            {% assign event_card_img = nil %}
+            {% for static_file in site.static_files %}
+              {% if event_card_img == nil %}
+                {% assign efname = static_file.path | remove: "/images/cards/" %}
+                {% assign efname_noext = efname | split: "." | first %}
+                {% if efname_noext == eslug %}
+                  {% assign event_card_img = static_file.path %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
+            {% if event.image %}
+            <img src="{{ event.image }}" class="card-img-top" alt="{{ event.title }}" loading="lazy">
+            {% elsif event.card_type == "screenshot" %}
+            <img src="https://v1.screenshot.11ty.dev/{{ event.url | url_encode }}/opengraph/" class="card-img-top" alt="{{ event.title }}" loading="lazy">
+            {% elsif event_card_img %}
+            <img src="{{ event_card_img }}" class="card-img-top" alt="{{ event.title }}" loading="lazy">
+            {% else %}
+            <img src="https://v1.screenshot.11ty.dev/{{ event.url | url_encode }}/opengraph/" class="card-img-top" alt="{{ event.title }}" loading="lazy">
+            {% endif %}
+            <div class="card-body">
+              <h5 class="card-title">{{ event.title }}</h5>
+              {% if event.conference %}<p class="card-text text-muted mb-1"><i class="fas fa-landmark"></i> {{ event.conference }}</p>{% endif %}
+              <p class="card-text mb-1">
+                <i class="fas fa-calendar"></i>
+                {% if event.date_end %}
+                  {{ event.date_start | date: "%b %-d" }}–{{ event.date_end | date: "%b %-d, %Y" }}
+                {% else %}
+                  {{ event.date_start | date: "%b %-d, %Y" }}
+                {% endif %}
+                {% if event.time %}<br><i class="fas fa-clock"></i> {{ event.time }}{% endif %}
+              </p>
+              <p class="card-text mb-1">
+                <i class="fas fa-map-marker-alt"></i> {{ event.location }}
+                {% if event.format %}<br><i class="fas fa-chalkboard"></i> {{ event.format }}{% endif %}
+              </p>
+              {% if event.description %}<p class="card-text"><small>{{ event.description }}</small></p>{% endif %}
+              <a href="{{ event.url }}" class="stretched-link" target="_blank" rel="noopener"></a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </template>
+
+      <script>
+        (function() {
+          var tmpl = document.getElementById('event-cards');
+          if (!tmpl) return;
+          var cards = Array.from(tmpl.content.querySelectorAll('.col[data-date]'));
+          var today = new Date().toISOString().slice(0, 10);
+          var upcoming = [];
+          var past = [];
+          cards.forEach(function(col) {
+            var endDate = col.getAttribute('data-date-end') || col.getAttribute('data-date');
+            if (endDate < today) {
+              past.push(col);
+            } else {
+              upcoming.push(col);
+            }
+          });
+          // Sort upcoming earliest-first, past most-recent-first
+          upcoming.sort(function(a, b) { return a.getAttribute('data-date').localeCompare(b.getAttribute('data-date')); });
+          past.sort(function(a, b) { return b.getAttribute('data-date').localeCompare(a.getAttribute('data-date')); });
+
+          var upRow = document.getElementById('upcoming-events-row');
+          var pastRow = document.getElementById('past-events-row');
+          var pastHeading = document.getElementById('past-events-heading');
+          var noUpcoming = document.getElementById('no-upcoming');
+
+          if (upcoming.length > 0) {
+            upcoming.forEach(function(col) { upRow.appendChild(col); });
+            upRow.style.display = '';
+          } else {
+            noUpcoming.style.display = '';
+          }
+          if (past.length > 0) {
+            past.forEach(function(col) { pastRow.appendChild(col); });
+            pastHeading.style.display = '';
+            pastRow.style.display = '';
+          }
+        })();
+      </script>
+      {% else %}
+      <p class="text-muted mb-3">No upcoming public events scheduled.</p>
+      <div class="alert alert-info mb-5">
+        <i class="fas fa-info-circle"></i> Interested in customized training for your organization?
+        <a href="/contact.html">Contact me</a> to discuss your needs, or see <a href="/training.html">training details</a> for available curricula.
+      </div>
+      {% endif %}
+
+    {% elsif section.no_images %}
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+        {% for link in section.links %}
+        <div class="col">
+          <div class="card h-100 link-card">
+            <div class="icon-card-header">
+              <i class="{{ link.card_icon }}"></i>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{ link.title }}</h5>
+              <p class="card-text">{{ link.description }}</p>
+              <a href="{{ link.url }}" class="stretched-link" target="_blank" rel="noopener"></a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+    {% else %}
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+        {% for link in section.links %}
+        <div class="col">
+          <div class="card h-100 link-card">
+
+            {% comment %}
+              Look for a cached card image by URL slug.
+              The slug is generated the same way as in fetch_cards.sh:
+              strip protocol, replace each non-alphanumeric char with _.
+              We match against static files in images/cards/.
+            {% endcomment %}
+            {% assign slug = link.url | remove: "https://" | remove: "http://" | replace: "/", "_" | replace: ".", "_" | replace: ":", "_" | replace: "?", "_" | replace: "&", "_" | replace: "=", "_" | replace: "@", "_" | replace: "-", "_" | replace: "+", "_" %}
+            {% assign card_img = nil %}
+            {% for static_file in site.static_files %}
+              {% if card_img == nil %}
+                {% assign fname = static_file.path | remove: "/images/cards/" %}
+                {% assign fname_noext = fname | split: "." | first %}
+                {% if fname_noext == slug %}
+                  {% assign card_img = static_file.path %}
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
+            {% if link.image %}
+              <img src="{{ link.image }}" class="card-img-top" alt="{{ link.title }}" loading="lazy">
+            {% elsif link.card_type == "screenshot" %}
+              <img src="https://v1.screenshot.11ty.dev/{{ link.url | url_encode }}/opengraph/" class="card-img-top" alt="{{ link.title }}" loading="lazy">
+            {% elsif card_img %}
+              <img src="{{ card_img }}" class="card-img-top" alt="{{ link.title }}" loading="lazy">
+            {% else %}
+              <img src="https://v1.screenshot.11ty.dev/{{ link.url | url_encode }}/opengraph/" class="card-img-top" alt="{{ link.title }}" loading="lazy">
+            {% endif %}
+
+            <div class="card-body">
+              <h5 class="card-title">{% if link.card_icon %}<i class="{{ link.card_icon }}"></i> {% endif %}{{ link.title }}</h5>
+              <p class="card-text">{{ link.description }}</p>
+              <a href="{{ link.url }}" class="stretched-link" target="_blank" rel="noopener"></a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% endfor %}
+
+  </div>
+
+</body>
