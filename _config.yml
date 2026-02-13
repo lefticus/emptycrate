@@ -1,20 +1,17 @@
 
 markdown: kramdown
 
-redcarpet:
-  extensions: ["smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
-
 kramdown:
   input: GFM
 
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-mentions
   - jekyll-paginate
 
-whitelist:
+allowlist:
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-sitemap
@@ -27,6 +24,6 @@ author:
 feed:
   path: node/feed.xml
 
-url: http://articles.emptycrate.com
+url: https://articles.emptycrate.com
 
 paginate: 10

@@ -66,17 +66,6 @@ a:visited.cs-blue { color:white; }
 
 </style>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-384017-8', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
 
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@lefticus">
@@ -95,7 +84,7 @@ a:visited.cs-blue { color:white; }
   <meta name="twitter:description" content="{{ site.description | xml_escape }}">
 {% endif %}
 {% if page.youtube_id %}
-  <meta name="twitter:image:src" content="http://img.youtube.com/vi/{{ page.youtube_id }}/default.jpg">
+  <meta name="twitter:image:src" content="https://img.youtube.com/vi/{{ page.youtube_id }}/default.jpg">
 {% else %}
   <meta name="twitter:image:src" content="{{ site.url }}/logo.png">
 {% endif %}
