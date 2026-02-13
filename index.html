@@ -27,31 +27,35 @@ redirect_from:
 
     <nav>
       <ul class="pagination">
-        <li>
+        <li class="page-item {% unless paginator.previous_page %}disabled{% endunless %}">
           {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_path_path }}" aria-label="Previous">
+          <a class="page-link" href="{{ paginator.previous_page_path }}" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span>
           </a>
+          {% else %}
+          <span class="page-link">&laquo;</span>
           {% endif %}
         </li>
 
 
         {% for page in (1..paginator.total_pages) %}
         {% if page == paginator.page %}
-        <li class="active"><a href="#">{{ page }}</a></li>
+        <li class="page-item active"><a class="page-link" href="#">{{ page }}</a></li>
         {% elsif page == 1 %}
-        <li class="enabled"><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
+        <li class="page-item"><a class="page-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a></li>
         {% else %}
-        <li class="enabled"><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
+        <li class="page-item"><a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
         {% endif %}
         {% endfor %}
 
 
-        <li>
+        <li class="page-item {% unless paginator.next_page %}disabled{% endunless %}">
           {% if paginator.next_page %}
-          <a href="{{ paginator.next_path_path }}" aria-label="Next">
+          <a class="page-link" href="{{ paginator.next_page_path }}" aria-label="Next">
             <span aria-hidden="true">&raquo;</span>
           </a>
+          {% else %}
+          <span class="page-link">&raquo;</span>
           {% endif %}
         </li>
       </ul>

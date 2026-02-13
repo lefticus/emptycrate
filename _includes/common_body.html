@@ -1,4 +1,4 @@
-<div class="jumbotron cs-blue">
+<div class="p-4 mb-4 rounded-3 cs-blue">
   <div class="container">
     <div class="row">
       <div class="col-md-2 vcenter"><a href="/index.html" class="cs-blue"><img src="/logo.png" width="150" alt="EmptyCrate logo"/></a></div>
@@ -24,9 +24,8 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <form  class="d-flex me-auto" role="search" action="https://www.google.com" id="cse-search-box">
+      <form class="d-flex me-auto" role="search" action="https://www.google.com" id="cse-search-box">
         <div>
           <input type="hidden" name="cx" value="partner-pub-1595128002130008:6361083647" />
           <input type="hidden" name="ie" value="UTF-8" />
@@ -44,15 +43,13 @@
         {% endfor %}
 
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
 
 
 
-<div class="page-header">
-  <div class="container">
-    <h1>{{page.title}}</h1>
-    {% if page.date %}{% assign current_post = page %}{% include tag_names.html %}{% endif %}
-  </div>
+<div class="container pb-2 mt-4 mb-4 border-bottom">
+  <h1>{{page.title}}</h1>
+  {% if page.date %}{% assign current_post = page %}{% include tag_names.html %}{% endif %}
 </div>

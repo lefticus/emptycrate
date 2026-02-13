@@ -42,13 +42,17 @@
       </div>
     </div>
 
-    <nav>
-      <ul class="pager">
-        {% if page.previous %}{% assign prevdisabled = "" %}{%else%}{% assign prevdisabled = "disabled" %}{% endif %}
-        {% if page.next %}{% assign nextdisabled = "" %}{%else%}{% assign nextdisabled = "disabled" %}{% endif %}
-        <li class="previous {{prevdisabled}}"><a href="{{ page.previous.url }}"><span aria-hidden="true">&larr;</span> {{page.previous.title}}</a></li>
-        <li class="next {{nextdisabled}}"><a href="{{ page.next.url }}">{{page.next.title}} <span aria-hidden="true">&rarr;</span></a></li>
-      </ul>
+    <nav class="d-flex justify-content-between my-4">
+      {% if page.previous %}
+        <a href="{{ page.previous.url }}">&larr; {{page.previous.title}}</a>
+      {% else %}
+        <span></span>
+      {% endif %}
+      {% if page.next %}
+        <a href="{{ page.next.url }}">{{page.next.title}} &rarr;</a>
+      {% else %}
+        <span></span>
+      {% endif %}
     </nav>
 
   </div>

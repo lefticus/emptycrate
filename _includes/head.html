@@ -58,81 +58,9 @@ a.cs-blue:hover { color: #ddd; }
     margin: -10px 0px 0px 0px;
 }
 
-/* Replacements for removed Bootstrap 3 components */
-.jumbotron {
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-    border-radius: 0.3rem;
-}
-
-.panel {
-    margin-bottom: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-.panel-default { border-color: #ddd; }
-.panel-primary { border-color: #337ab7; }
-.panel-success { border-color: #d6e9c6; }
-.panel-info { border-color: #bce8f1; }
-.panel-heading {
-    padding: 10px 15px;
-    border-bottom: 1px solid #ddd;
-    border-radius: 3px 3px 0 0;
-}
-.panel-primary > .panel-heading { background-color: #337ab7; color: #fff; border-color: #337ab7; }
-.panel-success > .panel-heading { background-color: #dff0d8; color: #3c763d; border-color: #d6e9c6; }
-.panel-info > .panel-heading { background-color: #d9edf7; color: #31708f; border-color: #bce8f1; }
-.panel-body { padding: 15px; }
-.panel-title { margin: 0; font-size: 16px; }
-
-.well { padding: 19px; background-color: #f5f5f5; border: 1px solid #e3e3e3; border-radius: 4px; }
-.well-lg { padding: 24px; }
-
-/* Breadcrumb - BS3 style (horizontal inline with separators) */
-.breadcrumb {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 8px 15px;
-    margin-bottom: 20px;
-    list-style: none;
-    background-color: #f5f5f5;
-    border-radius: 4px;
-}
-.breadcrumb > li { display: inline-block; }
-.breadcrumb > li + li::before {
-    content: "/ ";
-    padding: 0 5px;
-    color: #ccc;
-}
-.breadcrumb > .active { color: #777; }
-.breadcrumb > .active a { color: #777; }
-
-.page-header {
-    padding-bottom: 9px;
-    margin: 40px 0 20px;
-    border-bottom: 1px solid #eee;
-}
-
-/* BS5 link underline overrides for site chrome */
-.jumbotron a, .navbar a { text-decoration: none; }
-.panel-body a { text-decoration: none; }
-.panel-body a:hover { text-decoration: underline; }
-
 /* Navbar toggler icon visible on dark backgrounds */
 .navbar-toggler { border-color: rgba(255,255,255,0.5); }
 .navbar-toggler-icon { filter: invert(1); }
-
-.pager {
-    padding-left: 0;
-    margin: 20px 0;
-    list-style: none;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-}
-.pager li { display: inline; }
-.pager li.disabled a { color: #777; cursor: not-allowed; pointer-events: none; }
 
 </style>
 
