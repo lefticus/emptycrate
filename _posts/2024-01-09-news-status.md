@@ -36,7 +36,7 @@ If you're interested in supporting this channel or following me on Patreon
 
 If you want a T-Shirt, check out my C++ Weekly t-shirt shop!
 
-* [Spring Shirt C++ T-Shirts](https://my-store-d16a2f.creator-spring.com/)
+* [C++ T-Shirts](https://jason-turner-shop.fourthwall.com/)
 
 <!--more-->
 
