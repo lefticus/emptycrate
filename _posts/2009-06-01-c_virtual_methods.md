@@ -42,23 +42,23 @@ int main() {
   Derived *derivedptr(&d);    
   
   // Calling by the object itself, the expected version is called   
-  std::cout << d.getInt() << std::endl; // 2   
-  std::cout << d.getString() << std::endl;  // "Derived"    
+  std::cout << d.getInt() << '\n'; // 2   
+  std::cout << d.getString() << '\n';  // "Derived"    
   
   // Calling by a reference or pointer to the base class,   
   // non-virtual methods call the base class version   
   // virtual methods call the derived version   
-  std::cout << baseref.getInt() << std::endl; // 1   
-  std::cout << baseref.getString() << std::endl;  // "Derived"    
-  std::cout << baseptr->getInt() << std::endl;  // 1    
-  std::cout << baseptr->getString() << std::endl;  // "Derived"    
+  std::cout << baseref.getInt() << '\n'; // 1   
+  std::cout << baseref.getString() << '\n';  // "Derived"    
+  std::cout << baseptr->getInt() << '\n';  // 1    
+  std::cout << baseptr->getString() << '\n';  // "Derived"    
   
   // Calling by a reference or pointer to the derived class   
   // The derived versions are always called   
-  std::cout << derivedref.getInt() << std::endl;  // 2   
-  std::cout << derivedref.getString() << std::endl;  // "Derived"    
-  std::cout << derivedptr->getInt() << std::endl; // 2    
-  std::cout << derivedptr->getString() << std::endl;  // "Derived" 
+  std::cout << derivedref.getInt() << '\n';  // 2   
+  std::cout << derivedref.getString() << '\n';  // "Derived"    
+  std::cout << derivedptr->getInt() << '\n'; // 2    
+  std::cout << derivedptr->getString() << '\n';  // "Derived" 
 }
 ```
 

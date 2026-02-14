@@ -119,7 +119,7 @@ void print_container(OutItr begin, OutItr end)
     std::cout << *(begin++) << " ";
   }
 
-  std::cout << std::endl;
+  std::cout << '\n';
 }
 
 int main()

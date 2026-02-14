@@ -23,22 +23,22 @@ On occasion you will read or hear someone talking about C++ templates causing co
 
 void print(int i)
 {
-  std::cout << i << std::endl;
+  std::cout << i << '\n';
 }
 
 void print(const std::string &s)
 {
-  std::cout << s << std::endl;
+  std::cout << s << '\n';
 }
 
 void print(double d)
 {
-  std::cout << d << std::endl;
+  std::cout << d << '\n';
 }
 
 void print(bool b)
 {
-  std::cout << b << std::endl;
+  std::cout << b << '\n';
 }
 
 int main()
@@ -60,7 +60,7 @@ And with the use of templates:
 template
 void print(const T &t)
 {
-  std::cout << t << std::endl;
+  std::cout << t << '\n';
 }
 
 int main()

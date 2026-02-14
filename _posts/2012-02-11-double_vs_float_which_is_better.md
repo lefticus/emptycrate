@@ -78,13 +78,13 @@ T sum(int num_times, T value)
 
 int main()
 {
-  std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
-  std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
-  std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
-  std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
-  std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
-  std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
-  std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
+  std::cout << " summed value: " << sum(2000000000, 3.3) << '\n';
+  std::cout << " summed value: " << sum(2000000000, 3.3) << '\n';
+  std::cout << " summed value: " << sum(2000000000, 3.3) << '\n';
+  std::cout << " summed value: " << sum(2000000000, 3.3) << '\n';
+  std::cout << " summed value: " << sum(2000000000, 3.3) << '\n';
+  std::cout << " summed value: " << sum(2000000000, 3.3) << '\n';
+  std::cout << " summed value: " << sum(2000000000, 3.3) << '\n';
 }
 ```
 

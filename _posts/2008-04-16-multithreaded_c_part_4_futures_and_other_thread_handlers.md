@@ -33,7 +33,7 @@ future<int> Fib3 = boost::bind(&calculatefib, 3);
 Three threads were created in the above example and each began calculating its respective Fibonacci value. If the user were to try and access a future value the application would either return the value immediately if it were already available or block until it became available.
 
 ```cpp
-std::cout << Fib1 << std::endl; // Return immediately if the value is ready or wait for it to become ready
+std::cout << Fib1 << '\n'; // Return immediately if the value is ready or wait for it to become ready
 ```
 
 Worker  

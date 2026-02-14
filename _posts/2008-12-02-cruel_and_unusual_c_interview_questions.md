@@ -47,7 +47,7 @@ I did have one guy interview who put "C++ Guru" on his resume. I went digging fo
 
 **Advantages**
 
-Because of ADL code like: `std::cout << "hello world" << std::endl` can compile because the compiler can find `operator<<(ostream &, const char*)` in the namespace std automatically.
+Because of ADL code like: `std::cout << "hello world" << '\n'` can compile because the compiler can find `operator<<(ostream &, const char*)` in the namespace std automatically.
 
 **Disadvantages**
 

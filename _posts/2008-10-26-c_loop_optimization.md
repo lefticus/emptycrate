@@ -42,7 +42,7 @@ int main()
     {
       sum += *itr;
     }
-    std::cout << sum << std::endl;
+    std::cout << sum << '\n';
   }
 }
 ```
@@ -83,7 +83,7 @@ int main()
     {
       sum += *itr;
     }
-    std::cout << sum << std::endl;
+    std::cout << sum << '\n';
   }
 }
 ```
@@ -123,7 +123,7 @@ int main()
     {
       sum += *itr;
     }
-    std::cout << sum << std::endl;
+    std::cout << sum << '\n';
   }
 }
 ```
@@ -185,7 +185,7 @@ int main()
   for (int i = 0; i < 1000; ++i)
   {
     //Sum and output the values of each vector.
-    std::cout << std::for_each(vec.begin(), vec.end(), Sum()).m_sum << std::endl;
+    std::cout << std::for_each(vec.begin(), vec.end(), Sum()).m_sum << '\n';
   }
 }
 ```

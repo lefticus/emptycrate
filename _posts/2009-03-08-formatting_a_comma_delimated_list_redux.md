@@ -38,12 +38,12 @@ Usage:
 ```cpp
 //With an array: 
 int vals[] = {1,17,9}; 
-std::cout << join(&vals[0], &vals[sizeof(vals)/sizeof(int)], ", ") << std::endl;  
+std::cout << join(&vals[0], &vals[sizeof(vals)/sizeof(int)], ", ") << '\n';  
 //With a vector: 
 std::vector vec; 
 vec.push_back(1); 
 vec.push_back(17); 
 vec.push_back(9); 
-std::cout << join(vec.begin(), vec.end(), ",") << std::endl;
+std::cout << join(vec.begin(), vec.end(), ",") << '\n';
 ```
 

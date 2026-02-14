@@ -125,7 +125,7 @@ int main()
   //Create the generator iterator adaptor, for 65,000,000 entries
   generator_itr<increment_generator, uint32_t, 65000000> itr(increment_generator(0));
   //Use the generator iterator to sum 0..64999999
-  std::cout << std::for_each(itr, itr.end(), Sum()).m_sum << std::endl;
+  std::cout << std::for_each(itr, itr.end(), Sum()).m_sum << '\n';
 }
 ```
 

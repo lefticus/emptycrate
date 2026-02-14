@@ -24,7 +24,7 @@ int main(int, char *argv<:??))
   int j = 0;
 
   for (; i < 10 and j < 11; ++i, ++j) ??< 
-    std::cout << not (i bitand j) << std::endl;
+    std::cout << not (i bitand j) << '\n';
   %>
 ??>
 ```
@@ -78,7 +78,7 @@ int main(int, char *argv[]))
   int j = 0;
 
   for (; i < 10 && j < 11; ++i, ++j) { 
-    std::cout << ! (i & j) << std::endl;
+    std::cout << ! (i & j) << '\n';
   }
 }
 ```

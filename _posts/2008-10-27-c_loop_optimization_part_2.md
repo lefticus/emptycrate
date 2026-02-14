@@ -47,7 +47,7 @@ int main() {
   std::vector<uint64_t> vec;    
   std::generate_n(back_inserter(vec), 10000000, Increment(0));    
   for (int i = 0; i < 1000; ++i)   {     
-    std::cout << sum(vec.begin(), vec.end(), 0) << std::endl;   
+    std::cout << sum(vec.begin(), vec.end(), 0) << '\n';   
   }
 }
 ```

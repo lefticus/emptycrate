@@ -130,8 +130,8 @@ int main(int, char **){
   Thing &thing1(paper);  
   Thing &thing2(rock);  
   
-  std::cout << std::boolalpha;  std::cout << myDispatcher(thing1, thing2) << std::endl; // decide (at runtime) which version to call  
-  std::cout << myDispatcher(rock, paper) << std::endl;
+  std::cout << std::boolalpha;  std::cout << myDispatcher(thing1, thing2) << '\n'; // decide (at runtime) which version to call  
+  std::cout << myDispatcher(rock, paper) << '\n';
 };
 ```
 

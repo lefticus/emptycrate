@@ -22,7 +22,7 @@ Sometimes, in the course of C++ template based programming it might be desirable
 struct TestClass {   
   template<typename T>
   TestClass(const T &t) {       
-    std::cout << "Constructed a TestClass " << t << std::endl;     
+    std::cout << "Constructed a TestClass " << t << '\n';     
   } 
 };
 ```
@@ -46,7 +46,7 @@ The solution is simple. We can still retain the flexibility of the templated con
 struct TestClass {   
   template<typename T>     
   explicit TestClass(const T &t) {       
-    std::cout << "Constructed a TestClass " << t << std::endl;     
+    std::cout << "Constructed a TestClass " << t << '\n';     
   } 
 };
 ```

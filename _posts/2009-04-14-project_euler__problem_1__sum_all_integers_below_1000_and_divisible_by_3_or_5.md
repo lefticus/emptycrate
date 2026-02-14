@@ -32,7 +32,7 @@ struct Problem1<0> {
 };   
 
 int main() {   
-  std::cout << Problem1<999>::value << std::endl; 
+  std::cout << Problem1<999>::value << '\n'; 
 }
 ```
 

@@ -206,10 +206,10 @@ std::pair<stats,stats> calculate_stats(const std::vector<std::pair<int, int> > &
 
 void analyze(const stats &s)
 {
-  std::cout << "Time To Execute: " << s.position << std::endl;
-  std::cout << "Velocity: " << s.velocity << std::endl;
-  std::cout << "Acceleration: " << s.acceleration << std::endl;
-  std::cout << "Jerk: " << s.jerk << std::endl;
+  std::cout << "Time To Execute: " << s.position << '\n';
+  std::cout << "Velocity: " << s.velocity << '\n';
+  std::cout << "Acceleration: " << s.acceleration << '\n';
+  std::cout << "Jerk: " << s.jerk << '\n';
 
   if (s.acceleration > .001)
   {
@@ -242,7 +242,7 @@ int main(int argc, char *argv[])
        ++itr)
   {
     timings.push_back(std::make_pair(*itr, time(argv[1], *itr)));
-    std::cout << timings.back().first << ": " << timings.back().second << std::endl;
+    std::cout << timings.back().first << ": " << timings.back().second << '\n';
   }
 
   std::pair<stats, stats> s = calculate_stats(timings);

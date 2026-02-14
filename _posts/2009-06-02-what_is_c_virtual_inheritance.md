@@ -52,9 +52,9 @@ struct Derived : Base1, Base2 {
 
 int main() {   
   Derived d;   
-  //std::cout << d.m_id << std::endl; <-- Compiler error, ambiguous call   
-  std::cout << d.Base1::m_id << std::endl; //Outputs 1, calling Base1's copy of Object    
-  std::cout << d.Base2::m_id << std::endl; //Outputs 2, calling Base2's copy of Object 
+  //std::cout << d.m_id << '\n'; <-- Compiler error, ambiguous call   
+  std::cout << d.Base1::m_id << '\n'; //Outputs 1, calling Base1's copy of Object    
+  std::cout << d.Base2::m_id << '\n'; //Outputs 2, calling Base2's copy of Object 
 }
 ```
 
@@ -93,10 +93,10 @@ struct Derived : Base1, Base2 {
 
 int main() {   
   Derived d;   
-  std::cout << d.m_id << std::endl; // -1 is output   
+  std::cout << d.m_id << '\n'; // -1 is output   
   d.m_id = 4;   
-  std::cout << d.Base1::m_id << std::endl; // 4 is output   
-  std::cout << d.Base2::m_id << std::endl; // 4 is output 
+  std::cout << d.Base1::m_id << '\n'; // 4 is output   
+  std::cout << d.Base2::m_id << '\n'; // 4 is output 
 }
 ```
 
@@ -115,7 +115,7 @@ Now, with our explicit initialization of the virtual base Object, m_id is set to
 ```cpp
 int main() {   
   Derived d;   
-  std::cout << d.m_id << std::endl; // 3 is output 
+  std::cout << d.m_id << '\n'; // 3 is output 
 }
 ```
 

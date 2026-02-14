@@ -54,8 +54,8 @@ Rock rock;
 int main(int, char **)
 {
   std::cout << std::boolalpha;
-  std::cout << defeats(paper, rock) << std::endl;
-  std::cout << defeats(rock, paper) << std::endl;
+  std::cout << defeats(paper, rock) << '\n';
+  std::cout << defeats(rock, paper) << '\n';
 }
 ```
 
