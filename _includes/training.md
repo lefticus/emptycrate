@@ -3,7 +3,7 @@
 
 # C++ Class Offerings
 
-Jason is a C++ programmer, speaker, and trainer with almost 20 years of professional experience. He has won awards for his conference sessions, published 5-star reviewed video training series with O'Reilly Media, and is a Microsoft MVP for his contribution to the C++ community.
+Jason is a C++ programmer, speaker, and trainer with over 25 years of professional experience. He has won awards for his conference sessions, published 5-star reviewed video training series with O'Reilly Media, and is a Microsoft MVP for his contribution to the C++ community.
 
 Jason hosts [C++ Weekly](https://www.youtube.com/c/JasonTurner-lefticus), a YouTube channel for C++ developers, and has published [several C++ books](https://leanpub.com/u/jason_turner) and [C++ related puzzle books](https://amzn.to/3kPabYf). 
 
