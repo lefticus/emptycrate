@@ -17,7 +17,7 @@ tags:
 
 Most of the postings I make to this website are for my own personal reference. They are things that I want to make sure I don't forget, or at least have easy access to. Today is no exception. For some reason, I can never remember the following command and have to track it down every time I'm interested. 
 
-```
+```cpp
 echo "" | cpp -dD
 ```
 

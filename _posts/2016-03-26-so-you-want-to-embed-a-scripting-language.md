@@ -56,13 +56,13 @@ This release has varying levels of support for the following lanuages:
 
 The general usage of SWIG is:
 
-```
+```cpp
 swig -<sourcelanguage> -<targetlanguage> <Interface file>
 ```
 
 Specifically, in the case of generating Lua wrapper code for the Crate Game Engine, we would call:
 
-```
+```cpp
 swig -c++ -lua CrateGameEngine.i
 ```
 
@@ -77,13 +77,13 @@ User defined types include classes, structs, enums and typedefs. Herein lies one
 
 Therefore, to design with SWIG in mind, we have avoided using pointers to strings, and have limited public interfaces involving std classes to std::vector and std::string. Although std::map is supported by most languages in SWIG, it is mostly unusable for the case of:
 
-```
+```cpp
 std::map<string, string>
 ```
 
 because the normal behavior of an STL container class is to return a reference to the object  that it contains. This allows the user of the container to perform an operation such as:
 
-```
+```cpp
 std::map<string, string> mymap
 mymap["test"] = "test1";
 mymap.front().second = "test2";

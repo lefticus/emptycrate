@@ -16,31 +16,33 @@ tags:
 
 I'm going to cover a thread safety strategy I have been thinking about lately. Let's look at an example for a typical "lock the variables as you use them" approach:
 
-    class Stuff
+```cpp
+class Stuff
+{
+  public:
+    void doSomething()
     {
-      public:
-        void doSomething()
-        {
-          setString();
-          checkString();
-        }
+      setString();
+      checkString();
+    }
 
-      private:
-        string myString;
-        boost::mutex myMutex;
+  private:
+    string myString;
+    boost::mutex myMutex;
 
-        void setString()
-        {
-          boost::mutex::scoped_lock l(myMutex); // Lock before touching local vars
-          myString = "hello world";
-        }
+    void setString()
+    {
+      boost::mutex::scoped_lock l(myMutex); // Lock before touching local vars
+      myString = "hello world";
+    }
 
-        void checkString()
-        {
-          boost::mutex::scoped_lock l(myMutex); // Lock before touching local vars
-          assert(myString == "hello world");
-        }
-    };
+    void checkString()
+    {
+      boost::mutex::scoped_lock l(myMutex); // Lock before touching local vars
+      assert(myString == "hello world");
+    }
+};
+```
 
 I am proposing the following changes to the typical approach:
 
@@ -60,27 +62,29 @@ Cons:
 
 This is the result of those changes. Compared it to the above example, it's a bit more concise. I think I would like to call this "Level 1 Thread Safety." By building your classes that need to be thread safe like this you can get thread safety quickly and cheaply, and have the capability to move into more efficient methods in the future if you need to.
 
-    class Stuff
+```cpp
+class Stuff
+{
+  public:
+    void doSomething()
     {
-      public:
-        void doSomething()
-        {
-          boost::mutex::scoped_lock l(myMutex);
-          setString(myString);
-          checkString(myString);
-        }
+      boost::mutex::scoped_lock l(myMutex);
+      setString(myString);
+      checkString(myString);
+    }
 
-      private:
-        string myString;
-        boost::mutex myMutex;
+  private:
+    string myString;
+    boost::mutex myMutex;
 
-        void setString(string &s)
-        {
-          s = "hello world";
-        }
+    void setString(string &s)
+    {
+      s = "hello world";
+    }
 
-        void checkString(const string &s)
-        {
-          assert(s == "hello world");
-        }
-    };
+    void checkString(const string &s)
+    {
+      assert(s == "hello world");
+    }
+};
+```

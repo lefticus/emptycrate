@@ -41,7 +41,7 @@ project.cpp source:
 //gcc src/project.cpp -I include/  
 
 #include "myproject/project.hpp"  
-// do stuff`
+// do stuff
 ```
 
 
@@ -65,10 +65,13 @@ project.hpp source:
 // the "" version of the include uses relative path lookups.  
 // this means that we can install our project's .hpp files anywhere we like and the 
 // project.hpp file will always be able to find its include for project_base.hpp 
-// _as long as they are installed in the same folder_  #include "project_base.hpp"  
-//do stuff  #endif`
+// _as long as they are installed in the same folder_
+#include "project_base.hpp"
+//do stuff
+#endif
+```
 
-project_base.hpp source: 
+project_base.hpp source:
 
 ```cpp
 #ifndef __PROJECT_BASE_HPP__ 
@@ -81,9 +84,11 @@ project_base.hpp source:
 
 When you go to actually use your installed library you will want to use the \<\> format: testmyproject.cpp source:
 
-    #include <myproject/project.hpp>
+```cpp
+#include <myproject/project.hpp>
 
-    //Use the library
+//Use the library
+```
 
 If we define the project as shown above and install in a standard location, compiling our testmyproject.cpp file is simple: ` gcc -I/usr/local testmyproject.cpp`
 

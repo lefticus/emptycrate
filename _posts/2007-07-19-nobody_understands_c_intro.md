@@ -25,104 +25,108 @@ Also, I'm not claiming to be a C++ expert. I only have 4 years of experience wit
 
 Here is the scenario: you have a callback handler you want to implement in an OOP-ish way where members of your class get called when a certain event happens. In our first example, we only know how to use C style function pointers to implement our code, so we end up with something like the following:
 
-    class CallbackHandler
+```cpp
+class CallbackHandler
+{
+private:
+  struct CallbackFunction
+  {
+    CallbackFunction(void (*cbf)(), void *d)
+      : cb(cbf), d(data) {}
+
+    void (*cb)();
+    void *data;
+  }
+
+  vector callbacks;
+
+public:
+  void register(void (cb*)(), void *data)
+  {
+     callbacks
+       .push_back(CallbackFunction(cb, data));
+  }
+
+  void doCallbacks()
+  {
+    for (vector::const_iterator
+           itr = callbacks.begin();
+         itr != callbacks.end();
+         itr++)
     {
-    private:
-      struct CallbackFunction
-      {
-        CallbackFunction(void (*cbf)(), void *d)
-          : cb(cbf), d(data) {}
+      itr->cb(itr->data);
+    }
+  }
+};
 
-        void (*cb)();
-        void *data;
-      }
+class ClassWithCallbacks
+{
+public:
+  static void callback1(void *obj)
+  {
+    reinterpret_cast(obj)
+      ->callback1Impl();
+  }
 
-      vector callbacks;
+  static void callback2(void *obj)
+  {
+    reinterpret_cast(obj)
+      ->callback2Impl();
+  }
 
-    public:
-      void register(void (cb*)(), void *data)
-      {
-         callbacks
-           .push_back(CallbackFunction(cb, data));
-      }
-
-      void doCallbacks()
-      {
-        for (vector::const_iterator
-               itr = callbacks.begin();
-             itr != callbacks.end();
-             itr++)
-        {
-          itr->cb(itr->data);
-        }
-      }
-    };
-
-    class ClassWithCallbacks
-    {
-    public:
-      static void callback1(void *obj)
-      {
-        reinterpret_cast(obj)
-          ->callback1Impl();
-      }
-
-      static void callback2(void *obj)
-      {
-        reinterpret_cast(obj)
-          ->callback2Impl();
-      }
-
-      void registerSelf(CallbackHandler &cbh)
-      {
-        cbh.register(&ClassWithCallbacks::callback1,
-                     this);
-        cbh.register(&ClassWithCallbacks::callback2,
-                     this);
-      }
-    private:
-      void callback1Impl() { /* dosomething */ }
-      void callback2Impl() { /* dosomething */ }
-    };
+  void registerSelf(CallbackHandler &cbh)
+  {
+    cbh.register(&ClassWithCallbacks::callback1,
+                 this);
+    cbh.register(&ClassWithCallbacks::callback2,
+                 this);
+  }
+private:
+  void callback1Impl() { /* dosomething */ }
+  void callback2Impl() { /* dosomething */ }
+};
+```
 
 Now, for our second example, we have become a more advanced user. We have learned boost and have put to use the features of C++ that are "too confusing" as some may say.
 
-    class CallbackHandler
+```cpp
+class CallbackHandler
+{
+  vector< boost::function0 > callbacks;
+
+public:
+  void register(boost::function0 &f)
+  {
+     callbacks.push_back(f);
+  }
+
+  void doCallbacks()
+  {
+    BOOST_FOREACH(boost::function0 f, 
+                  callbacks)
     {
-      vector< boost::function0 > callbacks;
+      f();
+    }
+  }
+};
 
-    public:
-      void register(boost::function0 &f)
-      {
-         callbacks.push_back(f);
-      }
+class ClassWithCallbacks
+{
+public:
+  void registerSelf(CallbackHandler &cbh)
+  {
+    cbh.register(
+      boost::bind(&ClassWithCallbacks::callback1,
+                 this));
+    cbh.register(
+      boost::bind(&ClassWithCallbacks::callback2,
+                 this));
+  }
 
-      void doCallbacks()
-      {
-        BOOST_FOREACH(boost::function0 f, 
-                      callbacks)
-        {
-          f();
-        }
-      }
-    };
-
-    class ClassWithCallbacks
-    {
-    public:
-      void registerSelf(CallbackHandler &cbh)
-      {
-        cbh.register(
-          boost::bind(&ClassWithCallbacks::callback1,
-                     this));
-        cbh.register(
-          boost::bind(&ClassWithCallbacks::callback2,
-                     this));
-      }
-
-    private:
-      void callback1Impl() { /* dosomething */ }
-      void callback2Impl() { /* dosomething */ }
-    };
+private:
+  void callback1Impl() { /* dosomething */ }
+  void callback2Impl() { /* dosomething */ }
+};
+```
 
 Now, I challenge anyone to argue that the first example is cleaner or easier to understand. You may not understand the details of the second example, but surely learning them must be beneficial? I have LITERALLY seen cases where a rudimentary understanding of templates, or even the boost library would cut out AT LEAST 25% of the code written. That much of a savings must equate to more maintainable easier to read code. More to come on this topic...

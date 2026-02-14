@@ -19,23 +19,25 @@ This morning while reading Stroustrup (The C++ Programming Language) I learned t
 
 As a test case, I put together this little example. The below code is a complete program, it will compile and run and copy "input.txt" to "output.txt". It works with any file, binary or not (which is why the noskipws is needed). No, it is NOT the most efficient way of doing things, but it shows just how expressive the C++ standard library is.
 
-    #include <istream>
-    #include <iostream>
-    #include <fstream>
-    #include <iterator>
+```cpp
+#include <istream>
+#include <iostream>
+#include <fstream>
+#include <iterator>
 
-    using namespace std;
+using namespace std;
 
-    int main()
-    {
-      fstream f("input.txt", fstream::in|fstream::binary);
-      f << noskipws;
-      istream_iterator begin(f);
-      istream_iterator end;
+int main()
+{
+  fstream f("input.txt", fstream::in|fstream::binary);
+  f << noskipws;
+  istream_iterator begin(f);
+  istream_iterator end;
 
-      fstream f2("output.txt",
-        fstream::out|fstream::trunc|fstream::binary);
-      ostream_iterator begin2(f2);
+  fstream f2("output.txt",
+    fstream::out|fstream::trunc|fstream::binary);
+  ostream_iterator begin2(f2);
 
-      copy(begin, end, begin2);
-    }
+  copy(begin, end, begin2);
+}
+```

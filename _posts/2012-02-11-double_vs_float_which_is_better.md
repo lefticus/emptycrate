@@ -43,7 +43,9 @@ In all of my C++ resources, the only guidance I can find is in the [C++ Programm
 
 Where there is only one version of a standard library floating point operation, the library defaults to working with `double`. This includes the functions `atof` and `strtod`. In [C89](http://en.wikipedia.org/wiki/C89_(C_version)#C89) the only data type supported by all [math.h](http://en.wikipedia.org/wiki/C_mathematical_functions#Overview_of_functions) functions was `double`. **Performance** On modern hardware `double` outperforms `float` in every case. In the higher optimization levels `long double` even outperforms float. The test code was compiled with the command line
 
-    g++ floatdouble.cpp -std=c++0x -O3 -march=native
+```bash
+g++ floatdouble.cpp -std=c++0x -O3 -march=native
+```
 
 > Type name: f Size in bytes: 4 Summation time in s: 2.82 summed value: 6.71089e+07 // float 
 > Type name: d Size in bytes: 8 Summation time in s: 2.78585 summed value: 6.6e+09 // double 
@@ -51,38 +53,40 @@ Where there is only one version of a standard library floating point operation, 
 
 The test code was:
 
-    #include <chrono>
-    #include <vector>
-    #include <iostream>
-    #include <typeinfo>
+```cpp
+#include <chrono>
+#include <vector>
+#include <iostream>
+#include <typeinfo>
 
-    template
-    T sum(int num_times, T value)
-    {
-      T val=0;
+template
+T sum(int num_times, T value)
+{
+  T val=0;
 
-      std::chrono::high_resolution_clock::time_point t1 = std::chrono::high_resolution_clock::now();
-      for (int i = 0; i < num_times; ++i)
-      {
-        val += value;
-      }
-      std::chrono::high_resolution_clock::duration d = std::chrono::high_resolution_clock::now() - t1;
+  std::chrono::high_resolution_clock::time_point t1 = std::chrono::high_resolution_clock::now();
+  for (int i = 0; i < num_times; ++i)
+  {
+    val += value;
+  }
+  std::chrono::high_resolution_clock::duration d = std::chrono::high_resolution_clock::now() - t1;
 
-      std::cout << "Type name: " << typeid(T).name() << " Size in bytes: " << sizeof(T) << " Summation time in s: " << std::chrono::duration_cast>(d).count(); 
+  std::cout << "Type name: " << typeid(T).name() << " Size in bytes: " << sizeof(T) << " Summation time in s: " << std::chrono::duration_cast>(d).count(); 
 
-      return val;
-    }
+  return val;
+}
 
-    int main()
-    {
-      std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
-      std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
-      std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
-      std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
-      std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
-      std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
-      std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
-    }
+int main()
+{
+  std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
+  std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
+  std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
+  std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
+  std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
+  std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
+  std::cout << " summed value: " << sum(2000000000, 3.3) << std::endl;
+}
+```
 
 **Conclusion** 
 

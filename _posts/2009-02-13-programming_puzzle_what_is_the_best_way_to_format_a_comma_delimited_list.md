@@ -15,7 +15,7 @@ tags:
 
 Say you have a list, array, vector, storage format doesn't matter: 
 
-```
+```cpp
 std::vector<int> vec; 
 vec.push_back(1); 
 vec.push_back(17); 

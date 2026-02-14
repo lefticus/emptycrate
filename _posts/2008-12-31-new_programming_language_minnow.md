@@ -26,7 +26,7 @@ Of course, the system is still young and some bugs are still being worked out.
 
 (Full disclosure: The author of minnow and I are cousins) 
 
-```
+```text
 extern def log(x : double) : double  // Make the c library log and abs functions available
 extern def fabs(x : double) : double
 feature Color

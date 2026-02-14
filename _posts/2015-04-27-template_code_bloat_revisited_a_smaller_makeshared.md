@@ -174,19 +174,23 @@ int main()
 Using the `std::make_shared` version:
 
 
-    jason@jason-VirtualBox:~$ /usr/bin/time g++ smaller_make_shared.cpp -std=c++11  -O3 -DUSE_STD && ls -al a.out
-    3.95user 0.20system 0:04.16elapsed 99%CPU (0avgtext+0avgdata 255584maxresident)k
-    0inputs+2384outputs (0major+74828minor)pagefaults 0swaps
-    -rwxrwxr-x 1 jason jason 137580 Apr 25 20:48 a.out
+```text
+jason@jason-VirtualBox:~$ /usr/bin/time g++ smaller_make_shared.cpp -std=c++11  -O3 -DUSE_STD && ls -al a.out
+3.95user 0.20system 0:04.16elapsed 99%CPU (0avgtext+0avgdata 255584maxresident)k
+0inputs+2384outputs (0major+74828minor)pagefaults 0swaps
+-rwxrwxr-x 1 jason jason 137580 Apr 25 20:48 a.out
+```
 
 
 My version:
 
 
-    jason@jason-VirtualBox:~$ /usr/bin/time g++ smaller_make_shared.cpp -std=c++11  -O3  && ls -al a.out
-    0.91user 0.04system 0:00.97elapsed 99%CPU (0avgtext+0avgdata 61828maxresident)k
-    0inputs+736outputs (0major+23009minor)pagefaults 0swaps
-    -rwxrwxr-x 1 jason jason 48361 Apr 25 21:02 a.out
+```text
+jason@jason-VirtualBox:~$ /usr/bin/time g++ smaller_make_shared.cpp -std=c++11  -O3  && ls -al a.out
+0.91user 0.04system 0:00.97elapsed 99%CPU (0avgtext+0avgdata 61828maxresident)k
+0inputs+736outputs (0major+23009minor)pagefaults 0swaps
+-rwxrwxr-x 1 jason jason 48361 Apr 25 21:02 a.out
+```
 
 
 The `std::make_shared` version is ~4.2x slower to compile, uses 4.1x more RAM and produces binaries which are 2.8x bigger.

@@ -30,86 +30,88 @@ A method of preventing more than one thread from access a section of code at a t
 
 The pthread library is written in C. As such, we need a C compatible way of calling the library from inside of C++. The following example represents the common way to do this:
 
-    class threaded_class
+```cpp
+class threaded_class
+{
+public:
+    threaded_class()
+        : m_stoprequested(false), m_running(false)
     {
-    public:
-        threaded_class()
-            : m_stoprequested(false), m_running(false)
+        pthread_mutex_init(&m_mutex);
+    }
+
+    ~threaded_class()
+    {
+        pthread_mutex_destroy(&m_mutex);
+    }
+
+    // Create the thread and start work
+    // Note 1
+    void go() 
+    {
+        assert(m_running == false);
+        m_running = true;
+        pthread_create(&m_thread, 0, &threaded_class::start_thread, this);
+    }
+
+    void stop() // Note 2
+    {
+        assert(m_running == true);
+        m_running = false;
+        m_stoprequested = true;
+        pthread_join(&m_thread, 0);
+    }
+
+    int get_fibonacci_value(int which)
+    {
+        pthread_mutex_lock(&m_mutex); // Note 3 
+        int value = m_fibonacci_values.get(which); // Note 4 
+        pthread_mutex_unlock(&m_mutex);
+        return value;
+    }
+
+private:
+    volatile bool m_stoprequested; // Note 5
+    volatile bool m_running;
+    pthread_mutex_t m_mutex; // Variable declarations added 4/14/2010
+    pthread_t m_thread;
+    
+    std::vector m_fibonacci_values;
+
+    // This is the static class function that serves as a C style function pointer
+    // for the pthread_create call
+    static void start_thread(void *obj)
+    {
+        //All we do here is call the do_work() function
+        reinterpret_cast(obj)->do_work();
+    }
+
+    int fibonacci_number(int num)
+    {
+        switch(num)
         {
-            pthread_mutex_init(&m_mutex);
+            case 0:
+            case 1:
+                return 1;
+            default:
+                return fibonacci_number(num-2) + fibonacci_number(num-1); // Correct 4/6/2010 based on comments
+        };
+    }    
+
+    // Compute and save fibonacci numbers as fast as possible
+    void do_work()
+    {
+        int iteration = 0;
+        while (!m_stoprequested)
+        {
+            int value = fibonacci_number(iteration);
+            pthread_mutex_lock(&m_mutex);
+            m_fibonacci_values.push_back(value);
+            pthread_mutex_unlock(&m_mutex); // Note 6
         }
-
-        ~threaded_class()
-        {
-            pthread_mutex_destroy(&m_mutex);
-        }
-
-        // Create the thread and start work
-        // Note 1
-        void go() 
-        {
-            assert(m_running == false);
-            m_running = true;
-            pthread_create(&m_thread, 0, &threaded_class::start_thread, this);
-        }
-
-        void stop() // Note 2
-        {
-            assert(m_running == true);
-            m_running = false;
-            m_stoprequested = true;
-            pthread_join(&m_thread, 0);
-        }
-
-        int get_fibonacci_value(int which)
-        {
-            pthread_mutex_lock(&m_mutex); // Note 3 
-            int value = m_fibonacci_values.get(which); // Note 4 
-            pthread_mutex_unlock(&m_mutex);
-            return value;
-        }
-
-    private:
-        volatile bool m_stoprequested; // Note 5
-        volatile bool m_running;
-        pthread_mutex_t m_mutex; // Variable declarations added 4/14/2010
-        pthread_t m_thread;
-        
-        std::vector m_fibonacci_values;
-
-        // This is the static class function that serves as a C style function pointer
-        // for the pthread_create call
-        static void start_thread(void *obj)
-        {
-            //All we do here is call the do_work() function
-            reinterpret_cast(obj)->do_work();
-        }
-
-        int fibonacci_number(int num)
-        {
-            switch(num)
-            {
-                case 0:
-                case 1:
-                    return 1;
-                default:
-                    return fibonacci_number(num-2) + fibonacci_number(num-1); // Correct 4/6/2010 based on comments
-            };
-        }    
-
-        // Compute and save fibonacci numbers as fast as possible
-        void do_work()
-        {
-            int iteration = 0;
-            while (!m_stoprequested)
-            {
-                int value = fibonacci_number(iteration);
-                pthread_mutex_lock(&m_mutex);
-                m_fibonacci_values.push_back(value);
-                pthread_mutex_unlock(&m_mutex); // Note 6
-            }
-        }                    
-    };
+    }                    
+};
+```
 
 While this code works and is an all too common way of using threads in C++, it has several disadvantages. Note markers are made in the code and will be explained here.
 

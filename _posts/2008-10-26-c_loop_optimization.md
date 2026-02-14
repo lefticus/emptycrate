@@ -21,29 +21,31 @@ The results of the research for this article surprised me. I'll first cover the 
 
 **Typical "Unoptimized" C++ Loop**
 
-    int main()
+```cpp
+int main()
+{
+  std::vector<uint32_t> vec;
+
+  //Fill the vector with some values
+  for(int i=0; i<10000000; i++)
+  {
+    vec.push_back(i);
+  }
+
+  //Sum up the values in the vector 1000 times
+  for (int i = 0; i < 1000; i++)
+  {
+    uint64_t sum = 0;
+    for (std::vector<uint32_t>::const_iterator itr = vec.begin();
+        itr != vec.end();
+        itr++)
     {
-      std::vector<uint32_t> vec;
-
-      //Fill the vector with some values
-      for(int i=0; i<10000000; i++)
-      {
-        vec.push_back(i);
-      }
-
-      //Sum up the values in the vector 1000 times
-      for (int i = 0; i < 1000; i++)
-      {
-        uint64_t sum = 0;
-        for (std::vector<uint32_t>::const_iterator itr = vec.begin();
-            itr != vec.end();
-            itr++)
-        {
-          sum += *itr;
-        }
-        std::cout << sum << std::endl;
-      }
+      sum += *itr;
     }
+    std::cout << sum << std::endl;
+  }
+}
+```
 
 
 | Setting | Time |
@@ -58,31 +60,33 @@ The results of the research for this article surprised me. I'll first cover the 
 This version of the loop is exactly the same as the unoptimized version, except we are now caching the value of "end()" so that a lookup does not occur on each loop iteration. Not every developer realizes that `for (itr = vec.begin(); itr != vec.end(); itr++)` results in a call to `vec.end()` for each loop. Presumably the compiler cannot cache `.end()` and it may be a very expensive lookup depending on how well or poorly your container is implemented.
 
 
-    int main()
+```cpp
+int main()
+{
+  std::vector<uint32_t> vec;
+
+  for(int i=0; i<10000000; i++)
+  {
+    vec.push_back(i);
+  }
+
+  for (int i=0; i<1000; i++)
+  {
+    uint64_t sum = 0;
+
+    //Cache vec.end() to avoid redundant lookups 
+    // (we know that it will not change during this loop but the compiler does not)
+    std::vector<uint32_t>::const_iterator itr, end(vec.end()); 
+    for (itr = vec.begin();
+        itr != end;
+        itr++)
     {
-      std::vector<uint32_t> vec;
-
-      for(int i=0; i<10000000; i++)
-      {
-        vec.push_back(i);
-      }
-
-      for (int i=0; i<1000; i++)
-      {
-        uint64_t sum = 0;
-
-        //Cache vec.end() to avoid redundant lookups 
-        // (we know that it will not change during this loop but the compiler does not)
-        std::vector<uint32_t>::const_iterator itr, end(vec.end()); 
-        for (itr = vec.begin();
-            itr != end;
-            itr++)
-        {
-          sum += *itr;
-        }
-        std::cout << sum << std::endl;
-      }
+      sum += *itr;
     }
+    std::cout << sum << std::endl;
+  }
+}
+```
 
 
 | Setting | Time |
@@ -96,31 +100,33 @@ This version of the loop is exactly the same as the unoptimized version, except 
 We've now made a very simple change, we've gone from `itr++` to `++itr`. The reason why preincrement is faster than postincrement will be covered in a later article. In this particular case, it saved us almost 40% in our very simple loop!
 
 
-    int main()
+```cpp
+int main()
+{
+  std::vector<uint32_t> vec;
+
+  //Preincrement instead of post increment
+  for(int i=0; i<10000000; ++i)
+  {
+    vec.push_back(i);
+  }
+
+  for (int i=0; i<1000; ++i)
+  {
+    uint64_t sum = 0;
+    std::vector<uint32_t>::const_iterator itr, end(vec.end());
+
+    //Preincrement instead of post increment
+    for (itr = vec.begin();
+        itr != end;
+        ++itr)
     {
-      std::vector<uint32_t> vec;
-
-      //Preincrement instead of post increment
-      for(int i=0; i<10000000; ++i)
-      {
-        vec.push_back(i);
-      }
-
-      for (int i=0; i<1000; ++i)
-      {
-        uint64_t sum = 0;
-        std::vector<uint32_t>::const_iterator itr, end(vec.end());
-
-        //Preincrement instead of post increment
-        for (itr = vec.begin();
-            itr != end;
-            ++itr)
-        {
-          sum += *itr;
-        }
-        std::cout << sum << std::endl;
-      }
+      sum += *itr;
     }
+    std::cout << sum << std::endl;
+  }
+}
+```
 
 
 | Setting | Time |
@@ -137,50 +143,52 @@ We've gone the functional route and put to use `std::for_each` which does the ab
 However, in this case, we now see a net loss in effeciency. Why? Because with optimization turned off the compiler is not allowed to inline the calls to `Sum` and `Increment`.
 
 
-    struct Sum
-    {
-      uint64_t m_sum;
+```cpp
+struct Sum
+{
+  uint64_t m_sum;
 
-      Sum()
-        : m_sum(0)
-      {
-      }
+  Sum()
+    : m_sum(0)
+  {
+  }
 
-      void operator()(uint32_t i)
-      {
-        m_sum += i;
-      }
-    };
+  void operator()(uint32_t i)
+  {
+    m_sum += i;
+  }
+};
 
-    struct Increment
-    {
-      int m_value;
+struct Increment
+{
+  int m_value;
 
-      Increment(int i)
-        : m_value(i)
-      {
-      }
+  Increment(int i)
+    : m_value(i)
+  {
+  }
 
-      int operator()()
-      {
-        return m_value++;
-      }
-    };
+  int operator()()
+  {
+    return m_value++;
+  }
+};
 
-    int main()
-    {
-      std::vector<uint32_t> vec;
+int main()
+{
+  std::vector<uint32_t> vec;
 
-      //Nice and succinct, use generate_n to generate 10,000,000
-      //values with the Increment generator
-      std::generate_n(back_inserter(vec), 10000000, Increment(0));
+  //Nice and succinct, use generate_n to generate 10,000,000
+  //values with the Increment generator
+  std::generate_n(back_inserter(vec), 10000000, Increment(0));
 
-      for (int i = 0; i < 1000; ++i)
-      {
-        //Sum and output the values of each vector.
-        std::cout << std::for_each(vec.begin(), vec.end(), Sum()).m_sum << std::endl;
-      }
-    }
+  for (int i = 0; i < 1000; ++i)
+  {
+    //Sum and output the values of each vector.
+    std::cout << std::for_each(vec.begin(), vec.end(), Sum()).m_sum << std::endl;
+  }
+}
+```
 
 
 | Setting | Time |

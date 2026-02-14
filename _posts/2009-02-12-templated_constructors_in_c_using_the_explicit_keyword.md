@@ -29,7 +29,7 @@ struct TestClass {
 
 By creating a templated constructor, however, we have created an infinite number of automatic type conversions. That is, the following code does compile: 
 
-```
+```cpp
 void TakeATestClass(const TestClass &t) { }  
 
 int main() {   

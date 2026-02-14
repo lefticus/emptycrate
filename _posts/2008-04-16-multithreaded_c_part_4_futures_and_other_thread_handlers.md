@@ -24,26 +24,32 @@ In the "C++" example we showed a object that automatically managed a thread's li
 Future  
 A future is a method of letting a value calculate in the background and doing a block-wait for it when you want the value.
 
-    future<int> Fib1 = boost::bind(&calculatefib, 1);
-    future<int> Fib2 = boost::bind(&calculatefib, 2);
-    future<int> Fib3 = boost::bind(&calculatefib, 3);
+```cpp
+future<int> Fib1 = boost::bind(&calculatefib, 1);
+future<int> Fib2 = boost::bind(&calculatefib, 2);
+future<int> Fib3 = boost::bind(&calculatefib, 3);
+```
 
 Three threads were created in the above example and each began calculating its respective Fibonacci value. If the user were to try and access a future value the application would either return the value immediately if it were already available or block until it became available.
 
-    std::cout << Fib1 << std::endl; // Return immediately if the value is ready or wait for it to become ready
+```cpp
+std::cout << Fib1 << std::endl; // Return immediately if the value is ready or wait for it to become ready
+```
 
 Worker  
 A worker performs work in the background, without handling a return value and cleans itself up when it goes out of scope.
 
-    vector parallelfibcalculator()
-    {
-      vector<int> values(4);
-      worker w0 = boost::bind(&calculatefib, 0, boost::ref(values[0]));
-      worker w1 = boost::bind(&calculatefib, 1, boost::ref(values[1]));
-      worker w2 = boost::bind(&calculatefib, 2, boost::ref(values[2]));
-      worker w3 = boost::bind(&calculatefib, 3, boost::ref(values[3]));
-      return values; // when w3-w0 try to destruct they will block until work is finished
-    }
+```cpp
+vector parallelfibcalculator()
+{
+  vector<int> values(4);
+  worker w0 = boost::bind(&calculatefib, 0, boost::ref(values[0]));
+  worker w1 = boost::bind(&calculatefib, 1, boost::ref(values[1]));
+  worker w2 = boost::bind(&calculatefib, 2, boost::ref(values[2]));
+  worker w3 = boost::bind(&calculatefib, 3, boost::ref(values[3]));
+  return values; // when w3-w0 try to destruct they will block until work is finished
+}
+```
 
 Calling `parallelfibcalculator()` will spawn four threads for calculating the first four Fibonacci values then block until all four are completed.
 

@@ -37,65 +37,67 @@ Any of these three inheritance access specifiers can be modified with the `virtu
 
 Examples of how this plays out:
 
-    struct X {
-    public:
-      void A() {}
-    };
+```cpp
+struct X {
+public:
+  void A() {}
+};
 
-    struct Y {
-    public:
-      void B() {}
-    };
+struct Y {
+public:
+  void B() {}
+};
 
-    struct Z {
-    public:
-      void C() {}
-    };
+struct Z {
+public:
+  void C() {}
+};
 
-    struct Q : public X, protected Y, private Z {
-    public:
-      void Test()
-      {
-        A(); // OK
-        B(); // OK
-        C(); // OK
-      }
-    };
+struct Q : public X, protected Y, private Z {
+public:
+  void Test()
+  {
+    A(); // OK
+    B(); // OK
+    C(); // OK
+  }
+};
 
-    struct R : public Q {
-    public:
-      void Test2()
-      {
-        A(); // OK
-        B(); // OK
-        C(); // NOT OK
+struct R : public Q {
+public:
+  void Test2()
+  {
+    A(); // OK
+    B(); // OK
+    C(); // NOT OK
 
-        Q t;
-        Y *y = &t // OK
-        Z *z = &t // NOT OK
-      }
-    };
+    Q t;
+    Y *y = &t // OK
+    Z *z = &t // NOT OK
+  }
+};
 
-    int main(int argc, char **argv) {
-      Q t1;
-      t1.A(); // OK
-      t1.B(); // NOT OK
-      t1.C(); // NOT OK
+int main(int argc, char **argv) {
+  Q t1;
+  t1.A(); // OK
+  t1.B(); // NOT OK
+  t1.C(); // NOT OK
 
-      R t2;
-      t2.A(); // OK
-      t2.B(); // NOT OK
-      t2.C(); // NOT OK
+  R t2;
+  t2.A(); // OK
+  t2.B(); // NOT OK
+  t2.C(); // NOT OK
 
-      X *x = &t1; // OK
-      Y *y = &t1; // NOT OK
-      Z *z = &t1; // NOT OK
+  X *x = &t1; // OK
+  Y *y = &t1; // NOT OK
+  Z *z = &t1; // NOT OK
 
-      x = &t2; // OK
-      y = &t2; // NOT OK
-      z = &t2; // NOT OK
+  x = &t2; // OK
+  y = &t2; // NOT OK
+  z = &t2; // NOT OK
 
-    }
+}
+```
 
 *What about Virtual?* 
 

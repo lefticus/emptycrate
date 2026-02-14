@@ -76,20 +76,24 @@ User Defined Conversions
 You can now define your own automatic type conversions. They can be specified in either ChaiScript or C++.
 
 
-    // In chaiscript 
-    add_type_conversion(type("string"), type("Type_Info"), fun(s) { return type(s); });
+```chaiscript
+// In chaiscript 
+add_type_conversion(type("string"), type("Type_Info"), fun(s) { return type(s); });
 
-    // This looks simple, but it takes the string "string" and using the registered
-    // conversion above, automatically converts that into a Type_Info object, which then
-    // allows the Type_Info.name() function to be called
+// This looks simple, but it takes the string "string" and using the registered
+// conversion above, automatically converts that into a Type_Info object, which then
+// allows the Type_Info.name() function to be called
 
-    assert_equal("string".name(), "string");
+assert_equal("string".name(), "string");
+```
 
 
 
-    // C++
-    chai.add(chaiscript::type_conversion<TestBaseType, Type2>([](const TestBaseType &t_bt) { return Type2(t_bt); }));
-    // Adds a conversion from TestBaseType to Type2 using the lambda provided.
+```cpp
+// C++
+chai.add(chaiscript::type_conversion<TestBaseType, Type2>([](const TestBaseType &t_bt) { return Type2(t_bt); }));
+// Adds a conversion from TestBaseType to Type2 using the lambda provided.
+```
 
 
 New `class` syntax
@@ -98,15 +102,17 @@ New `class` syntax
 Added new `class` syntax. (The old way still works).
 
 
-    // old way
-    def MyClass::MyClass() { /* constructor */ }
-    attr MyClass::a; // add a variable
+```chaiscript
+// old way
+def MyClass::MyClass() { /* constructor */ }
+attr MyClass::a; // add a variable
 
-    // new way
-    class MyClass {
-      def MyClass() { /* constructor */ }
-      var a;
-    };
+// new way
+class MyClass {
+  def MyClass() { /* constructor */ }
+  var a;
+};
+```
 
 
 
@@ -116,8 +122,10 @@ Added new `class` syntax. (The old way still works).
 You can now add your own `method_missing` functions that are called automatically in the case that a method call attempt is made, but no method by that name exists. This has been put to use to allow dynamically adding values to ChaiScript defined types:
 
 
-    var o2 = Dynamic_Object();
-    o2.a = 15
+```chaiscript
+var o2 = Dynamic_Object();
+o2.a = 15
+```
 
 
 `future` support
@@ -126,12 +134,14 @@ You can now add your own `method_missing` functions that are called automaticall
 You can now create `std::future` objects inside of ChaiScript.
 
 
-    var f := async(someFunction);
-    var f2 := async(someFunction2);
+```chaiscript
+var f := async(someFunction);
+var f2 := async(someFunction2);
 
-    // someFunction and someFunction2 are running in parallel now
-    f.get();
-    f2.get();
+// someFunction and someFunction2 are running in parallel now
+f.get();
+f2.get();
+```
 
 
 Full Support for Move-Only Types

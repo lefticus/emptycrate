@@ -14,8 +14,12 @@ tags:
 
 The auto storage class means the compiler decides when the variable is created and destroyed. This is opposed to static which is only created once. Auto is the default storage class. So:
 
-    auto int i = 5;
+```cpp
+auto int i = 5;
+```
 
 is the same as:
 
-    int i = 5;
+```cpp
+int i = 5;
+```

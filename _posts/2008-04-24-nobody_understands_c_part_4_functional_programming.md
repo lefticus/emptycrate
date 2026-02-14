@@ -20,28 +20,32 @@ tags:
 
 The standard library headers [algorithm](http://www.cplusplus.com/reference/algorithm/) and [functional](http://msdn2.microsoft.com/en-us/library/4y7z5x4b.aspx) header files provide functional algorithms and facilitate their use, respectively. As usual we will try to provide a simple example of why we should put to use the functional techniques in the standard library. The most simple case is `for_each` which iterates over the elements in a container and performs some operation on them. Typical example:
 
-    void printVector(const std::vector<std::string> &data)
-    {
-      for (std::vector<std::string>::const_iterator itr = data.begin();
-            itr != data.end();
-            ++itr)
-      {
-        std::cout << *itr << " ";
-      }
-    }
+```cpp
+void printVector(const std::vector<std::string> &data)
+{
+  for (std::vector<std::string>::const_iterator itr = data.begin();
+        itr != data.end();
+        ++itr)
+  {
+    std::cout << *itr << " ";
+  }
+}
+```
 
 A version which uses the `for_each` standard algorithm might look like this:
 
-    void printElement(const std::string &element)
-    {
-      std::cout << element << " ";
-    }
+```cpp
+void printElement(const std::string &element)
+{
+  std::cout << element << " ";
+}
 
-    void printVector(const std::vector<std::string> &data)
-    {
-      // For each element in the range [data.begin, data.end) call printElement
-      for_each(data.begin(), data.end(), &printElement);
-    }
+void printVector(const std::vector<std::string> &data)
+{
+  // For each element in the range [data.begin, data.end) call printElement
+  for_each(data.begin(), data.end(), &printElement);
+}
+```
 
 Why would we choose the second version over the first version? After all, it's not any shorter. Often times using the standard algorithms does not result in shorter code. There are, however, several advantages to the second version:
 
@@ -53,11 +57,13 @@ Using the `for_each` statement makes it clear that you are iterating over a set 
 
 The single line, easy to read format of the `for_each` statement makes it less likely that you might make a mistake like the following (which assumes that `some_other_data` is also a `std::vector`)
 
-    for (std::vector<std::string>::const_iterator itr = data.begin();
-            itr != some_other_data.end();
-            ++itr)
-    {
-    }
+```cpp
+for (std::vector<std::string>::const_iterator itr = data.begin();
+        itr != some_other_data.end();
+        ++itr)
+{
+}
+```
 
 I've personally made that mistake on more than one occasion. It will compile, but will cause an infinite loop.
 
@@ -75,15 +81,14 @@ The [`boost::bind`](http://www.boost.org/doc/libs/release/libs/bind/bind.html) a
 
 Another reason to use the standard algorithms and become familiar with them is to put the techniques of using iterators and functional programming to use in your own code. With these techniques we can write our own generic algorithms. The example above might become:
 
-    template<typeame InItr>
-    void printRange(InItr begin, const InItr end)
-    {
-      while (begin != end)
-      {
-        std::cout << *begin << " ";
-        ++begin; //This is ok because we copy the iterators when we call this function
-      }
-    }
-
-    
-    
+```cpp
+template<typeame InItr>
+void printRange(InItr begin, const InItr end)
+{
+  while (begin != end)
+  {
+    std::cout << *begin << " ";
+    ++begin; //This is ok because we copy the iterators when we call this function
+  }
+}
+```

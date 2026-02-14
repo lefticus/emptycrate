@@ -16,7 +16,9 @@ There's not a whole lot to say here. The `asm()` statement lets you inject assem
 
 The syntax and meaning of the assembly language you insert is dependent on your compiler and platform. The example provided in C++ In a Nutshell is:
 
-    asm("mov 4, %eax"); // GNU on Intel IA32
-    asm("mov eax, 4"); // Borland on Intel IA32
+```cpp
+asm("mov 4, %eax"); // GNU on Intel IA32
+asm("mov eax, 4"); // Borland on Intel IA32
+```
 
 It is important to note that many compilers offer expanded support for asm with code block and other nice features.

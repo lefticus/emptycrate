@@ -34,9 +34,7 @@ Let's say I'm doing some cryptography work. I've just received a signed message 
 
 2. Use a boost function object
 
-    A boost::function wraps up any function call into an object with a known signature. It's very flexible and allows you to do all kinds of things like reordering of function parameters.
-
-    See boost::bind and boost::function for more info.
+    A boost::function wraps up any function call into an object with a known signature. It's very flexible and allows you to do all kinds of things like reordering of function parameters. See boost::bind and boost::function for more info.
 
     ```cpp
     class Message
@@ -74,5 +72,4 @@ Let's say I'm doing some cryptography work. I've just received a signed message 
 
     It also fails to handle a member function pointer. However, since it can accept a boost::function with no loss of efficiency, you can always just used boost::bind to create a boost::function from a member function pointer.
 
-    Oh, and this is the method that the standard algorithms use. 
-
+    Oh, and this is the method that the standard algorithms use.

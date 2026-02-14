@@ -74,10 +74,12 @@ int main()
 
 There is no question that the templated version is smaller, easier to maintain and easier to grok than the first version (assuming a basic understanding of [templates](/taxonomy/term/32)). They both produce exactly the same output:
 
-    1
-    hello world
-    4.5
-    0
+```text
+1
+hello world
+4.5
+0
+```
 
 And what about compiled code size? Each were compiled with the command `g++ .cpp -O3`. 
 

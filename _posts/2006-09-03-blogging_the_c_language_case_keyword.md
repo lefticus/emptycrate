@@ -14,13 +14,15 @@ tags:
 
 The case keyword is used to label a section of a switch statement. For instance:
 
-    switch (i) {
-      case 1:
-        //do something
-        break;
-      case 2:
-        //do something else
-        break;
-    };
+```cpp
+switch (i) {
+  case 1:
+    //do something
+    break;
+  case 2:
+    //do something else
+    break;
+};
+```
 
 if `i==1` the first case is called, if 2, the second case, otherwise no code of the switch statement is executed. This example also illustrates the second use of break. In the last blog entry I mentioned that break was used to exit from a looping construct. It is also used to exit from a switch statement.

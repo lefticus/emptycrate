@@ -26,24 +26,26 @@ Good Old C++98
 ==============
 
 
-    std::vector<std::vector<std::string>> classic(const int num_vecs, const int vec_size)
+```cpp
+std::vector<std::vector<std::string>> classic(const int num_vecs, const int vec_size)
+{
+  std::vector<std::vector<std::string>> retval;
+
+  for (int i = 0; i < num_vecs; ++i)
+  {
+    std::vector<std::string> nextvec(vec_size);
+    for (int j = 0; j < vec_size; ++j)
     {
-      std::vector<std::vector<std::string>> retval;
-
-      for (int i = 0; i < num_vecs; ++i)
-      {
-        std::vector<std::string> nextvec(vec_size);
-        for (int j = 0; j < vec_size; ++j)
-        {
-          nextvec[j] = "Some string that's a little bit longer than a short string ";
-          // plus whatever else needs to happen
-        }
-        retval.push_back(nextvec);
-        // do some other house keeping here
-      }
-
-      return retval;
+      nextvec[j] = "Some string that's a little bit longer than a short string ";
+      // plus whatever else needs to happen
     }
+    retval.push_back(nextvec);
+    // do some other house keeping here
+  }
+
+  return retval;
+}
+```
 
 
 *Timing: 3106445us*
@@ -56,25 +58,27 @@ So we think, "I know C++11, the solution here is to use `std::move`!"
 ==============
 
 
-    std::vector<std::vector<std::string>> moved(const int num_vecs, const int vec_size)
+```cpp
+std::vector<std::vector<std::string>> moved(const int num_vecs, const int vec_size)
+{
+  std::vector<std::vector<std::string>> retval;
+
+  for (int i = 0; i < num_vecs; ++i)
+  {
+    std::vector<std::string> nextvec(vec_size);
+    for (int j = 0; j < vec_size; ++j)
     {
-      std::vector<std::vector<std::string>> retval;
-
-      for (int i = 0; i < num_vecs; ++i)
-      {
-        std::vector<std::string> nextvec(vec_size);
-        for (int j = 0; j < vec_size; ++j)
-        {
-          nextvec[j] = "Some string that's a little bit longer than a short string ";
-          // plus whatever else needs to happen
-        }
-        retval.push_back(std::move(nextvec)); // this version requires extra bookkeeping to get the performance
-        // do some other house keeping here
-        // but we might be tempted to use nextvec, which is now is some unknown state
-      }
-
-      return retval;
+      nextvec[j] = "Some string that's a little bit longer than a short string ";
+      // plus whatever else needs to happen
     }
+    retval.push_back(std::move(nextvec)); // this version requires extra bookkeeping to get the performance
+    // do some other house keeping here
+    // but we might be tempted to use nextvec, which is now is some unknown state
+  }
+
+  return retval;
+}
+```
 
 
 *Timing: 1363530us*
@@ -89,28 +93,30 @@ Problem Decomposition
 =====================
 
 
-    std::vector<std::string> build_vector(const int vec_size)
-    {
-      std::vector<std::string> nextvec(vec_size);
-      for (int j = 0; j < vec_size; ++j)
-      {
-        nextvec[j] = "Some string that's a little bit longer than a short string ";
-        // plus whatever else needs to happen
-      }
-      return nextvec;
-    }
+```cpp
+std::vector<std::string> build_vector(const int vec_size)
+{
+  std::vector<std::string> nextvec(vec_size);
+  for (int j = 0; j < vec_size; ++j)
+  {
+    nextvec[j] = "Some string that's a little bit longer than a short string ";
+    // plus whatever else needs to happen
+  }
+  return nextvec;
+}
 
-    std::vector<std::vector<std::string>> function_call(const int num_vecs, const int vec_size)
-    {
-      std::vector<std::vector<std::string>> retval;
+std::vector<std::vector<std::string>> function_call(const int num_vecs, const int vec_size)
+{
+  std::vector<std::vector<std::string>> retval;
 
-      for (int i = 0; i < num_vecs; ++i)
-      {
-        retval.push_back(build_vector(vec_size));
-      }
+  for (int i = 0; i < num_vecs; ++i)
+  {
+    retval.push_back(build_vector(vec_size));
+  }
 
-      return retval;
-    }
+  return retval;
+}
+```
 
 
 This works quite well and doesn't require any manual book keeping or leave any moved-out-of objects lying around.
@@ -125,28 +131,30 @@ Immediately-Invoked Function Expression
 =======================================
 
 
-    std::vector<std::vector<std::string>> iife(const int num_vecs, const int vec_size)
-    {
-      std::vector<std::vector<std::string>> retval;
+```cpp
+std::vector<std::vector<std::string>> iife(const int num_vecs, const int vec_size)
+{
+  std::vector<std::vector<std::string>> retval;
 
-      for (int i = 0; i < num_vecs; ++i)
-      {
-        retval.push_back([vec_size](){
-              std::vector<std::string> nextvec(vec_size);
-              for (int j = 0; j < vec_size; ++j)
-              {
-                nextvec[j] = "Some string that's a little bit longer than a short string ";
-                // plus whatever else needs to happen
-              }
-              return nextvec;
-            }());
-        // no extra bookkeeping
-        // no temptation to use the moved value
-        // no pollution of the local namespace with a 'bad' variable
-      }
+  for (int i = 0; i < num_vecs; ++i)
+  {
+    retval.push_back([vec_size](){
+          std::vector<std::string> nextvec(vec_size);
+          for (int j = 0; j < vec_size; ++j)
+          {
+            nextvec[j] = "Some string that's a little bit longer than a short string ";
+            // plus whatever else needs to happen
+          }
+          return nextvec;
+        }());
+    // no extra bookkeeping
+    // no temptation to use the moved value
+    // no pollution of the local namespace with a 'bad' variable
+  }
 
-      return retval;
-    }
+  return retval;
+}
+```
 
 
 The syntax is certainly not something C++ developers are used to seeing. The trailing `()` after the lambda expression is easy to miss.
@@ -163,10 +171,12 @@ Final Note
 Yes, this example is a bit contrived. If you truly need to initialize a bunch of multidimensional vector elements with the same value, use the built in constructors that accomplish that:
 
 
-    std::vector<std::vector<std::string>> smarter(const int num_vecs, const int vec_size)
-    {
-      return std::vector<std::vector<std::string>>(num_vecs, std::vector<std::string>(vec_size, "Some string that's a little bit longer than a short string "));
-    }
+```cpp
+std::vector<std::vector<std::string>> smarter(const int num_vecs, const int vec_size)
+{
+  return std::vector<std::vector<std::string>>(num_vecs, std::vector<std::string>(vec_size, "Some string that's a little bit longer than a short string "));
+}
+```
 
 
 *Timing: 258654us*

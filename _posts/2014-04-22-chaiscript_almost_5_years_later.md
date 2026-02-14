@@ -24,7 +24,7 @@ Features Added
 
 It is now trivially easy to create a function in ChaiScript and call that function from C++.
 
-```
+```cpp
 chaiscript::ChaiScript chai;
 
 chai.eval("def func() { print(\"Hello World\"); } ");
@@ -44,33 +44,37 @@ See Also:
 ChaiScript can throw exceptions which can be caught in C++ and C++ can throw exceptions which can be caught in ChaiScript.
 
 
-    // From C++ Example
-    chaiscript::ChaiScript chai;
-      
-    try {
-      chai.eval("throw(1.0)", chaiscript::exception_specification<int, double>());
-    } catch (const double e) {
-      if (e == 1.0)
-      {
-        // success
-      }
-    }
-    //
+```cpp
+// From C++ Example
+chaiscript::ChaiScript chai;
+  
+try {
+  chai.eval("throw(1.0)", chaiscript::exception_specification<int, double>());
+} catch (const double e) {
+  if (e == 1.0)
+  {
+    // success
+  }
+}
+//
+```
 
 
 
-    // From ChaiScript Example
-    // multiple catches with guards on the values
-    try {
-      throw(3)
-    }
-    catch(e) : e < 3 
-    {
-      // Should never get called
-    }
-    catch {
-      // what does get called
-    }
+```chaiscript
+// From ChaiScript Example
+// multiple catches with guards on the values
+try {
+  throw(3)
+}
+catch(e) : e < 3
+{
+  // Should never get called
+}
+catch {
+  // what does get called
+}
+```
 
 
 See Also:

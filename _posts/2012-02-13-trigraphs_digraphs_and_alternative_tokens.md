@@ -15,17 +15,19 @@ tags:
 
 Quick, which language is the following code written in?
 
-    %:include 
+```cpp
+%:include 
 
-    int main(int, char *argv<:??))
-    <%
-      int i = 0;
-      int j = 0;
+int main(int, char *argv<:??))
+<%
+  int i = 0;
+  int j = 0;
 
-      for (; i < 10 and j < 11; ++i, ++j) ??< 
-        std::cout << not (i bitand j) << std::endl;
-      %>
-    ??>
+  for (; i < 10 and j < 11; ++i, ++j) ??< 
+    std::cout << not (i bitand j) << std::endl;
+  %>
+??>
+```
 
 If you guessed standard C++, you'd be correct. C and C++ support a set of alternative tokens and character sequences to account for languages and keyboards that do not have easy access to characters that those of us with US keyboards consider to be normal. 
 
@@ -67,16 +69,18 @@ The trigraph replacements are performed before any other part of the parsing pro
 
 Our example above now becomes:
 
-    #include <iostream>
+```cpp
+#include <iostream>
 
-    int main(int, char *argv[]))
-    {
-      int i = 0;
-      int j = 0;
+int main(int, char *argv[]))
+{
+  int i = 0;
+  int j = 0;
 
-      for (; i < 10 && j < 11; ++i, ++j) { 
-        std::cout << ! (i & j) << std::endl;
-      }
-    }
+  for (; i < 10 && j < 11; ++i, ++j) { 
+    std::cout << ! (i & j) << std::endl;
+  }
+}
+```
 
 What does this gain you? Nothing really. Even though trigraphs are a part of the standard most compilers require a switch to enable them! However, this information might help you work on your next [IOCCC](http://www.ioccc.org/) entry. Stackoverflow has more complete discussions on both [trigraphs](http://stackoverflow.com/questions/1234582/purpose-of-trigraph-sequences-in-c) and [digraphs](http://stackoverflow.com/questions/432443/why-are-there-digraphs-in-c-and-c).

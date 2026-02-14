@@ -20,57 +20,59 @@ tags:
 
 If [boost::threads](/import_node/277) represent the C of multithreaded programming, then RAII and automatically managed threads represent the C++ of multithreaded programming. In the last article we promised that using more [RAII](/import_node/274) would allow us to get this code even smaller and better to manage. Here is the result of that:
 
-    class threaded_class
+```cpp
+class threaded_class
+{
+public:
+    threaded_class()
+        : m_stoprequested(false),  
+          m_thread(boost::bind(&threaded_class::do_work, this)) //Note 2
     {
-    public:
-        threaded_class()
-            : m_stoprequested(false),  
-              m_thread(boost::bind(&threaded_class::do_work, this)) //Note 2
-        {
-        }
+    }
 
-        ~threaded_class()
-        {
-            m_stoprequested = true;
-            m_thread.join(); //Note 2
-        }
+    ~threaded_class()
+    {
+        m_stoprequested = true;
+        m_thread.join(); //Note 2
+    }
 
-        int get_fibonacci_value(int which)
+    int get_fibonacci_value(int which)
+    {
+        boost::mutex::scoped_lock l(m_mutex);
+        return m_fibonacci_values.get(which);
+    }
+
+private:
+    volatile bool m_stoprequested;
+    std::vector m_fibonacci_values;
+    boost::mutex m_mutex;
+    boost::thread m_thread;
+    
+    int fibonacci_number(int num)
+    {
+        switch(num)
         {
+            case 0:
+            case 1:
+                return 1;
+            default:
+                return fib(num-2) + fib(num-1);
+        };
+    }    
+
+    // Compute and save fibonacci numbers as fast as possible
+    void do_work()
+    {
+        int iteration = 0;
+        while (!m_stoprequested)
+        {
+            int value = fibonacci_number(iteration);
             boost::mutex::scoped_lock l(m_mutex);
-            return m_fibonacci_values.get(which);
+            m_fibonacci_values.push_back(value);
         }
-
-    private:
-        volatile bool m_stoprequested;
-        std::vector m_fibonacci_values;
-        boost::mutex m_mutex;
-        boost::thread m_thread;
-        
-        int fibonacci_number(int num)
-        {
-            switch(num)
-            {
-                case 0:
-                case 1:
-                    return 1;
-                default:
-                    return fib(num-2) + fib(num-1);
-            };
-        }    
-
-        // Compute and save fibonacci numbers as fast as possible
-        void do_work()
-        {
-            int iteration = 0;
-            while (!m_stoprequested)
-            {
-                int value = fibonacci_number(iteration);
-                boost::mutex::scoped_lock l(m_mutex);
-                m_fibonacci_values.push_back(value);
-            }
-        }                    
-    };
+    }                    
+};
+```
 
 By using RAII techniques we were able to cut our last example of boost::threads down from 64 lines of code to 52; a 20% savings in code size. Overall we are down by 35% from the original [pthreads](/import_node/270) version. Notes regarding this version:
 

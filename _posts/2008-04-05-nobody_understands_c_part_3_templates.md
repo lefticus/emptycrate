@@ -24,19 +24,27 @@ The average developer would try and figure out a method of creating a set of cla
 
 Not one developer even mentioned the classic C answer:
 
-    #define MAX(A,B) A>B?A:B
+```cpp
+#define MAX(A,B) A>B?A:B
+```
 
 However, since macro expansion is a text replacement, the following example presents a serious problem:
 
-    MAX(i++, j++)
+```cpp
+MAX(i++, j++)
+```
 
 Which is compiled as:
 
-    i++>j++?i++:j++
+```cpp
+i++>j++?i++:j++
+```
 
 Also, what happens in the case where you try to compare two different types:
 
-    MAX("hi", 5);
+```cpp
+MAX("hi", 5);
+```
 
 This would more than likely compile and not do anything at all expected. 
 
@@ -46,28 +54,36 @@ The answer lies in C++ templates. Templates provide a programmer with the means 
 
 The C++ template version of the max function becomes:
 
-    template
-    const T &max(const T &f, const T &l)
-    {
-      if (f < l) return l;
-      return f;
-    }
+```cpp
+template
+const T &max(const T &f, const T &l)
+{
+  if (f < l) return l;
+  return f;
+}
+```
 
 Our use of the new max function is almost as simple as the use of the last version:
 
-    max(5, 6);
+```cpp
+max(5, 6);
+```
 
 That `` it is a little cumbersome though. As it turns out the template compiler is able to automatically determine the types of template function arguments:
 
-    max(5,6); //Automatically generate an  version
+```cpp
+max(5,6); //Automatically generate an  version
+```
 
 So what are we actually doing here? By creating a template function we are allowing the compiler to generate code for us! When we use the function: `max` the compiler is generating code that looks like this:
 
-    const int &max(const int &f, const int &l)
-    {
-      if (f < l) return l;
-      return f;
-    }
+```cpp
+const int &max(const int &f, const int &l)
+{
+  if (f < l) return l;
+  return f;
+}
+```
 
 All of the overhead for using templates is put up front, at compile time. No runtime overhead is added. 
 

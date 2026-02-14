@@ -29,83 +29,91 @@ There are just a couple of simple rules to understanding lifetime:
 
 The following code example illustrates object lifetime:
 
-    void do_something()
+```cpp
+void do_something()
+{
+    std::string s("Hello World");    // s created
+    std::vector some_strings(5);  // some_strings created with an initial size of 5
+
+    if (s == "Hello World")
     {
-        std::string s("Hello World");    // s created
-        std::vector some_strings(5);  // some_strings created with an initial size of 5
-
-        if (s == "Hello World")
+        int i = 5;    // i created
+        for (int j = i; j < 10; ++j) // j created
         {
-            int i = 5;    // i created
-            for (int j = i; j < 10; ++j) // j created
-            {
-                float f = 5.5; // f created;
-                cout << f * j << endl;
-                // f destroyed at end of each loop iteration scope is exited
-            } // j destroyed when loop scope is exited.
-        } // i destroyed on "if" scope exit
+            float f = 5.5; // f created;
+            cout << f * j << endl;
+            // f destroyed at end of each loop iteration scope is exited
+        } // j destroyed when loop scope is exited.
+    } // i destroyed on "if" scope exit
 
-    }  // some_strings destroyed on do_something scope exit
-        // s destroyed
+}  // some_strings destroyed on do_something scope exit
+    // s destroyed
+```
 
 How does RAII enforce good design and keep us out of trouble? Let's say we want to update a timestamp (with our hypothetical "time" class) every time a particular function exits. Without RAII this becomes very cumbersome.
 
-    time t;
+```cpp
+time t;
 
-    void timed_function()
+void timed_function()
+{
+    int i = random();
+
+    if (i < 10)
     {
-        int i = random();
-
-        if (i < 10)
-        {
-            t.update();
-            return;
-        }
-
-        try {
-            // do some work
-        } catch (...) {
-            t.update();
-            throw();
-        }
+        t.update();
+        return;
     }
+
+    try {
+        // do some work
+    } catch (...) {
+        t.update();
+        throw();
+    }
+}
+```
 
 Notice how we have to track every possible way that the function might exit and call `t.update`? What happens if `random()` can throw an exception and we did not know it? 
 
 The RAII way is much cleaner. Let's create for ourselves a class, time_stamp, that does the work of updating a time for us.
 
-    class time_stamp
-    {
-    public:
-        time_stamp(time &t_time)
-            : m_time(t_time)
-        {}
+```cpp
+class time_stamp
+{
+public:
+    time_stamp(time &t_time)
+        : m_time(t_time)
+    {}
 
-        ~time_stamp()
-        {
-            m_time.update(); // as soon as I'm destroyed, update the time
-        }
-    private:
-        time &m_time;
-    };
+    ~time_stamp()
+    {
+        m_time.update(); // as soon as I'm destroyed, update the time
+    }
+private:
+    time &m_time;
+};
+```
 
 We now have a reusable time_stamp class we can use wherever we need it. 
 
 Our example above of needing to track when a function was last completed becomes much more simple:
 
-    time t;
+```cpp
+time t;
 
-    void timed_function()
+void timed_function()
+{
+    time_stamp ts(t);
+    int i = random();
+
+    if (i < 10)
     {
-        time_stamp ts(t);
-        int i = random();
-
-        if (i < 10)
-        {
-            return;
-        }
-        // do some work
+        return;
     }
+    // do some work
+}
+```
 
 It is now literally impossible for us to forget to update the time of last exit, the compiler does it for us! 
 
@@ -118,19 +126,21 @@ Secondly, it is possible if you misunderstand object scope and object lifetime, 
 For this example, let's say that our `time_stamp` class uses two-phase construction.
 
 
-    void timed_function()
-    {
-        time_stamp ts;
-        time t;
-        ts.register(t);
-        int i = random();
+```cpp
+void timed_function()
+{
+    time_stamp ts;
+    time t;
+    ts.register(t);
+    int i = random();
 
-        if (i < 10)
-        {
-            return;
-        }
-        // do some work
-    } // Oops, crash
+    if (i < 10)
+    {
+        return;
+    }
+    // do some work
+} // Oops, crash
+```
 
 The crash occurs because `t` is destroyed before `ts`. When `ts` is destroyed it tries to update `t`, causing a crash. 
 

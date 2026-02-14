@@ -14,14 +14,18 @@ tags:
 
 The class keyword is used when declaring or defining a class or a templated class. For instance:
 
-    template
-    class bob
-    {
-      T myvariable;
-    }
+```cpp
+template
+class bob
+{
+  T myvariable;
+}
+```
 
 The above code defines a template class which expects a class parameter. Also, the class keyword can be used to declare a class when you do not want / need the definition. For example, when declaring a function:
 
-    class bob;
+```cpp
+class bob;
 
-    myFunc(bob *);
+myFunc(bob *);
+```

@@ -14,9 +14,11 @@ tags:
 
 The `break` statement exits from innermost loop (do, while, or for). For instance:
 
-    for (int i = 0; i++; i<10) {
-      if (i == 3)
-        break;
-    }
+```cpp
+for (int i = 0; i++; i<10) {
+  if (i == 3)
+    break;
+}
+```
 
 When `i == 3` the for loop will exit and execution will resume after the closing `}` of the for loop.

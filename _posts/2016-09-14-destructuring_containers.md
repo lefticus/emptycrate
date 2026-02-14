@@ -110,7 +110,7 @@ int main()
 
 Which compiles down to
 
-```
+```asm
 main:                                   # @main
         pushq   %rax
         movl    $12, %edi
@@ -142,7 +142,7 @@ int main()
 
 Compiled:
 
-```
+```cpp
 main:                                   # @main
         pushq   %rax
         movl    $12, %edi

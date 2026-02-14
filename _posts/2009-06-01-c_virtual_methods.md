@@ -66,44 +66,48 @@ int main() {
 
 Taking the above classes:
 
-    Base *b = new Derived();
-    delete b; // Warning, non-virtual destructor
+```cpp
+Base *b = new Derived();
+delete b; // Warning, non-virtual destructor
+```
 
 If we were to delete a Derived by a pointer to Base, only the Base destructor is called! This means the Derived destructor is not called and the object is not properly freed. Most modern compilers will warn if you create this situation. The fix to it is simple. You most simply provide virtual destructors:
 
-    struct Base
-    {
-      // We have virtual methods, so we should provide a virtual destructor
-      virtual ~Base()
-      {
-      }
-      // Non virtual method
-      int getInt()
-      {
-        return 1;
-      }
+```cpp
+struct Base
+{
+  // We have virtual methods, so we should provide a virtual destructor
+  virtual ~Base()
+  {
+  }
+  // Non virtual method
+  int getInt()
+  {
+    return 1;
+  }
 
-      // Virtual Method
-      virtual std::string getString()
-      {
-        return "Base";
-      }
-    };
+  // Virtual Method
+  virtual std::string getString()
+  {
+    return "Base";
+  }
+};
 
-    struct Derived : Base
-    {
-      virtual ~Derived()
-      {
-      }
+struct Derived : Base
+{
+  virtual ~Derived()
+  {
+  }
 
-      int getInt()
-      {
-        return 2;
-      }
+  int getInt()
+  {
+    return 2;
+  }
 
-      virtual std::string getString()
-      {
-        return "Derived";
-      }
-    };
+  virtual std::string getString()
+  {
+    return "Derived";
+  }
+};
+```
 
