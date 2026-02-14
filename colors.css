@@ -1,0 +1,97 @@
+/* Site color palette — single source of truth
+   RGB triplets are needed for Bootstrap's rgba() link variables. */
+:root {
+    --green-rgb:      45, 122, 58;
+    --green-dark-rgb: 36, 99, 48;
+
+    --green:          rgb(var(--green-rgb));
+    --green-dark:     rgb(var(--green-dark-rgb));
+    --green-darkest:  #1a3a1a;
+    --green-muted:    #4a7a4a;
+    --green-text:     #2d5a2d;
+    --green-bg-light: #f0f7f0;
+    --light-gray:     #f8f9fa;
+
+    /* Override Bootstrap reboot link colors.
+       Values must match --green-rgb and --green-dark-rgb above. */
+    --bs-link-color-rgb: 45, 122, 58;
+    --bs-link-hover-color-rgb: 36, 99, 48;
+
+}
+
+/* --- Bootstrap component color overrides --- */
+.pagination {
+    --bs-pagination-color: var(--green);
+    --bs-pagination-hover-color: white;
+    --bs-pagination-hover-bg: var(--green);
+    --bs-pagination-hover-border-color: var(--green);
+    --bs-pagination-active-color: white;
+    --bs-pagination-active-bg: var(--green);
+    --bs-pagination-active-border-color: var(--green);
+    --bs-pagination-focus-color: var(--green-dark);
+    --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(var(--green-rgb), 0.25);
+}
+
+/* --- Code blocks --- */
+pre {
+    background: var(--light-gray);
+    border: 1px solid #ddd;
+    border-left: 3px solid var(--green);
+    border-radius: 4px;
+    padding: 1rem;
+    overflow-x: auto;
+}
+code {
+    color: var(--green-darkest);
+}
+pre code {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* --- Site header (white banner at top) --- */
+.site-header { background: white; border-bottom: 3px solid var(--green); }
+.site-header h1 { color: var(--green-darkest); font-weight: 700; }
+.site-header h4 { color: var(--green-darkest); font-weight: 600; }
+a.site-header-link { color: var(--green); text-decoration: none; }
+a.site-header-link:hover { color: var(--green-dark); }
+
+/* --- Navbar & legacy .cs-blue class --- */
+.cs-blue { color: white; background: var(--green); }
+a.cs-blue { color: white; text-decoration: none; }
+a:link.cs-blue { color: white; }
+a:visited.cs-blue { color: white; }
+a.cs-blue:hover { color: var(--light-gray); }
+.navbar-toggler { border-color: rgba(255,255,255,0.5); }
+.navbar-toggler-icon { filter: invert(1); }
+
+/* --- Ad banner --- */
+.ad-banner {
+    background: var(--green-bg-light);
+    color: var(--green-text);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    border-bottom: 2px solid var(--green);
+}
+.ad-banner .ad-hook {
+    color: var(--green-darkest);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.ad-banner .ad-tension {
+    color: var(--green-muted);
+}
+.ad-banner .ad-keyword {
+    color: var(--green);
+    font-weight: 700;
+}
+.ad-banner .ad-cta {
+    background: var(--green);
+    color: white;
+    border: none;
+}
+.ad-banner .ad-cta:hover {
+    background: var(--green-dark);
+    color: white;
+}

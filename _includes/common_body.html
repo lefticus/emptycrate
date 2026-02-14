@@ -1,15 +1,16 @@
-<div class="p-4 mb-4 rounded-3 cs-blue">
+<div class="p-4 site-header">
   <div class="container">
     <div class="row">
-      <div class="col-md-2 vcenter"><a href="/index.html" class="cs-blue"><img src="/logo.png" width="150" alt="EmptyCrate logo"/></a></div>
+      <div class="col-md-2 vcenter"><a href="/index.html"><img src="/logo.png" width="150" alt="EmptyCrate logo"/></a></div>
       <div class="col-md-8 vcenter">
-        <h1><a href="/index.html" class="cs-blue">EmptyCrate</a></h1>
+        <h1><a href="/index.html" class="site-header-link">EmptyCrate</a></h1>
         <h4>
-          <a href="/about.html" class="cs-blue">About Me</a> |
-          <a href="/contact.html" class="cs-blue">Contact Me</a> |
-          <a href="/training.html" class="cs-blue">Training</a> |
-          <a href="https://youtube.com/@cppweekly" class="cs-blue">C++ Weekly (YouTube)</a> |
-          <a href="https://jason-turner-shop.fourthwall.com/" class="cs-blue">Awesome C++ T-Shirts</a>
+          <a href="/about.html" class="site-header-link">About Me</a> |
+          <a href="/contact.html" class="site-header-link">Contact Me</a> |
+          <a href="/training.html" class="site-header-link">Training</a> |
+          <a href="https://youtube.com/@cppweekly" class="site-header-link">C++ Weekly (YouTube)</a> |
+          <a href="https://cppevo.dev" class="site-header-link">C++ Evolution Viewer</a> |
+          <a href="https://jason-turner-shop.fourthwall.com/" class="site-header-link">Awesome C++ T-Shirts</a>
         </h4>
       </div>
     </div>
@@ -19,18 +20,18 @@
 
 <nav class="navbar navbar-expand-md cs-blue" role="navigation">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/index.html" style="color:white;">EmptyCrate</a>
+    <a class="navbar-brand cs-blue" href="/index.html">EmptyCrate</a>
     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <form class="d-flex me-auto" role="search" action="https://www.google.com" id="cse-search-box">
-        <div>
-          <input type="hidden" name="cx" value="partner-pub-1595128002130008:6361083647" />
-          <input type="hidden" name="ie" value="UTF-8" />
-          <input type="text" name="q" size="30" class="form-control form-control-sm" />
-          <input type="submit" name="sa" value="Search" class="btn btn-sm btn-outline-light" />
+        <input type="hidden" name="cx" value="partner-pub-1595128002130008:6361083647" />
+        <input type="hidden" name="ie" value="UTF-8" />
+        <div class="input-group input-group-sm">
+          <input type="text" name="q" class="form-control" />
+          <input type="submit" name="sa" value="Search" class="btn btn-outline-light" />
         </div>
       </form>
       <script src="https://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang="></script>
@@ -38,7 +39,7 @@
 
         {% for tag_page in site.html_pages %}
           {% if tag_page.current_tag %}
-            <li class="nav-item {% if page.url == tag_page.url %}active{% endif %}"><a class="nav-link" href="{{ tag_page.url }}" style="color:white;">{{ tag_page.current_tag }}</a></li>
+            <li class="nav-item {% if page.url == tag_page.url %}active{% endif %}"><a class="nav-link cs-blue" href="{{ tag_page.url }}">{{ tag_page.current_tag }}</a></li>
           {% endif %}
         {% endfor %}
 
@@ -47,7 +48,52 @@
   </div>
 </nav>
 
-
+<div id="ad-banner" class="ad-banner">
+  <div class="container d-md-flex align-items-center justify-content-between py-3">
+    <div>
+      <div class="ad-hook"></div>
+      <div class="ad-tension"></div>
+      <div class="ad-positioning"></div>
+    </div>
+    <a class="ad-cta btn btn-light fw-bold ms-md-4 mt-2 mt-md-0 text-nowrap" href="/go.html"></a>
+  </div>
+</div>
+<script>
+(function() {
+  var hooks = [
+    "Is your C++ correct — or just compiling?",
+    "Is your team writing good C++?",
+    "Is your team writing safe C++ — or getting lucky?",
+    "Is your AI writing bad C++?"
+  ];
+  var tensions = [
+    "Compiling doesn't mean correct.",
+    "Passing tests isn't proof of safety.",
+    "Undefined behavior doesn't announce itself.",
+    "\u201CIt works\u201D is not a quality bar.",
+    "Confidence is not correctness."
+  ];
+  var positionings = [
+    "Learn to recognize good C++ from bad C++.",
+    "Develop the judgment to review C++ with precision.",
+    "Raise your standard for modern C++.",
+    "Build real confidence in your code reviews."
+  ];
+  var ctas = [
+    "Read C++ Best Practices \u2192",
+    "Bring training to your team \u2192",
+    "Stop guessing. Start evaluating \u2192"
+  ];
+  var keywords = /\b(correct|safe|bad|compiling|Undefined behavior|confidence|quality|standard)\b/gi;
+  function pick(a) { return a[Math.floor(Math.random() * a.length)]; }
+  function hl(t) { return t.replace(keywords, '<strong class="ad-keyword">$&</strong>'); }
+  var b = document.getElementById('ad-banner');
+  b.querySelector('.ad-hook').innerHTML = hl(pick(hooks));
+  b.querySelector('.ad-tension').innerHTML = hl(pick(tensions));
+  b.querySelector('.ad-positioning').innerHTML = hl(pick(positionings));
+  b.querySelector('.ad-cta').innerHTML = pick(ctas);
+})();
+</script>
 
 <div class="container pb-2 mt-4 mb-4 border-bottom">
   <h1>{{page.title}}</h1>

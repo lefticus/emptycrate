@@ -35,6 +35,14 @@
       description: "Weekly videos on C++ tips, tricks, and best practices since 2016."
       card_type: screenshot
 
+- section: Tools
+  icon: fas fa-tools
+  links:
+    - url: https://cppevo.dev
+      title: "C++ Evolution Viewer"
+      description: "Explore how the C++ standard evolved across versions with interactive side-by-side diffs."
+      card_type: screenshot
+
 - section: Shop
   icon: fas fa-shopping-bag
   links:
