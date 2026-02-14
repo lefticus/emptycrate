@@ -213,20 +213,20 @@ void analyze(const stats &s)
 
   if (s.acceleration > .001)
   {
-    std::cout << "Your run time is accelerating, this is bad, indicating polynomial complexity." << std::endl;
+    std::cout << "Your run time is accelerating, this is bad, indicating polynomial complexity.\n";
   } else if (s.acceleration < -.001) {
-    std::cout << "Your run time is decelerating, good, the algorithm is becoming more effecient as the number of units is increased." << std::endl;
+    std::cout << "Your run time is decelerating, good, the algorithm is becoming more effecient as the number of units is increased.\n";
   } else {
-    std::cout << "Your run time has no acceleration, indicating linear complexity" << std::endl;
+    std::cout << "Your run time has no acceleration, indicating linear complexity\n";
   }
 
   if (s.jerk > .001)
   {
-    std::cout << "Your run time has positive jerk, this means that your acceleration is increasing, indicating possible exponential complexity (very bad)." << std::endl;
+    std::cout << "Your run time has positive jerk, this means that your acceleration is increasing, indicating possible exponential complexity (very bad).\n";
   } else if (s.jerk < -.001) {
-    std::cout << "Your run time has negative jerk, this means that your acceleration is decreasing, indicating possible logarithmic complexity." << std::endl;
+    std::cout << "Your run time has negative jerk, this means that your acceleration is decreasing, indicating possible logarithmic complexity.\n";
   } else {
-    std::cout << "Your acceleration is neither increasing nor decreasing." << std::endl;
+    std::cout << "Your acceleration is neither increasing nor decreasing.\n";
   }
        
 }
@@ -247,11 +247,11 @@ int main(int argc, char *argv[])
 
   std::pair<stats, stats> s = calculate_stats(timings);
 
-  std::cout << "Early in analysis: " << std::endl;
+  std::cout << "Early in analysis: \n";
   analyze(s.first);
 
-  std::cout << "-------------------" << std::endl;
-  std::cout << "Later in analysis: " << std::endl;
+  std::cout << "-------------------\n";
+  std::cout << "Later in analysis: \n";
   analyze(s.second);
 }
 ```

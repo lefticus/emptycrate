@@ -18,50 +18,50 @@ I ran across a question the other day that I didn't know the answer to, so I tho
 class YourClass {
 public:
   YourClass() {
-    cout << "YourClass() Called" << endl;
+    cout << "YourClass() Called\n";
   }
   ~YourClass() {
-    cout << "~YourClass() Called" << endl;
+    cout << "~YourClass() Called\n";
   }
 };
 
 void DoStuff() {
-  cout << "DoStuff entered" << endl;
+  cout << "DoStuff entered\n";
   MyClass m;
 
   try {
     YourClass y;
-    cout << "Throwing int exception" << endl;
+    cout << "Throwing int exception\n";
     throw (15);
-    cout << "Exception thrown" << endl;
+    cout << "Exception thrown\n";
   } catch (int i) {
     cout << "int Exception caught " << i << endl;
   } catch (...) {
-    cout << "unknown exception caught" << endl;
+    cout << "unknown exception caught\n";
   }
 
   try {
     MyClass m2;
-    cout << "Throwing MyClass exception" << endl;
+    cout << "Throwing MyClass exception\n";
     throw (&m2);
   } catch (MyClass *m) {
     //BZZT invalid pointer m!
     //(see the debug output destructor already called
-    cout << "MyClass exception caught" << endl;
+    cout << "MyClass exception caught\n";
   } catch (...) {
-    cout << "unkown exception caught" << endl;
+    cout << "unkown exception caught\n";
   }
 
-  cout << "DoStuff exiting" << endl;
+  cout << "DoStuff exiting\n";
 }
 
 int main(int, char *[])
 {
-  cout << "main entered" << endl;
+  cout << "main entered\n";
 
   DoStuff();
 
-  cout << "main exiting" << endl;
+  cout << "main exiting\n";
 }
 ```
 

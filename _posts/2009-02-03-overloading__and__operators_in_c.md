@@ -21,7 +21,7 @@ Short answer: don't do it! Long answer: As the C++ example from the article on [
  
 bool getbool(bool b)
 {
-  std::cout << " getbool called " << std::endl;
+  std::cout << " getbool called \n";
   return b;
 }
  
@@ -49,33 +49,33 @@ struct Boolean
  
 Boolean getBoolean(bool b)
 {
-  std::cout << " getBoolean called " << std::endl;
+  std::cout << " getBoolean called \n";
   return Boolean(b);
 }
  
 int main()
 {
-  std::cout << " Testing getbool || expecting 1 output: " << std::endl;
+  std::cout << " Testing getbool || expecting 1 output: \n";
   if (getbool(true) || getbool(false))
   {
   }
  
-  std::cout << " Testing getbool || expecting 2 outputs: " << std::endl;
+  std::cout << " Testing getbool || expecting 2 outputs: \n";
   if (getbool(false) || getbool(true))
   {
   }
  
-  std::cout << " Testing getbool && expecting 1 outputs: " << std::endl;
+  std::cout << " Testing getbool && expecting 1 outputs: \n";
   if (getbool(false) && getbool(true))
   {
   }
  
-  std::cout << " Testing getBoolean || expecting 2 outputs: (no shortcircuit) " << std::endl;
+  std::cout << " Testing getBoolean || expecting 2 outputs: (no shortcircuit) \n";
   if (getBoolean(true) || getBoolean(false))
   {
   }
  
-  std::cout << " Testing getBoolean && expecting 2 outputs: (no shortcircuit)" << std::endl;
+  std::cout << " Testing getBoolean && expecting 2 outputs: (no shortcircuit)\n";
   if (getBoolean(false) && getBoolean(true))
   {
   }
@@ -89,7 +89,7 @@ It is *impossible* to overload the && or || operators in C++ and maintain the sh
  
 bool getbool(bool b)
 {
-  std::cout << " getbool called " << std::endl;
+  std::cout << " getbool called \n";
   return b;
 }
 struct Boolean
@@ -111,33 +111,33 @@ struct Boolean
 
 Boolean getBoolean(bool b)
 {
-  std::cout << " getBoolean called " << std::endl;
+  std::cout << " getBoolean called \n";
   return Boolean(b);
 }
 
 int main()
 {
-  std::cout << " Testing getbool || expecting 1 output: " << std::endl;
+  std::cout << " Testing getbool || expecting 1 output: \n";
   if (getbool(true) || getbool(false))
   {
   }
 
-  std::cout << " Testing getbool || expecting 2 outputs: " << std::endl;
+  std::cout << " Testing getbool || expecting 2 outputs: \n";
   if (getbool(false) || getbool(true))
   {
   }
 
-  std::cout << " Testing getbool && expecting 1 outputs: " << std::endl;
+  std::cout << " Testing getbool && expecting 1 outputs: \n";
   if (getbool(false) && getbool(true))
   {
   }
 
-  std::cout << " Testing getBoolean || expecting 1 outputs:" << std::endl;
+  std::cout << " Testing getBoolean || expecting 1 outputs:\n";
   if (getBoolean(true) || getBoolean(false))
   {
   }
 
-  std::cout << " Testing getBoolean && expecting 1 outputs:" << std::endl;
+  std::cout << " Testing getBoolean && expecting 1 outputs:\n";
   if (getBoolean(false) && getBoolean(true))
   {
   }

@@ -20,49 +20,49 @@ The problem is best illustrated with an example:
 
 struct Base1 { 
   ~Base1() { 
-    std::cout << "~Base1" << std::endl; 
+    std::cout << "~Base1\n"; 
   } 
 };
 
 struct Derived1 : Base1 { 
   ~Derived1() { 
-    std::cout << "~Derived1" << std::endl;
+    std::cout << "~Derived1\n";
   } 
 };
 
 struct Base2 { 
   virtual ~Base2() { 
-    std::cout << "~Base2" << std::endl;
+    std::cout << "~Base2\n";
   } 
 };
 
 struct Derived2 : Base2 { 
   ~Derived2() { 
-    std::cout << "~Derived2" << std::endl;
+    std::cout << "~Derived2\n";
   } 
 };
 
 struct Base3 { 
   virtual ~Base3() { 
-    std::cout << "~Base3" << std::endl;
+    std::cout << "~Base3\n";
   } 
 };
 
 struct Derived3 : Base3 { 
   virtual ~Derived3() { 
-    std::cout << "~Derived3" << std::endl; 
+    std::cout << "~Derived3\n"; 
   } 
 };
 
 struct Base4 { 
   ~Base4() { 
-    std::cout << "~Base4" << std::endl; 
+    std::cout << "~Base4\n"; 
   } 
 };
 
 struct Derived4 : Base4 { 
   virtual ~Derived4() { 
-    std::cout << "~Derived4" << std::endl;
+    std::cout << "~Derived4\n";
   } 
 };
 
