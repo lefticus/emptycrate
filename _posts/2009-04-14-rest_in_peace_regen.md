@@ -14,7 +14,7 @@ This Monday I had to put down my 11 year old Rottweiler. She had just turned 11 
 
 About a year ago she began exhibiting symptoms of [Inflammatory Bowel Disease](http://en.wikipedia.org/wiki/Inflammatory_bowel_disease). For a dog, this means that we had to keep trying "unique protein sources" until we found food that her body would accept without giving her diarrhea. Despite our best efforts, we could not find a food that worked for her. She was kept on a regular regime of [prednisone](http://en.wikipedia.org/wiki/Prednisone) which mostly ensured that her food would not irritate her bowels, but she refused to eat the foods that did not upset her. She would accept a new food for a while and then begin refusing it for no explanation that we could see. 
 
-[img_assist|nid=399|title=Regen|link=popup|align=right|width=283|height=420] 
+ 
 
 Even with her illness and refusal to eat she seemed happy and playful. We would often spend 2 and 3 hours a day trying to make meal time more interesting for her. We would mix up which foods we were giving her and make a game out of it by tossing the food to her. 
 

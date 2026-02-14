@@ -17,4 +17,4 @@ BibleStudy 2.0 alpha has been released to the sourceforge project [page](http://
 -   Reading Plans do not show up until after the first one is created with the ReadingPlanner wizard and the application is restarted
 -   Use the biblestudy.bat file in the zip archive to launch biblestudy and avoid any pop-up warnings
 
-[img_assist|fid=13|thumb=1|alt=BibleStudy 2.0 alpha Screenshot|caption=Screen shot of biblestudy 2.0 showing support for ReadingPlanner and right to left text rendering.]
+

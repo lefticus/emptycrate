@@ -48,10 +48,17 @@ If we get past the function guards we know that there is a function called "int"
 
 **Consequence of the Implementation of Clone** 
 
-The fallout of how we have implemented clone and the fact that it is called for every assignment operation is that you need to provide a clone ability for each new C++ type you add the the ChaiScript engine. That is, if you want your newly added type to support regular assignment and copying. Note that this is not a requirement, you can use the reference assignment (`:=`) operator instead. To make sure your type is fully supported, you need to add a type name for your type to the engine: ` ChaiScript chai; chai.add(user_type(), "MyType");`
+The fallout of how we have implemented clone and the fact that it is called for every assignment operation is that you need to provide a clone ability for each new C++ type you add the the ChaiScript engine. That is, if you want your newly added type to support regular assignment and copying. Note that this is not a requirement, you can use the reference assignment (`:=`) operator instead. To make sure your type is fully supported, you need to add a type name for your type to the engine:
 
-Also, you need to add a copy constructor that has the same name as the type you just registered. There is a shorthand method for this built into the chaiscript::bootstrap helpers: ` chai.add(copy_constructor("MyType"));`
+    ChaiScript chai;
+    chai.add(user_type<MyType>(), "MyType");
 
-An additional shorthand exists for adding both a copy constructor and a default constructor at the same time: ` chai.add(basic_constructors("MyType"));`
+Also, you need to add a copy constructor that has the same name as the type you just registered. There is a shorthand method for this built into the chaiscript::bootstrap helpers:
+
+    chai.add(copy_constructor<MyType>("MyType"));
+
+An additional shorthand exists for adding both a copy constructor and a default constructor at the same time:
+
+    chai.add(basic_constructors<MyType>("MyType"));
 
 It is worth taking the time to point out that "constructors" in ChaiScript are really not a special type of function, they are just functions that have "special" names. This can lead to interesting possibilities in more advanced examples.

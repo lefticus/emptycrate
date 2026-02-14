@@ -39,7 +39,7 @@ The trigraph replacements are performed before any other part of the parsing pro
  * `??/` becomes `\` 
  * `??)` becomes `]` 
  * `??>` becomes `}` 
- * `??’` becomes `ˆ` 
+ * `??'` becomes `ˆ` 
  * `??!` becomes `|` 
  * `??-` becomes `∼` 
   

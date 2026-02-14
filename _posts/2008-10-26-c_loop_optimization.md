@@ -46,37 +46,16 @@ The results of the research for this article surprised me. I'll first cover the 
     }
 
 
-<table>
-<tr>
-<td>
-<em>No Optimization</em>
-</td>
-<td>
-551.97s
-</td>
-</tr>
-<tr>
-<td>
-<em>-O1</em>
-</td>
-<td>
-48.91s
-</td>
-</tr>
-<tr>
-<td>
-<em>-O2</em>
-</td>
-<td>
-48.74s
-</td>
-</tr>
-</table>
+| Setting | Time |
+| --- | --- |
+| *No Optimization* | 551.97s |
+| *-O1* | 48.91s |
+| *-O2* | 48.74s |
 
 
 **Cached "end()" Iterator**
 
-This version of the loop is exactly the same as the unoptimized version, except we are now caching the value of "end()" so that a lookup does not occur on each loop iteration. Not every developer realizes that <code>for (itr = vec.begin(); itr != vec.end(); itr++)</code> results in a call to <code>vec.end()</code> for each loop. Presumably the compiler cannot cache <code>.end()</code> and it may be a very expensive lookup depending on how well or poorly your container is implemented.
+This version of the loop is exactly the same as the unoptimized version, except we are now caching the value of "end()" so that a lookup does not occur on each loop iteration. Not every developer realizes that `for (itr = vec.begin(); itr != vec.end(); itr++)` results in a call to `vec.end()` for each loop. Presumably the compiler cannot cache `.end()` and it may be a very expensive lookup depending on how well or poorly your container is implemented.
 
 
     int main()
@@ -106,36 +85,15 @@ This version of the loop is exactly the same as the unoptimized version, except 
     }
 
 
-<table>
-<tr>
-<td>
-<em>No Optimization</em>
-</td>
-<td>
-524.81s (5% improvement)
-</td>
-</tr>
-<tr>
-<td>
-<em>-O1</em>
-</td>
-<td>
-Not Tested
-</td>
-</tr>
-<tr>
-<td>
-<em>-O2</em>
-</td>
-<td>
-48.78s
-</td>
-</tr>
-</table>
+| Setting | Time |
+| --- | --- |
+| *No Optimization* | 524.81s (5% improvement) |
+| *-O1* | Not Tested |
+| *-O2* | 48.78s |
 
 **Pre-increment Instead of Post-Increment Iterators**
 
-We've now made a very simple change, we've gone from <code>itr++</code> to <code>++itr</code>. The reason why preincrement is faster than postincrement will be covered in a later article. In this particular case, it saved us almost 40% in our very simple loop!
+We've now made a very simple change, we've gone from `itr++` to `++itr`. The reason why preincrement is faster than postincrement will be covered in a later article. In this particular case, it saved us almost 40% in our very simple loop!
 
 
     int main()
@@ -165,39 +123,18 @@ We've now made a very simple change, we've gone from <code>itr++</code> to <code
     }
 
 
-<table>
-<tr>
-<td>
-<em>No Optimization</em>
-</td>
-<td>
-323.58s (38% Improvement)
-</td>
-</tr>
-<tr>
-<td>
-<em>-O1</em>
-</td>
-<td>
-Not Tested
-</td>
-</tr>
-<tr>
-<td>
-<em>-O2</em>
-</td>
-<td>
-48.74s
-</td>
-</tr>
-</table>
+| Setting | Time |
+| --- | --- |
+| *No Optimization* | 323.58s (38% Improvement) |
+| *-O1* | Not Tested |
+| *-O2* | 48.74s |
 
 
 **Use std::for_each**
 
-We've gone the functional route and put to use <code>std::for_each</code> which does the above two things for us, it caches <code>.end()</code> and uses pre- instead of post- increment operators for the iterators.
+We've gone the functional route and put to use `std::for_each` which does the above two things for us, it caches `.end()` and uses pre- instead of post- increment operators for the iterators.
 
-However, in this case, we now see a net loss in effeciency. Why? Because with optimization turned off the compiler is not allowed to inline the calls to <code>Sum</code> and <code>Increment</code>.
+However, in this case, we now see a net loss in effeciency. Why? Because with optimization turned off the compiler is not allowed to inline the calls to `Sum` and `Increment`.
 
 
     struct Sum
@@ -246,57 +183,28 @@ However, in this case, we now see a net loss in effeciency. Why? Because with op
     }
 
 
-<table>
-<tr>
-<td>
-<em>No Optimization</em>
-</td>
-<td>
-398.65s (23% Loss)
-</td>
-</tr>
-<tr>
-<td>
-<em>-O1</em>
-</td>
-<td>
-49.95s
-</td>
-</tr>
-<tr>
-<td>
-<em>-O2</em>
-</td>
-<td>
-48.59s
-</td>
-</tr>
-</table>
+| Setting | Time |
+| --- | --- |
+| *No Optimization* | 398.65s (23% Loss) |
+| *-O1* | 49.95s |
+| *-O2* | 48.59s |
 
-<strong>Technical Conclusion</strong>
+**Technical Conclusion**
 
-The preceeding examples and discussion focused on the unoptimized performance characteristics. The surprise? With a modern GCC (these tests were done with GCC 4.2.1) and optimization enabled <strong>you cannot affect the performance</strong>. At all. Really, anything with -01 or better was within a margin of error, all four examples took approximately 49s each to run, or 85% faster than our fastest un-optimized version.
+The preceeding examples and discussion focused on the unoptimized performance characteristics. The surprise? With a modern GCC (these tests were done with GCC 4.2.1) and optimization enabled **you cannot affect the performance**. At all. Really, anything with -01 or better was within a margin of error, all four examples took approximately 49s each to run, or 85% faster than our fastest un-optimized version.
 
-I should qualify that this conclusion is based on the standard container template classes. It's possible you. someone on your team or a third party has written rather poor containers with expensive <code>.end()</code> lookups and ineffecient iterators such that the techniques above do become more important.
+I should qualify that this conclusion is based on the standard container template classes. It's possible you. someone on your team or a third party has written rather poor containers with expensive `.end()` lookups and ineffecient iterators such that the techniques above do become more important.
 
-<strong>Personal Conclusion</strong>
+**Personal Conclusion**
 
 The functional approach is my personal favorite. The code is a tad bit longer, and it is possible that it is slighly slower than the other versions; I did not run enough tests at enough different optimization levels to conclusively determine if it is any slower or faster. However, the code is more reusable: Sum and Increment are generic and could be put in a reusable library, they could even be extended to be templated types to allow you to choose the size of the int you want to support.
 
 Also, the actual loops themselves are much more succicnt and self documenting:
-<dl>
-<dt>
-Question: What are you generating?
-</dt>
-<dd>
-Answer: An <em>increment</em>ed set of integers, starting at 0
-</dd>
-<dt>
-Question: What are you doing with the vector?
-</dt>
-<dd>
-Answer: <em>Sum</em>ming all values and outputting the result
-</dd>
-</dl>
+
+**Question: What are you generating?**
+Answer: An *increment*ed set of integers, starting at 0
+
+**Question: What are you doing with the vector?**
+Answer: *Sum*ming all values and outputting the result
 The functional programming guys have known this for a long time, C++ is just recently discovering it.
 

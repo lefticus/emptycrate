@@ -28,32 +28,30 @@ There are two major groups that an embeddable scripting language falls into. Tho
 
 There are many languages that can be embedded as scripting languages and the concepts covered here should help you evaluate which ones you want to support and get you started in the process.
 
-First we will cover <a href="http://swig.org">SWIG</a>, then move on to specific concerns about the two language types and conclude with a list of web resources.
+First we will cover [SWIG](http://swig.org), then move on to specific concerns about the two language types and conclude with a list of web resources.
 
 # SWIG Overview
 
-<a href="http://swig.org">SWIG</a> is your best friend when it comes to using your application's API from within a scripting language. SWIG stands for "Simplified Wrapper and Interface Generator." With SWIG, you can automatically generate wrapper code to allow you to use your C or C++ library from within a scripting language. The latest "stable" release of SWIG is 1.1p5 which was released in 1998, the latest "development" release is 1.3.27, released in June, 2005. 
+[SWIG](http://swig.org) is your best friend when it comes to using your application's API from within a scripting language. SWIG stands for "Simplified Wrapper and Interface Generator." With SWIG, you can automatically generate wrapper code to allow you to use your C or C++ library from within a scripting language. The latest "stable" release of SWIG is 1.1p5 which was released in 1998, the latest "development" release is 1.3.27, released in June, 2005.
 
 The 1.3.27 release is known to have some backward compatibility issues and is blocked in Gentoo Linux. However, it is the release that we will be focusing on because it has a wider range of language support.
 
 This release has varying levels of support for the following lanuages:
 
-<ul>
-<li>C#</li>
-<li>Chicken</li>
-<li>Guile</li>
-<li>Java</li>
-<li>Lua</li>
-<li>Modula-3</li>
-<li>MzScheme</li>
-<li>Ocaml</li>
-<li>Perl5</li>
-<li>PHP4</li>
-<li>Pike</li>
-<li>Python</li>
-<li>Ruby</li>
-<li>Tcl</li>
-</ul>
+- C#
+- Chicken
+- Guile
+- Java
+- Lua
+- Modula-3
+- MzScheme
+- Ocaml
+- Perl5
+- PHP4
+- Pike
+- Python
+- Ruby
+- Tcl
 
 
 The general usage of SWIG is:
@@ -70,14 +68,12 @@ swig -c++ -lua CrateGameEngine.i
 
 Our case is very simple because we have made a point of designing the API to be SWIG friendly. Specifically, that means using datatypes that SWIG knows about. There are three main catagories of types that SWIG knows about.
 
-<ol>
-<li>Built In Types</li>
+1. Built In Types
 Built in types are POD types: char, int, long, bool, etc. Also, pointers to these types.
-<li>STL Types</li>
+2. STL Types
 STL types that are supported vary from widely from language to language. Currently, Python has very robust support with all major container classes and stream templates supported (e.g. std::vector, std::map, std::iostream, std::string, etc). Other languages, such as Lua, only support vector and string. Note, SWIG does not handle non-const pointers to strings very well. One reason given for this is that some scripting languages consider strings to be immutable.
-<li>User Defined Types</li>
+3. User Defined Types
 User defined types include classes, structs, enums and typedefs. Herein lies one of the main points of SWIG, to be able to generate language specific wrappers for user defined types. It is very well supported
-</ol>
 
 Therefore, to design with SWIG in mind, we have avoided using pointers to strings, and have limited public interfaces involving std classes to std::vector and std::string. Although std::map is supported by most languages in SWIG, it is mostly unusable for the case of:
 
@@ -142,19 +138,17 @@ Lines that are inside the `%{}` blocks are inserted verbatim into the resulting 
 
 # Languages Designed For Embedding
 
-Lua and Javascript (specifically <a href="http://www.mozilla.org/js/spidermonkey/">spidermonkey</a>) are two languages which were specifically designed for embedding in a C or C++ application.
+Lua and Javascript (specifically [spidermonkey](http://www.mozilla.org/js/spidermonkey/)) are two languages which were specifically designed for embedding in a C or C++ application.
 
 The general order of operations for using one of these languages is:
 
-<ol>
-<li>Initialize Scripting Language Context</li>
-<li>Add Datatypes to Scripting Language Context</li>
-<li>Add Variables to Scripting Language Context</li>
-<li>Load Script into Context</li>
-<li>Execute Script</li>
-<li>Get Results from Context</li>
-<li>Close Scripting Language Context</li>
-</ol>
+1. Initialize Scripting Language Context
+2. Add Datatypes to Scripting Language Context
+3. Add Variables to Scripting Language Context
+4. Load Script into Context
+5. Execute Script
+6. Get Results from Context
+7. Close Scripting Language Context
 
 Lua is supported by SWIG, which saves you a lot of work. SWIG generates a method called SWIG_init which accomplishes step #2. It also generates methods SWIG_NewPointerObj and SWIG_ConvertPtr which help you with items #3 & #6 respectively.
 
@@ -206,26 +200,24 @@ In pratice, a simple implementation of this from the Crate Game Engine looks lik
     lua_close(l);
 ```
 
-Javascript is not supported by SWIG and would require much more code to accomplish the same work."
+Javascript is not supported by SWIG and would require much more code to accomplish the same work.
 
 
 # Languages Designed as Standalone Languages
 
 Languages such as PHP, Perl, Python and Ruby are primarily used as standalone languages, but have support for using C or C++ modules.
 
-The first thing necessary is to generate a module for the target language, this is where SWIG again helps us. Please see the SWIG <a href="http://www.swig.org/Doc1.3/Sections.html#Sections">documentation</a> for examples on creating, testing and using a module.
+The first thing necessary is to generate a module for the target language, this is where SWIG again helps us. Please see the SWIG [documentation](http://www.swig.org/Doc1.3/Sections.html#Sections) for examples on creating, testing and using a module.
 
 The steps for using one of these languages inside your application is very similar to that of using one of the languages designed for embedding.
 
-<ol>
-<li>Initialize Scripting Language Context</li>
-<li>Load Application API Module into Scripting Language Context</li>
-<li>Add Variables to Scripting Language Context</li>
-<li>Load Script into Context</li>
-<li>Execute Script</li>
-<li>Get Results from Context</li>
-<li>Close Scripting Language Context</li>
-</ol>
+1. Initialize Scripting Language Context
+2. Load Application API Module into Scripting Language Context
+3. Add Variables to Scripting Language Context
+4. Load Script into Context
+5. Execute Script
+6. Get Results from Context
+7. Close Scripting Language Context
 
 The main difference between these languages and the languages designed for embedding is the extra work to compile and distribute the language specific module which adds your applications API to the scripting language. SWIG provides the standard SWIG_init, SWIG_NewPointerObj and SWIG_ConvertPtr helper functions mentioned in the previous section to help with many of these steps.
 
@@ -239,49 +231,33 @@ Specific resources regarding compiling language modules is covered in the next s
 
 # Conclusions and Resources
 
-"If your main goal is to integrate scripting capabilities quickly, with as few distribution dependancies as possible, using one of the languages that was designed for embedding is your best choice. <a href="http://lua.org">Lua</a> is currently popular and was chosen by blizzard to allow <a href="http://www.blizzard.com/support/wow/?id=aww01672p3">scripting</a> of thier user interface for World of Warcraft.
+If your main goal is to integrate scripting capabilities quickly, with as few distribution dependancies as possible, using one of the languages that was designed for embedding is your best choice. [Lua](http://lua.org) is currently popular and was chosen by blizzard to allow [scripting](http://www.blizzard.com/support/wow/?id=aww01672p3) of thier user interface for World of Warcraft.
 
-If, however, you are more interested in using a well supported language with a large community of support, choosing <a href="http://python.org">Python</a>, <a href="http://perl.org">Perl</a> or a similar language might be a better choice for you.
+If, however, you are more interested in using a well supported language with a large community of support, choosing [Python](http://python.org), [Perl](http://perl.org) or a similar language might be a better choice for you.
 
 As always, carefully check the license and distribution requirements of the language you choose to make sure they are compatible with the license and distribution you are using for your application.
 
 Much of the documentation and websites related to creating modules for languages and using scripting languages can be difficult to find. Many resources have been collected here, to help you get started.
 
-<ul>
-<li><a href="http://swig.org">SWIG</a> Resources</li>
-<ul>
-<li><a href="http://www.swig.org/Doc1.3/Sections.html#Sections">General Documentation</a>: The very well put together official documentation for SWIG.</li>
-</ul>
-<li><a href="http://perl.org">Perl</a> <a href="http://perl.com">Resources</a></li>
-<ul>
-<li>General <a href="http://perldoc.perl.org/index-internals.html">index</a> of documents related to extending Perl.</li>
-<li>Guide to <a href="http://perldoc.perl.org/perlembed.html">embedding Perl</a>.</li>
-</ul>
-<li><a href="http://ruby-lang.org">Ruby</a> Resources</li>
-<ul>
-<li>Guide to <a href="http://www.rubycentral.com/book/ext_ruby.html">extending Ruby</a>.</li>
-</ul>
-<li><a href="http://php.net">PHP</a> Resources</li>
-<ul>
-<li>Guide to <a href="http://www.zend.com/php/internals/extension-writing1.php?article=extension-writing1&kind=internals&id=7788&open=1&anc=7042&view=1">extending PHP</a>.</li>
-<li>PHP extension <a href="http://pecl.php.net">library and documentation</a>.</li>
-</ul>
-<li><a href="http://python.org">Python</a> Resources</strong></li>
-<ul>
-<li>Guide to <a href="http://docs.python.org/ext/building.html">building</a> Python extensions.</li> 
-<li>Guide to <a href="http://docs.python.org/ext/embedding.html">embedding</a> Python in another application.</li>
-<li>Blog <a href="http://stompstompstomp.com/weblog/entries/74/">posting</a> on distributing an application with embedded Python.</li>
-</ul>
-<li>Javascript Resources<li>
-<ul>
-<li>Guide to the Mozilla <a href="http://www.mozilla.org/js/spidermonkey/">spidermonkey</a> javascript engine</li>
-</ul>
-<li><a href="http://lua.org">Lua</a> Resources</li>
-<ul>
-<li><a href="http://www.lua.org/manual/5.0/">Lua Refernce Manual</a></li>
-<li>Source code <a href="http://www.lua.org/source/5.0/">documentation</a>: lauxlib contains many useful, undocumented utilities.</li>
-<li><a href="http://luabind.sourceforge.net/">Luabind</a>: A tool for binding classes and objects at runtime to Lua without using a code generator like SWIG.</li>
-</ul>
-</ul>"
+- [SWIG](http://swig.org) Resources
+  - [General Documentation](http://www.swig.org/Doc1.3/Sections.html#Sections): The very well put together official documentation for SWIG.
+- [Perl](http://perl.org) [Resources](http://perl.com)
+  - General [index](http://perldoc.perl.org/index-internals.html) of documents related to extending Perl.
+  - Guide to [embedding Perl](http://perldoc.perl.org/perlembed.html).
+- [Ruby](http://ruby-lang.org) Resources
+  - Guide to [extending Ruby](http://www.rubycentral.com/book/ext_ruby.html).
+- [PHP](http://php.net) Resources
+  - Guide to [extending PHP](http://www.zend.com/php/internals/extension-writing1.php?article=extension-writing1&kind=internals&id=7788&open=1&anc=7042&view=1).
+  - PHP extension [library and documentation](http://pecl.php.net).
+- [Python](http://python.org) Resources
+  - Guide to [building](http://docs.python.org/ext/building.html) Python extensions.
+  - Guide to [embedding](http://docs.python.org/ext/embedding.html) Python in another application.
+  - Blog [posting](http://stompstompstomp.com/weblog/entries/74/) on distributing an application with embedded Python.
+- Javascript Resources
+  - Guide to the Mozilla [spidermonkey](http://www.mozilla.org/js/spidermonkey/) javascript engine
+- [Lua](http://lua.org) Resources
+  - [Lua Refernce Manual](http://www.lua.org/manual/5.0/)
+  - Source code [documentation](http://www.lua.org/source/5.0/): lauxlib contains many useful, undocumented utilities.
+  - [Luabind](http://luabind.sourceforge.net/): A tool for binding classes and objects at runtime to Lua without using a code generator like SWIG.
 
 
