@@ -142,7 +142,7 @@ int main()
 
 Compiled:
 
-```cpp
+```asm
 main:                                   # @main
         pushq   %rax
         movl    $12, %edi
