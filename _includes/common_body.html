@@ -48,6 +48,11 @@
   </div>
 </nav>
 
+<div class="container pb-2 mt-4 mb-4">
+  <h1>{{page.title}}</h1>
+  {% if page.date %}{% assign current_post = page %}{% include tag_names.html %}{% endif %}
+</div>
+
 <div id="ad-banner" class="ad-banner">
   <div class="container d-md-flex align-items-center justify-content-between py-3">
     <div>
@@ -94,8 +99,3 @@
   b.querySelector('.ad-cta').innerHTML = pick(ctas);
 })();
 </script>
-
-<div class="container pb-2 mt-4 mb-4 border-bottom">
-  <h1>{{page.title}}</h1>
-  {% if page.date %}{% assign current_post = page %}{% include tag_names.html %}{% endif %}
-</div>

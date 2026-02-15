@@ -72,7 +72,9 @@ a.cs-blue:hover { color: var(--light-gray); }
     color: var(--green-text);
     font-size: 1.05rem;
     line-height: 1.6;
+    border-top: 2px solid var(--green);
     border-bottom: 2px solid var(--green);
+    margin-bottom: 1rem;
 }
 .ad-banner .ad-hook {
     color: var(--green-darkest);
