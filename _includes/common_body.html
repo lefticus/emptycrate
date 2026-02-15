@@ -89,11 +89,12 @@
     "Bring training to your team \u2192",
     "Stop guessing. Start evaluating \u2192"
   ];
+  var emojis = ["\uD83D\uDC40", "\uD83D\uDEA8", "\u26A0\uFE0F", "\uD83D\uDCA1", "\uD83D\uDD25", "\uD83E\uDDD0", "\uD83D\uDEE1\uFE0F"];
   var keywords = /\b(correct|safe|bad|compiling|Undefined behavior|confidence|quality|standard)\b/gi;
   function pick(a) { return a[Math.floor(Math.random() * a.length)]; }
   function hl(t) { return t.replace(keywords, '<strong class="ad-keyword">$&</strong>'); }
   var b = document.getElementById('ad-banner');
-  b.querySelector('.ad-hook').innerHTML = hl(pick(hooks));
+  b.querySelector('.ad-hook').innerHTML = pick(emojis) + ' ' + hl(pick(hooks));
   b.querySelector('.ad-tension').innerHTML = hl(pick(tensions));
   b.querySelector('.ad-positioning').innerHTML = hl(pick(positionings));
   b.querySelector('.ad-cta').innerHTML = pick(ctas);
