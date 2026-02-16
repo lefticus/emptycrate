@@ -69,14 +69,19 @@
     "Is your C++ correct — or just compiling?",
     "Is your team writing good C++?",
     "Is your team writing safe C++ — or getting lucky?",
-    "Is your AI writing bad C++?"
+    "Is your AI writing bad C++?",
+    "How do you know your AI is writing good C++?",
+    "How do you know your team is writing good C++?"
   ];
   var tensions = [
     "Compiling doesn't mean correct.",
     "Passing tests isn't proof of safety.",
     "Undefined behavior doesn't announce itself.",
-    "\u201CIt works\u201D is not a quality bar.",
-    "Confidence is not correctness."
+    "\"It works\" is not a quality bar.",
+    "Confidence is not correctness.",
+    "Can you tell the difference?",
+    "Most teams can't tell the difference.",
+    "Are you shipping without knowing the difference?"
   ];
   var positionings = [
     "Learn to recognize good C++ from bad C++.",
@@ -85,18 +90,19 @@
     "Build real confidence in your code reviews."
   ];
   var ctas = [
-    "Read C++ Best Practices \u2192",
-    "Bring training to your team \u2192",
-    "Stop guessing. Start evaluating \u2192"
+    "C++ Best Practices teaches you how to recognize good C++ from bad C++",
+    "My training helps you tell the difference",
+    "Read C++ Best Practices",
+    "Bring training to your team",
+    "Stop guessing. Start evaluating"
   ];
-  var emojis = ["\uD83D\uDC40", "\uD83D\uDEA8", "\u26A0\uFE0F", "\uD83D\uDCA1", "\uD83D\uDD25", "\uD83E\uDDD0", "\uD83D\uDEE1\uFE0F"];
   var keywords = /\b(correct|safe|bad|compiling|Undefined behavior|confidence|quality|standard)\b/gi;
   function pick(a) { return a[Math.floor(Math.random() * a.length)]; }
   function hl(t) { return t.replace(keywords, '<strong class="ad-keyword">$&</strong>'); }
   var b = document.getElementById('ad-banner');
-  b.querySelector('.ad-hook').innerHTML = pick(emojis) + ' ' + hl(pick(hooks));
+  b.querySelector('.ad-hook').innerHTML = hl(pick(hooks));
   b.querySelector('.ad-tension').innerHTML = hl(pick(tensions));
   b.querySelector('.ad-positioning').innerHTML = hl(pick(positionings));
-  b.querySelector('.ad-cta').innerHTML = pick(ctas);
+  b.querySelector('.ad-cta').innerHTML = pick(ctas) + " \u2192";
 })();
 </script>
