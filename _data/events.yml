@@ -38,6 +38,26 @@
   card_type: og
 
 - title: "C++ Best Practices"
+  date_start: "2026-09-21"
+  date_end: "2026-09-22"
+  time: "9:00 AM–5:00 PM (UTC+2)"
+  format: "In-person (2-day workshop)"
+  conference: "NDC TechTown 2026"
+  location: "Kongsberg, Norway"
+  description: "Writing clean, safe, maintainable C++ that performs well by default — and using tools to enhance code safety."
+  url: "https://ndctechtown.com/workshops/cpp-best-practices/6c9af33497b9"
+  card_type: og
+
+- title: "Recognizing Good C++ – Level Up the Quality of the Code You Write and the PRs You Review"
+  date_start: "2026-10-14"
+  format: "In-person (1-day workshop)"
+  conference: "C++ Under the Sea 2026"
+  location: "Breepark, Breda, Netherlands"
+  description: "Learn to recognize good C++ and make thoughtful, intelligent decisions in the code you write and the PRs you review."
+  url: "https://cppunderthesea.nl/#workshops"
+  card_type: og
+
+- title: "C++ Best Practices"
   date_start: "2025-06-26"
   date_end: "2025-06-27"
   time: "10:00–17:00"
@@ -57,4 +77,15 @@
   location: "Gaylord Rockies, Aurora, CO"
   description: "Smart pointers, code modernization, runtime performance, tooling, compile-time efficiency, cross-platform development, and object lifecycle."
   url: "https://cppcon.org/class-2025-best-practices/"
+  card_type: og
+
+- title: "C++ Best Practices"
+  date_start: "2026-06-15"
+  date_end: "2026-06-16"
+  time: "10:00–18:00"
+  format: "In-person (2-day workshop)"
+  conference: "ACCU on Sea 2026"
+  location: "Folkestone, UK"
+  description: "Interactive class reviewing code quality — attributes, constexpr, const, and functional programming approaches for better C++."
+  url: "https://accuonsea.uk/2026/sessions/cpp-best-practices/"
   card_type: og
